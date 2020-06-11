@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import './Homepage.scss';
 
 const Homepage = () => (
-  <div>Speedboat</div>
+  <div className="homepage">Speedboat</div>
 )
 
 export default Homepage;
