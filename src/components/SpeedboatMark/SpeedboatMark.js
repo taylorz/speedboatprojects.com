@@ -3,9 +3,14 @@ import Grid from '@material-ui/core/Grid';
 import FeedItem from '../FeedItem/FeedItem';
 import './SpeedboatMark.scss';
 
-const SpeedboatMark = ({ className, children }) => (
-  <FeedItem partial left className="speedboat-mark">
-    <Grid container className={className}>
+const SpeedboatMark = ({ children }) => (
+  <FeedItem 
+    partial
+    left
+    noPaddingBottom
+    className="speedboat-mark"
+  >
+    <Grid container>
       <Grid item xs={6} sm={2} className="mark">
           SPEEDBOAT
       </Grid>
