@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
-import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
-import { CSSTransition, TransitionGroup, Transition } from 'react-transition-group';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Home from './pages/Homepage/Homepage'
 import './App.css';
