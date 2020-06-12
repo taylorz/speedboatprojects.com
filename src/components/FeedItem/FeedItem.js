@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import './FeedItem.scss';
 
@@ -6,9 +6,7 @@ const FeedItem = ({
     className,
     children,
     center,
-    left,
     right,
-    full,
     partialBig,
     partialSmall,
     half,
@@ -28,7 +26,6 @@ const FeedItem = ({
       `} 
       justify={
         center ? "center" : 
-        left ? "flex-start" : 
         right ? "flex-end" : 
         "flex-start"
       }
@@ -37,7 +34,6 @@ const FeedItem = ({
         item
         xs={12}
         sm={
-          full ? "12" : 
           partialBig ? "11" : 
           partialSmall ? "8" :
           half ? "6" : 
