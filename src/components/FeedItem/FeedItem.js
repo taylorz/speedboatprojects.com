@@ -8,6 +8,7 @@ const FeedItem = ({
     center,
     right,
     partialBig,
+    partialMedium,
     partialSmall,
     half,
     noPaddingTop,
@@ -33,9 +34,10 @@ const FeedItem = ({
       <Grid 
         item
         xs={12}
-        sm={
+        md={
           partialBig ? "11" : 
-          partialSmall ? "8" :
+          partialMedium ? "8" :
+          partialSmall ? "4" :
           half ? "6" : 
           "12"
         }

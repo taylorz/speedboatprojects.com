@@ -10,8 +10,9 @@
 }
 
 @font-face {
-  font-family: 'Sohne Test Buch';
-  src: url(../assets/fonts/SohneTest/sohne-test-buch.woff) format("woff");
+  font-family: 'Soehne Buch';
+  src: url(../assets/fonts/SoehneBuch/soehne-web-buch.woff2) format('woff2'),
+       url(../assets/fonts/SoehneBuch/soehne-web-buch.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
