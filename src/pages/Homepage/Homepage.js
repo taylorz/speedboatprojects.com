@@ -2,8 +2,6 @@ import React from 'react';
 import PageContainer from '../../components/PageContainer/PageContainer'
 import SpeedboatMark from '../../components/SpeedboatMark/SpeedboatMark'
 import StudioDescription from '../../components/StudioDescription/StudioDescription'
-import StudioStatement from '../../components/StudioStatement/StudioStatement'
-import StudioServices from '../../components/StudioServices/StudioServices'
 import './Homepage.scss';
 
 const Homepage = () => (
