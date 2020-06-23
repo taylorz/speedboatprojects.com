@@ -3,6 +3,9 @@
 .feed-graphic {
     .graphic-item {
         height: 80vh;
+        @include breakpoint(xs) {
+            height: 40vh;
+        }
         img {
             max-width: 80%;
             height: auto;
