@@ -10,6 +10,9 @@ import './Homepage.scss';
 // IMAGE AND CONTENT IMPORTS
 import construction1 from '../../assets/images/construction1.jpg'
 import construction2 from '../../assets/images/construction2.jpg'
+import construction3 from '../../assets/images/construction3.jpg'
+import construction4 from '../../assets/images/construction4.jpg'
+import construction5 from '../../assets/images/construction5.jpg'
 
 import library1 from '../../assets/images/library1.jpg'
 
@@ -24,16 +27,20 @@ const Homepage = () => (
   <PageContainer className="homepage">
     <SpeedboatMark services="ARCHITECTURE AND CONSTRUCTION MANAGEMENT"/>
     <StudioDescription description="Speedboat is a creative and multifaceted construction company. We develop value-add spaces and design details supported by timeless architectural concepts. Our unique approach enables the imagination of exceptionable clients and makes building projects more fun."/>
-    <FeedImage imageUrl={construction2}/>
+    <FeedImage imageUrl={construction1}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic1} passing/>
-    <FeedImage imageUrl={construction1}/>
+    <FeedImage imageUrl={construction2}/>
     <FeedGraphic imageUrl={graphic2} rotating/>
+    <FeedLibrary imageUrl={library1}/>
+    <FeedImage imageUrl={construction3}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic3} blinking/>
     <FeedGraphic imageUrl={graphic4} rotating/>
+    <FeedImage imageUrl={construction4}/>
     <FeedGraphic imageUrl={graphic5} passing/>
     <FeedGraphic imageUrl={graphic6} blinking/>
+    <FeedImage imageUrl={construction5}/>
   </PageContainer>
 )
 
