@@ -6,10 +6,9 @@ import './FeedImage.scss';
 const FeedImage = ({ className, imageUrl }) => (
   <FeedItem 
     center
-    noPaddingBottom
     className={`feed-image ${className}`}
   >
-    <Grid item xs={12} className="image-item">
+    <Grid container item xs={8} className="image-item" justify="center" alignItems="center">
       <img src={imageUrl}></img>
     </Grid>
   </FeedItem>

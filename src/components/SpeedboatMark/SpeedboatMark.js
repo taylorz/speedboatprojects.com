@@ -12,10 +12,10 @@ const SpeedboatMark = ({ services }) => (
     className="speedboat-mark"
   >
     <Grid container>
-      <Grid item xs={6} sm={5} md={4} className="mark">
+      <Grid item xs={6} sm={4} md={3} className="mark">
           <Link to="/">SPEEDBOAT</Link>
       </Grid>
-      <Grid item xs={6} sm={9} md={8} className="service">
+      <Grid item xs={6} sm={8} md={9} className="service">
           {services}
       </Grid>
     </Grid>

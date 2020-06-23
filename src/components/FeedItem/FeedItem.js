@@ -37,12 +37,11 @@ const FeedItem = ({
     >
       <Grid
         container
-        justify={`
-          ${center ? "center" :
-            right ? "flex-end" :
-            "flex-start"
-          }
-        `}
+        justify={
+          center ? "center" : 
+          right ? "flex-end" : 
+          "flex-start"
+        }
       >
         {children}
       </Grid>

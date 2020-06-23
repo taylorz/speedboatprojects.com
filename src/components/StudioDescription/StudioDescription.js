@@ -7,10 +7,9 @@ const StudioDescription = ({ description }) => (
   <FeedItem
     right
     noPaddingTop
-    noPaddingBottom
     className="studio-description"
   >
-    <Grid item xs={11}>
+    <Grid item xs={12} sm={11}>
       {description}
     </Grid>
   </FeedItem>

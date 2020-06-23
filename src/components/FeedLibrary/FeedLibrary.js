@@ -6,10 +6,9 @@ import './FeedLibrary.scss';
 const FeedLibrary = ({ className, imageUrl }) => (
   <FeedItem 
     partialSmall
-    noPaddingBottom
     className={`feed-library ${className}`}
   >
-    <Grid item className="library-item">
+    <Grid container item className="library-item" justify="center" alignItems="center">
       <img src={imageUrl}></img>
     </Grid>
   </FeedItem>
