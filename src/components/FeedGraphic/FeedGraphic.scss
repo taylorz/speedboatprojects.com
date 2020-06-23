@@ -10,7 +10,7 @@
             max-width: 80%;
             height: auto;
             max-height: 80%;
-            @include animation(2s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
+            @include animation(5s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
         }
     }
 }

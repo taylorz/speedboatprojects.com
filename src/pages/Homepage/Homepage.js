@@ -13,7 +13,8 @@ import construction2 from '../../assets/images/construction2.jpg'
 
 import library1 from '../../assets/images/library1.jpg'
 
-import graphic1 from '../../assets/images/zoning-analysis.svg'
+import graphic1 from '../../assets/images/core-and-shell.svg'
+import graphic2 from '../../assets/images/adus-pool-houses.svg'
 
 const Homepage = () => (
   <PageContainer className="homepage">
@@ -22,6 +23,7 @@ const Homepage = () => (
     <FeedImage imageUrl={construction2}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic1}/>
+    <FeedGraphic imageUrl={graphic2}/>
   </PageContainer>
 )
 
