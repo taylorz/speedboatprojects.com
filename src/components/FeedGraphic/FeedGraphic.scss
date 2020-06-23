@@ -9,7 +9,13 @@
         .graphic-image {
             max-width: 80%;
             height: auto;
-            max-height: 80%;
+            // max-height: 80%;
+            @include breakpoint(sm) {
+                max-height: 40%;
+            }
+            @include breakpoint(md) {
+                max-height: 80%;
+            }
             &.rotating {
                 @include animation(5s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
             }

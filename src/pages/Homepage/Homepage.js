@@ -2,6 +2,8 @@ import React from 'react';
 import PageContainer from '../../components/PageContainer/PageContainer'
 import SpeedboatMark from '../../components/SpeedboatMark/SpeedboatMark'
 import StudioDescription from '../../components/StudioDescription/StudioDescription'
+import StudioStatement from '../../components/StudioStatement/StudioStatement'
+import StudioServices from '../../components/StudioServices/StudioServices'
 import FeedImage from '../../components/FeedImage/FeedImage'
 import FeedLibrary from '../../components/FeedLibrary/FeedLibrary'
 import FeedGraphic from '../../components/FeedGraphic/FeedGraphic' 
@@ -30,6 +32,8 @@ const Homepage = () => (
     <FeedImage imageUrl={construction1}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic1} passing/>
+    <StudioStatement statement="Speedboat is an architect-led construction firm focused on delivering projects to individuals, brands, and institutions. We employ creativity and technical know-how to build custom construction projects. Our role as designer & contractor is fluid, an approach that leads to better relationships with project partners, which in turn adds the value of a higher-quality design & cost-savings for our clients. Speedboat works with owners, investors, architects, interior designers, & builders in New York and California. Our partners are creating arts, residences, and capital projects in the New York City & Los Angeles markets."/>
+    <StudioServices/>
     <FeedImage imageUrl={construction2}/>
     <FeedGraphic imageUrl={graphic2} rotating/>
     <FeedLibrary imageUrl={library1}/>

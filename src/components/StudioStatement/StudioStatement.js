@@ -5,16 +5,11 @@ import './StudioStatement.scss';
 
 const StudioStatement = ({ statement }) => (
   <FeedItem
-    partialBig
-    right
-    noPaddingTop
-    noPaddingBottom
+    center
     className="studio-statement"
   >
-    <Grid container>
-      <Grid item xs={12}>
-        {statement}
-      </Grid>
+    <Grid item xs={12} sm={8}>
+      {statement}
     </Grid>
   </FeedItem>
 )
