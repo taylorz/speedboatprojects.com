@@ -6,11 +6,19 @@
         @include breakpoint(xs) {
             height: 40vh;
         }
-        img {
+        .graphic-image {
             max-width: 80%;
             height: auto;
             max-height: 80%;
-            @include animation(5s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
+            &.rotating {
+                @include animation(5s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
+            }
+            &.passing {
+                @include animation(3s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd2);
+            }
+            &.blinking {
+                @include animation(4s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd3);
+            }
         }
     }
 }

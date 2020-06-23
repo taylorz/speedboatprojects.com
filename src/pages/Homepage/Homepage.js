@@ -15,6 +15,10 @@ import library1 from '../../assets/images/library1.jpg'
 
 import graphic1 from '../../assets/images/single-family-homes.svg'
 import graphic2 from '../../assets/images/commercial-interiors.svg'
+import graphic3 from '../../assets/images/facades.svg'
+import graphic4 from '../../assets/images/core-and-shell.svg'
+import graphic5 from '../../assets/images/public-spaces.svg'
+import graphic6 from '../../assets/images/adus-pool-houses.svg'
 
 const Homepage = () => (
   <PageContainer className="homepage">
@@ -22,10 +26,11 @@ const Homepage = () => (
     <StudioDescription description="Speedboat is a creative and multifaceted construction company. We develop value-add spaces and design details supported by timeless architectural concepts. Our unique approach enables the imagination of exceptionable clients and makes building projects more fun."/>
     <FeedImage imageUrl={construction2}/>
     <FeedLibrary imageUrl={library1}/>
-    <FeedGraphic imageUrl={graphic1}/>
+    <FeedGraphic imageUrl={graphic1} rotating/>
     <FeedImage imageUrl={construction1}/>
-    <FeedGraphic imageUrl={graphic2}/>
+    <FeedGraphic imageUrl={graphic2} passing/>
     <FeedLibrary imageUrl={library1}/>
+    <FeedGraphic imageUrl={graphic3} blinking/>
   </PageContainer>
 )
 

@@ -46,11 +46,15 @@
     opacity: 0;
   }
 }
-@keyframes sunsetBlvd1 {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(15deg) rotateY(360deg) rotateZ(0deg);
-  }
+@keyframes sunsetBlvd1 { //rotating sign
+  0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: rotateX(15deg) rotateY(360deg) rotateZ(0deg); }
+}
+@keyframes sunsetBlvd2 { //passing in car
+  0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: rotateX(25deg) rotateY(70deg) rotateZ(15deg); }
+}
+@keyframes sunsetBlvd3 { //glowing turning off and on
+  0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: rotateX(-45deg) rotateY(-35deg) rotateZ(-5deg); }
 }
