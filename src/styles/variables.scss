@@ -7,12 +7,14 @@ $primaryFont:                        'Soehne Buch', times, sans-serif;
 $fontColorDark:                      #11111c;
 $fontColorLight:                     #fffffa;
 
-$fontSize:                           18px;
+$bgColorDark:                        $fontColorDark;
+
+$fontSize:                           22px;
 $fontSizeParagraph:                  $fontSize*1.15;
 $fontSizeStatement:                  $fontSize*1.85;
 $fontSizeHero:                       $fontSize*3;
 
-$lineHeight:                         20px;
+$lineHeight:                         24px;
 $lineHeightParagraph:                $lineHeight*1.4;
 $lineHeightStatement:                $lineHeight*1.95;
 $lineHeightHero:                     $lineHeight*3.25;

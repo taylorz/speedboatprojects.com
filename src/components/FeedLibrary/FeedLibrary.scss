@@ -1,0 +1,10 @@
+@import "../../styles/styles.scss";
+
+.feed-library {
+    .library-item {
+        background: $bgColorDark;
+        img {
+            width: 20px;
+        }
+    }
+}

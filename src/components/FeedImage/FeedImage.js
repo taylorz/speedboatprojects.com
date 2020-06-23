@@ -5,15 +5,12 @@ import './FeedImage.scss';
 
 const FeedImage = ({ className, imageUrl }) => (
   <FeedItem 
-    partialMedium
     center
     noPaddingBottom
     className={`feed-image ${className}`}
   >
-    <Grid container>
-      <Grid item xs={12} className="image-item">
-        <img src={imageUrl}></img>
-      </Grid>
+    <Grid item xs={12} className="image-item">
+      <img src={imageUrl}></img>
     </Grid>
   </FeedItem>
 )

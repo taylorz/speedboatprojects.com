@@ -5,16 +5,13 @@ import './StudioDescription.scss';
 
 const StudioDescription = ({ description }) => (
   <FeedItem
-    partialBig 
     right
     noPaddingTop
     noPaddingBottom
     className="studio-description"
   >
-    <Grid container>
-      <Grid item xs={12}>
-        {description}
-      </Grid>
+    <Grid item xs={11}>
+      {description}
     </Grid>
   </FeedItem>
 )

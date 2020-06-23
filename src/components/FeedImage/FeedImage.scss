@@ -1,7 +1,11 @@
 @import "../../styles/styles.scss";
 
 .feed-image {
-    img {
-        width: 100%;
+    .image-item {
+        text-align: center;
+        img {
+            max-width: 100%;
+            max-height: 80vh;
+        }
     }
 }

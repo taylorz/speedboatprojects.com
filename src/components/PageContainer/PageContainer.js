@@ -4,9 +4,7 @@ import './PageContainer.scss';
 
 const PageContainer = ({ className, children }) => (
   <Grid container className={`page-container ${className}`}>
-    <Grid item xs={12}>
-        {children}
-    </Grid>
+    {children}
   </Grid>
 )
 

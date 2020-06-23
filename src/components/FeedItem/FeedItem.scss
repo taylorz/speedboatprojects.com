@@ -1,7 +1,7 @@
 @import "../../styles/styles.scss";
 
 .feed-item {
-    padding: $feedItemPadding;
+    // padding: $feedItemPadding 0;
     &.no-padding-top {
         padding-top: 0;
     }

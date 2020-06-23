@@ -14,9 +14,10 @@ const FeedItem = ({
     noPaddingTop,
     noPaddingBottom,
     noPaddingLeft,
-    noPaddingRight,
+    noPaddingRight
   }) => (
-    <Grid container 
+    <Grid 
+      item
       className={`
         feed-item
         ${className}
@@ -25,22 +26,23 @@ const FeedItem = ({
         ${noPaddingLeft && 'no-padding-left'}
         ${noPaddingRight && 'no-padding-right'}
       `} 
-      justify={
-        center ? "center" : 
-        right ? "flex-end" : 
-        "flex-start"
+      xs={12}
+      md={
+        partialBig ? "11" : 
+        partialMedium ? "8" :
+        partialSmall ? "4" :
+        half ? "6" : 
+        "12"
       }
     >
-      <Grid 
-        item
-        xs={12}
-        md={
-          partialBig ? "11" : 
-          partialMedium ? "8" :
-          partialSmall ? "4" :
-          half ? "6" : 
-          "12"
-        }
+      <Grid
+        container
+        justify={`
+          ${center ? "center" :
+            right ? "flex-end" :
+            "flex-start"
+          }
+        `}
       >
         {children}
       </Grid>
