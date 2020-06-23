@@ -13,8 +13,8 @@ import construction2 from '../../assets/images/construction2.jpg'
 
 import library1 from '../../assets/images/library1.jpg'
 
-import graphic1 from '../../assets/images/commercial-interiors.svg'
-import graphic2 from '../../assets/images/adus-pool-houses.svg'
+import graphic1 from '../../assets/images/single-family-homes.svg'
+import graphic2 from '../../assets/images/commercial-interiors.svg'
 
 const Homepage = () => (
   <PageContainer className="homepage">
