@@ -18,9 +18,9 @@ const FeedItem = ({
   }) => (
     <Grid 
       item
+      container
       className={`
         feed-item
-        ${className}
         ${noPaddingTop && 'no-padding-top'}
         ${noPaddingBottom && 'no-padding-bottom'}
         ${noPaddingLeft && 'no-padding-left'}
@@ -36,7 +36,9 @@ const FeedItem = ({
       }
     >
       <Grid
+        item
         container
+        className={className}
         justify={
           center ? "center" : 
           right ? "flex-end" : 

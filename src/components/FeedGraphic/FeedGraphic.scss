@@ -1,0 +1,13 @@
+@import "../../styles/styles.scss";
+
+.feed-graphic {
+    .graphic-item {
+        height: 80vh;
+        img {
+            max-width: 80%;
+            height: auto;
+            max-height: 80%;
+            @include animation(2s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
+        }
+    }
+}

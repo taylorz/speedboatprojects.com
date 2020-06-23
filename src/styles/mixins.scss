@@ -26,8 +26,8 @@
   }
 }
 
-@mixin animation($duration, $easing, $delay, $animation) {
-  animation: $duration $easing $delay 1 $animation forwards;
+@mixin animation($duration, $easing, $delay, $iterationCount, $fillMode, $animation) {
+  animation: $duration $easing $delay $iterationCount $fillMode $animation;
 }
 
 @keyframes fadeIn {
@@ -44,5 +44,13 @@
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes sunsetBlvd1 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(5deg) rotateY(80deg) rotateZ(0deg);
   }
 }

@@ -44,18 +44,18 @@ body {
   }
   .my-node-appear {
     opacity: 0;
-    @include animation($timing, $easingRegular, $delay2, fadeIn);
+    @include animation($timing, $easingRegular, $delay2, 1, forwards, fadeIn);
   }
   .my-node-enter {
     opacity: 0;
   }
   .my-node-enter-active {
-    @include animation($timing, $easingRegular, $delay2, fadeIn);
+    @include animation($timing, $easingRegular, $delay2, 1, forwards, fadeIn);
   }
   .my-node-exit {
     opacity: 1;
   }
   .my-node-exit-active {
-    @include animation($timing, $easingRegular, 0s, fadeOut);
+    @include animation($timing, $easingRegular, 0s, 1, forwards, fadeOut);
   }
 }//body
