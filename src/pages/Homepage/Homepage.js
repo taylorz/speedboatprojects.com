@@ -25,6 +25,7 @@ const Homepage = () => (
     <FeedGraphic imageUrl={graphic1}/>
     <FeedImage imageUrl={construction1}/>
     <FeedGraphic imageUrl={graphic2}/>
+    <FeedLibrary imageUrl={library1}/>
   </PageContainer>
 )
 
