@@ -8,9 +8,6 @@ import './Homepage.scss';
 
 // IMAGE AND CONTENT IMPORTS
 import construction1 from '../../assets/images/construction1.jpg'
-import construction2 from '../../assets/images/construction2.jpg'
-import construction3 from '../../assets/images/construction3.jpg'
-import construction4 from '../../assets/images/construction4.jpg'
 
 import library1 from '../../assets/images/library1.jpg'
 
@@ -21,7 +18,6 @@ const Homepage = () => (
     <FeedImage imageUrl={construction1}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedLibrary imageUrl={library1}/>
-    <FeedImage imageUrl={construction3}/>
   </PageContainer>
 )
 
