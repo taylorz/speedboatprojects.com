@@ -1,0 +1,33 @@
+@import "../../styles/styles.scss";
+
+.feed-graphic {
+    .graphic-item {
+        height: 80vh;
+        @include breakpoint(xs) {
+            height: 40vh;
+        }
+        .graphic-image {
+            max-width: 80%;
+            height: auto;
+            // max-height: 80%;
+            @include breakpoint(sm) {
+                max-height: 80%;
+            }
+            @include breakpoint(md) {
+                max-height: 60%;
+            }
+            @include breakpoint(lg) {
+                max-height: 55%;
+            }
+            &.rotating {
+                @include animation(5s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
+            }
+            &.passing {
+                @include animation(3s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd2);
+            }
+            &.blinking {
+                @include animation(4s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd3);
+            }
+        }
+    }
+}

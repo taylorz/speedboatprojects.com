@@ -6,6 +6,7 @@ import './StudioStatement.scss';
 const StudioStatement = ({ statement }) => (
   <FeedItem
     right
+    noPaddingTop
     className="studio-statement"
   >
     <Grid item xs={12} sm={11}>

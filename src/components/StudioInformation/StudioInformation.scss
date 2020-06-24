@@ -1,13 +1,14 @@
 @import "../../styles/styles.scss";
 
-.studio-services {
+.studio-information {
+    padding-top: $buffer*4;
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         margin-bottom: $buffer*4;
     }
-    .services-header {
+    .header {
         text-align: center; 
     }
 }
