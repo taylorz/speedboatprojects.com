@@ -1,12 +1,7 @@
 @import '/variables.scss';
 
-@mixin transitionRegular {
-  transition: $transitionRegular;
-}
-@mixin transition {
-  transition: $transitionCubic;
-  // transition: all 1s linear;
-}
+@mixin transition { transition: $transitionCubic; }
+@mixin transitionRegular { transition: $transitionRegular; }
 
 @mixin breakpoint($class) {
   @if $class == xs {
@@ -31,20 +26,12 @@
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 @keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 @keyframes sunsetBlvd1 { //rotating sign
   0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }

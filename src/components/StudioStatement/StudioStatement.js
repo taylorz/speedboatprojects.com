@@ -5,10 +5,10 @@ import './StudioStatement.scss';
 
 const StudioStatement = ({ statement }) => (
   <FeedItem
-    center
+    right
     className="studio-statement"
   >
-    <Grid item xs={12} sm={10}>
+    <Grid item xs={12} sm={11}>
       {statement}
     </Grid>
   </FeedItem>
