@@ -43,11 +43,17 @@ const Homepage = () => (
     <FeedGraphic imageUrl={graphic3} blinking/>
     <FeedLibrary imageUrl={library1}/>
     
-    <FeedGraphic imageUrl={graphic4} rotating/>
     <FeedImage imageUrl={construction4}/>
-    <FeedGraphic imageUrl={graphic5} passing/>
-    <FeedGraphic imageUrl={graphic6} blinking/>
+    <FeedLibrary imageUrl={library1}/>
+    <FeedGraphic imageUrl={graphic4} rotating/>
+
     <FeedImage imageUrl={construction5}/>
+    <FeedGraphic imageUrl={graphic5} passing/>
+    <FeedLibrary imageUrl={library1}/>
+
+    <FeedImage imageUrl={construction5}/>
+    <FeedLibrary imageUrl={library1}/>
+    <FeedGraphic imageUrl={graphic6} blinking/>
   </PageContainer>
 )
 
