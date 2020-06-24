@@ -3,5 +3,8 @@
 .speedboat-mark {
     .mark {
         font-family: $logoFont;
+        a {
+            color: $fontColorDark;
+        }
     }//mark
 }

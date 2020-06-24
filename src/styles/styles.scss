@@ -34,7 +34,7 @@ body {
     color: red;
   }
   a {
-    color: inherit;
+    color: $fontColorLightened;
     text-decoration: none;
     @include transition;
     &:link {}
