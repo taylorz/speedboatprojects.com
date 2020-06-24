@@ -8,7 +8,7 @@ const StudioStatement = ({ statement }) => (
     center
     className="studio-statement"
   >
-    <Grid item xs={12} sm={8}>
+    <Grid item xs={12} sm={10}>
       {statement}
     </Grid>
   </FeedItem>

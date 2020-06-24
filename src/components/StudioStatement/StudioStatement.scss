@@ -3,4 +3,8 @@
 .studio-statement {
     font-size: $fontSizeStatement;
     line-height: $lineHeightStatement;
+    @include breakpoint(xs) {
+        font-size: $fontSizeParagraph;
+        line-height: $lineHeightParagraph;
+    }
 }

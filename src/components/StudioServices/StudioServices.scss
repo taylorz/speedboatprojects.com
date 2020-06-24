@@ -5,8 +5,9 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+        margin-bottom: $buffer*4;
     }
     .services-header {
-        text-align: center;
+        text-align: center; 
     }
 }

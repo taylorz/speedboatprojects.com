@@ -29,8 +29,8 @@ const FeedItem = ({
       xs={12}
       md={
         partialBig ? "11" : 
-        partialMedium ? "8" :
-        partialSmall ? "4" :
+        partialMedium ? "7" :
+        partialSmall ? "5" :
         half ? "6" : 
         "12"
       }

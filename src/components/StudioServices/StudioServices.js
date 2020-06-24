@@ -8,6 +8,7 @@ import CONSTRUCTION_SERVICES from '../../constants/construction-services';
 const StudioServices = () => (
   <FeedItem
     half
+    noPaddingBottom 
     className="studio-services"
   >
     <Grid item xs={12} sm={6}>
