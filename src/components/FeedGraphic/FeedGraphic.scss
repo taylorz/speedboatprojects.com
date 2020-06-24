@@ -21,6 +21,8 @@
             }
             &.rotating {
                 @include animation(5s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd1);
+                max-height: 70%;
+                max-width: 70%;
             }
             &.passing {
                 @include animation(3s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd2);
