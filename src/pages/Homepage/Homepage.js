@@ -27,6 +27,9 @@ import graphic6 from '../../assets/images/adus-pool-houses.svg'
 import graphic7 from '../../assets/images/kitchens.gif'
 
 import artifact1 from '../../assets/images/zine1.jpg'
+import artifact2 from '../../assets/images/pier-sf.gif'
+import artifact3 from '../../assets/images/lucas.png'
+import artifact4 from '../../assets/images/pfeiffer.jpg'
 
 const Homepage = () => (
   <PageContainer className="homepage">
@@ -37,30 +40,26 @@ const Homepage = () => (
     <FeedGraphic imageUrl={graphic1} passing/>
     <FeedLibrary imageUrl={library1}/>
     <FeedArtifact imageUrl={artifact1}/>
-
     <FeedImage imageUrl={construction2}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic2} rotating/>
-
+    <FeedArtifact imageUrl={artifact2}/>
     <FeedImage imageUrl={construction3}/>
     <FeedGraphic imageUrl={graphic3} walking/>
     <FeedLibrary imageUrl={library1}/>
-    
+    <FeedArtifact imageUrl={artifact3}/>
     <FeedImage imageUrl={construction4}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic4} rotating/>
-
+    <FeedArtifact right imageUrl={artifact4}/>
     <FeedImage imageUrl={construction5}/>
     <FeedGraphic imageUrl={graphic5} passing/>
     <FeedLibrary imageUrl={library1}/>
-
     <FeedImage imageUrl={construction5}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic6} walking/>
-
     <FeedImage imageUrl={construction5}/>
-    <FeedGraphic imageUrl={graphic7} />
-
+    <FeedGraphic imageUrl={graphic7} rotating/>
     <Footer/>
 
   </PageContainer>

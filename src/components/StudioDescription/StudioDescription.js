@@ -11,7 +11,7 @@ const StudioDescription = ({ description }) => (
     className="studio-description"
   >
     <Grid item xs={12} sm={11}>
-      {description} <Link smooth to="/#footer">Learn More.</Link>
+      {description} <Link smooth to="#footer">Learn More.</Link>
     </Grid>
   </FeedItem>
 )
