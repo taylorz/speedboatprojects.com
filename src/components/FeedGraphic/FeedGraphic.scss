@@ -27,7 +27,7 @@
             &.passing {
                 @include animation(3s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd2);
             }
-            &.blinking {
+            &.walking {
                 @include animation(4s, $easingCubic, $delay1, infinite, alternate, sunsetBlvd3);
             }
         }

@@ -5,6 +5,7 @@ import StudioDescription from '../../components/StudioDescription/StudioDescript
 import FeedImage from '../../components/FeedImage/FeedImage'
 import FeedLibrary from '../../components/FeedLibrary/FeedLibrary'
 import FeedGraphic from '../../components/FeedGraphic/FeedGraphic' 
+import FeedArtifact from '../../components/FeedArtifact/FeedArtifact'
 import Footer from '../../components/Footer/Footer' 
 import './Homepage.scss';
 
@@ -23,22 +24,26 @@ import graphic3 from '../../assets/images/facades.svg'
 import graphic4 from '../../assets/images/core-and-shell.svg'
 import graphic5 from '../../assets/images/public-spaces.svg'
 import graphic6 from '../../assets/images/adus-pool-houses.svg'
+import graphic7 from '../../assets/images/kitchens.gif'
+
+import artifact1 from '../../assets/images/zine1.jpg'
 
 const Homepage = () => (
   <PageContainer className="homepage">
-    <SpeedboatMark services="ARCHITECTURE AND CONSTRUCTION MANAGEMENT"/>
+    <SpeedboatMark services="DESIGN AND CONSTRUCTION MANAGEMENT"/>
     <StudioDescription description="Speedboat is a creative and multifaceted construction company. We develop value-add spaces and design details supported by timeless architectural concepts. Our unique approach enables the imagination of exceptionable clients and makes building projects more fun."/>
 
     <FeedImage imageUrl={construction1}/>
     <FeedGraphic imageUrl={graphic1} passing/>
     <FeedLibrary imageUrl={library1}/>
+    <FeedArtifact imageUrl={artifact1}/>
 
     <FeedImage imageUrl={construction2}/>
     <FeedLibrary imageUrl={library1}/>
     <FeedGraphic imageUrl={graphic2} rotating/>
 
     <FeedImage imageUrl={construction3}/>
-    <FeedGraphic imageUrl={graphic3} blinking/>
+    <FeedGraphic imageUrl={graphic3} walking/>
     <FeedLibrary imageUrl={library1}/>
     
     <FeedImage imageUrl={construction4}/>
@@ -51,7 +56,10 @@ const Homepage = () => (
 
     <FeedImage imageUrl={construction5}/>
     <FeedLibrary imageUrl={library1}/>
-    <FeedGraphic imageUrl={graphic6} blinking/>
+    <FeedGraphic imageUrl={graphic6} walking/>
+
+    <FeedImage imageUrl={construction5}/>
+    <FeedGraphic imageUrl={graphic7} />
 
     <Footer/>
 

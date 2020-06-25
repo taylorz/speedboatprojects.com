@@ -1,22 +1,14 @@
-const CONSTRUCTION_SERVICES = [
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
-    "Chad Karty",
-    "Taylor Zanke",
+const COLLABORATORS = [
+    "Eugene Stevenson",
+    "Janiya Rodgers",
+    "Gilberto Rivera",
+    "Emery Valdez",
+    "Guadalupe Pitts",
+    "Natasha Barton",
+    "Carson Butler",
+    "Jaxon Serrano",
+    "Paula Petty",
+    "Omar Higgins"
 ]
 
-export default CONSTRUCTION_SERVICES
+export default COLLABORATORS
