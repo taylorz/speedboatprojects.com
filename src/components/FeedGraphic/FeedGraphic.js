@@ -8,7 +8,7 @@ const FeedGraphic = ({ className, imageUrl, rotating, passing, walking }) => (
     partialMedium
     className={`feed-graphic ${className}`}
   >
-    <Grid container item className={`graphic-item`} justify="center" alignItems="center">
+    <Grid container item className="graphic-item" justify="center" alignItems="center">
       <img src={imageUrl} className={`graphic-image ${rotating && 'rotating'} ${passing && 'passing'} ${walking && 'walking'}`}></img>
     </Grid>
   </FeedItem>

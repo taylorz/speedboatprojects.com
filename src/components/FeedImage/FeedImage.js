@@ -8,7 +8,7 @@ const FeedImage = ({ className, imageUrl }) => (
     center
     className={`feed-image ${className}`}
   >
-    <Grid container item xs={12} sm={8} className="image-item" justify="center" alignItems="center">
+    <Grid container item xs={12} sm={10} className="image-item" justify="center" alignItems="center">
       <img src={imageUrl}></img>
     </Grid>
   </FeedItem>

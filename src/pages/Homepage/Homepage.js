@@ -16,7 +16,9 @@ import construction3 from '../../assets/images/construction3.jpg'
 import construction4 from '../../assets/images/construction4.jpg'
 import construction5 from '../../assets/images/construction5.jpg'
 
-import library1 from '../../assets/images/library1.jpg'
+import library1 from '../../assets/images/deliriousnewyork.png'
+import library2 from '../../assets/images/cityofquartz.png'
+import library3 from '../../assets/images/learningfromlasvegas.png'
 
 import graphic1 from '../../assets/images/single-family-homes.svg'
 import graphic2 from '../../assets/images/commercial-interiors.svg'
@@ -41,12 +43,12 @@ const Homepage = () => (
     <FeedLibrary imageUrl={library1}/>
     <FeedArtifact imageUrl={artifact1}/>
     <FeedImage imageUrl={construction2}/>
-    <FeedLibrary imageUrl={library1}/>
+    <FeedLibrary imageUrl={library2}/>
     <FeedGraphic imageUrl={graphic2} rotating/>
     <FeedArtifact imageUrl={artifact2}/>
     <FeedImage imageUrl={construction3}/>
     <FeedGraphic imageUrl={graphic3} walking/>
-    <FeedLibrary imageUrl={library1}/>
+    <FeedLibrary imageUrl={library3}/>
     <FeedArtifact imageUrl={artifact3}/>
     <FeedImage imageUrl={construction4}/>
     <FeedLibrary imageUrl={library1}/>

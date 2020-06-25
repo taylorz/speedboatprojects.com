@@ -3,10 +3,10 @@
 .feed-library {
     .library-item {
         background: $bgColorDark;
-        height: 80vh;
+        height: $feedItemHeight;
         width: 100%;
         @include breakpoint(xs) {
-            height: 40vh;
+            height: $feedItemHeightMobile;
         }
         img {
             max-width: 80%;

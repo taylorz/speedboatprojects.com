@@ -1,5 +1,7 @@
 $buffer:                             4px;
 $feedItemPadding:                    $buffer*4;
+$feedItemHeight:                     100vh;
+$feedItemHeightMobile:               50vh;
 
 $logoFont:                           'Prophet Bold', Helvetica, sans-serif;
 $primaryFont:                        'Soehne Buch', times, sans-serif;  
@@ -10,12 +12,12 @@ $fontColorLightened:                 #cccccc;
 
 $bgColorDark:                        $fontColorDark;
 
-$fontSize:                           18px;
+$fontSize:                           22px;
 $fontSizeParagraph:                  $fontSize*1.25;
 $fontSizeStatement:                  $fontSize*1.85;
 $fontSizeHero:                       $fontSize*3;
 
-$lineHeight:                         20px;
+$lineHeight:                         24px;
 $lineHeightParagraph:                $lineHeight*1.4;
 $lineHeightStatement:                $lineHeight*1.95;
 $lineHeightHero:                     $lineHeight*3.25;
