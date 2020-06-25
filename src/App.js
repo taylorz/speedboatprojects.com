@@ -20,12 +20,12 @@ class App extends Component {
             return (
               <>
                 <TransitionGroup component={null}>
-                  <CSSTransition
+                  {/* <CSSTransition
                     key={key}
                     appear={true}
                     classNames="my-node"
                     timeout={{enter: 1000, exit: 500}}
-                  >
+                  > */}
                     <Switch location={location}>
                       {routes.map(({ path, Component }) => (
                         <Route key={path} exact path={path}>
@@ -37,7 +37,7 @@ class App extends Component {
                         </Route>
                       ))}
                     </Switch>
-                  </CSSTransition>
+                  {/* </CSSTransition> */}
                 </TransitionGroup>
               </>
             )

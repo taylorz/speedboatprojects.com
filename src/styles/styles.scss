@@ -30,8 +30,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-variant-ligatures: common-ligatures;
   font-smoothing: antialiased;
-    opacity: 0;
-    @include animation($timing, $easingRegular, $delay2, 1, forwards, fadeIn);
+  opacity: 0;
+  @include animation($timing, $easingRegular, $delay2, 1, forwards, fadeIn);
   ::selection {
     color: red;
   }
