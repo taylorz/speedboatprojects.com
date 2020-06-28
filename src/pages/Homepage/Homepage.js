@@ -38,11 +38,11 @@ const Homepage = () => (
     <SpeedboatMark services="DESIGN AND CONSTRUCTION MANAGEMENT"/>
     <StudioDescription description="Speedboat is a creative and multifaceted construction company. We develop value-add spaces and design details supported by timeless architectural concepts. Our unique approach enables the imagination of exceptionable clients and makes building projects more fun."/>
 
-    <FeedImage imageUrl={construction1}/>
+    <FeedImage imageUrl={construction2}/>
     <FeedGraphic imageUrl={graphic1} passing/>
     <FeedLibrary imageUrl={library1}/>
     <FeedArtifact imageUrl={artifact1}/>
-    <FeedImage imageUrl={construction2}/>
+    <FeedImage imageUrl={construction1}/>
     <FeedLibrary imageUrl={library2}/>
     <FeedGraphic imageUrl={graphic2} rotating/>
     <FeedArtifact imageUrl={artifact2}/>
