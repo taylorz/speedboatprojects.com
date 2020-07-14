@@ -10,7 +10,7 @@ const Homepage = () => (
       services="ARCHITECTURE AND CONSTRUCTION MANAGEMENT"
     />
     <StudioDescription
-      description="Speedboat is a creative and multifaceted construction company. We develop value-add spaces and design details supported by timeless architectural concepts. Our unique approach enables the imagination of exceptionable clients and makes building projects more fun."
+      description="SPEEDBOAT is a dynamic and multifaceted design & construction management studio. We create projects informed by timeless architectural concepts and supported by spatial clarity, detail, and craft. Our unique approach enables the imagination of exceptional clients and makes building projects more fun. CALL US (323) 450-7551"
     />
   </PageContainer>
 )
