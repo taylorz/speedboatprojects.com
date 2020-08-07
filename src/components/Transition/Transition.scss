@@ -1,0 +1,26 @@
+@import "../../styles/styles.scss";
+
+.transition-container {
+    width: 100vw;
+    height: 100vh;
+    z-index: $zIndex3;
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    padding: $margin*6;
+    font-size: $fontSizeHero;
+    line-height: $lineHeightHero;
+    text-transform: uppercase;
+    .transition-inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .transition-text {
+            p {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

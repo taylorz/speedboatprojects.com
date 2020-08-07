@@ -1,0 +1,10 @@
+@import "../../styles/styles.scss";
+
+.hero-container {
+    background: #eaeaea;
+    height: 70vh;
+    overflow: hidden;
+    .hero-video {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,7 @@
+@import "../../styles/styles.scss";
+
+.max-width-wrapper {
+    width: $md;
+    margin: 0 auto;
+    padding: 0 $margin;
+}

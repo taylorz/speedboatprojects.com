@@ -1,0 +1,38 @@
+@import "../../styles/styles.scss";
+
+.nav-container {
+    font-family: $primaryFont;
+    font-size: $fontSizeStatement;
+    line-height: $lineHeightStatement;
+    text-transform: uppercase;
+    position: fixed;
+    padding-top: $margin;
+    z-index: $zIndex1;
+    .nav-inner {
+        .nav-items {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    .page-link {
+                        color: $goldenHour;
+                        &:hover {
+                            color: $acid;
+                        }
+                    }
+                    .page-link-active {
+                        color: $acid;
+                    }
+                }
+            }
+        }//nav-items
+        .nav-cta {
+            .cta-wrapper {
+                img {
+                    width: $fontSizeHero;
+                }
+            }
+        }
+    }
+}

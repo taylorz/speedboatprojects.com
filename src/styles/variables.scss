@@ -1,27 +1,33 @@
-$buffer:                             4px;
-$feedItemPadding:                    $buffer*4;
+$buffer:                             5px;
+$margin:                             $buffer*6;
 
-$logoFont:                           'Prophet Bold', Helvetica, sans-serif;
-$primaryFont:                        'Soehne Buch', times, sans-serif;  
+$primaryFont:                        'Prophet Bold', Helvetica, sans-serif;
 
-$fontColorDark:                      #11111c;
-$fontColorLight:                     #fffffa;
+$fontColorDark:                     #000000;
+$fontColorLight:                    #aaaaaa;
 
-$fontSize:                           18px;
-$fontSizeParagraph:                  $fontSize*1.15;
-$fontSizeStatement:                  $fontSize*1.85;
-$fontSizeHero:                       $fontSize*3;
+$goldenHour:                        #DEB83B;
+$acid:                              #FC4C02;
+$babyBlue:                          #B9D9EB;
+$seaFoam:                           #00C19F;
 
-$lineHeight:                         20px;
-$lineHeightParagraph:                $lineHeight*1.4;
-$lineHeightStatement:                $lineHeight*1.95;
-$lineHeightHero:                     $lineHeight*3.25;
+$fontSizeSmall:                      14px;
+$fontSize:                           24px;
+$fontSizeStatement:                  48px;
+$fontSizeHero:                       96px;
+
+$lineHeightSmall:                    16px;
+$lineHeight:                         26px;
+$lineHeightStatement:                50px;
+$lineHeightHero:                     96px;
 
 $timing:                             .5s;
 $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);
 $easingRegular:                      ease-in-out;
 $transitionCubic:                    all $timing $easingCubic;
 $transitionRegular:                  all $timing $easingRegular;
+
+$pageTransitionTiming:               2s;
 
 $delay1:                             .25s;
 $delay2:                             $delay1+$delay1;

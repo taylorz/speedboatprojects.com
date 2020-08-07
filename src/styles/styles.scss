@@ -31,7 +31,7 @@ body {
   -webkit-font-variant-ligatures: common-ligatures;
   font-smoothing: antialiased;
   ::selection {
-    color: red;
+    color: $babyBlue;
   }
   a {
     color: inherit;
@@ -43,19 +43,52 @@ body {
     &:active {}
   }
   .my-node-appear {
-    opacity: 0;
-    @include animation($timing, $easingRegular, $delay2, fadeIn);
+    .page-container {
+      opacity: 0;
+      @include animation(0s, $easingRegular, 1.5s, fadeIn);
+      overflow-y: hidden;
+    }
+    .transition-container {
+      opacity: 0;
+      @include animation(2s, $easingRegular, 0s, transitionPage);
+    }
   }
   .my-node-enter {
-    opacity: 0;
+    .page-container {
+      opacity: 0;
+      overflow-y: scroll;
+    }
+    .transition-container {
+      opacity: 0;
+    }
   }
   .my-node-enter-active {
-    @include animation($timing, $easingRegular, $delay2, fadeIn);
+    .page-container {
+      @include animation($timing, $easingRegular, 1.5s, fadeIn);
+      overflow-y: hidden;
+    }
+    .transition-container {
+      opacity: 0;
+      @include animation(2s, $easingRegular, 0s, transitionPage);
+    }
   }
   .my-node-exit {
-    opacity: 1;
+    .page-container {
+      opacity: 1;
+      overflow-y: scroll;
+    }
+    .transition-container {
+      opacity: 0;
+    }
   }
   .my-node-exit-active {
-    @include animation($timing, $easingRegular, 0s, fadeOut);
+    .page-container {
+      @include animation($timing, $easingRegular, 0s, fadeOut);
+      overflow-y: hidden;
+    }
+    .transition-container {
+      opacity: 0;
+      @include animation(2s, $easingRegular, $timing, transitionPage);
+    }
   }
 }//body
