@@ -45,12 +45,12 @@ body {
   .my-node-appear {
     .page-container {
       opacity: 0;
-      @include animation(0s, $easingRegular, 4s, fadeIn);
+      @include animation(0s, $easingRegular, 1.5s, fadeIn);
       overflow-y: hidden;
     }
     .transition-container {
       opacity: 0;
-      @include animation(5s, $easingRegular, 0s, transitionPage);
+      @include animation(2s, $easingRegular, 0s, transitionPage);
     }
   }
   .my-node-enter {
