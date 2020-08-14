@@ -6,6 +6,9 @@ import TextBlock from '../../components/TextBlock/TextBlock'
 import ImageBlock from '../../components/ImageBlock/ImageBlock'
 import studioImage from '../../assets/images/studio-image.png'
 
+import DESIGN from '../../constants/design-services'
+import CONSTRUCTION from '../../constants/construction-services'
+
 const Homepage = () => (
   <PageContainer className="homepage">
     <Hero/>
@@ -14,6 +17,8 @@ const Homepage = () => (
     <TextBlock header="people" body="Chad Karty, Project Principal, (American; b. 1985, Detroit, MI; he/him/his) is an architectural professional delivering unique projects to clients in the arts, entertainment, technology, & finance industries."/>
     <TextBlock body="In the past he worked as a carpenter, fabricating contemporary artworks and restoring Greek Revival townhomes. He earned his B.A. and M.Arch at Columbia University, where he received honors and taught design in the New York–Paris Studio. Before forming Speedboat, Chad practiced at several nationally-recognized firms, including MADE, M1DTW, Schuchart/Dow, and Radius Track."/>
     <TextBlock body="He is admitted to the ARE in New York and is a licensed general contractor in California. He lives in Silver Lake, Los Angeles."/>
+    <TextBlock header="design services" list={DESIGN}/>
+    <TextBlock header="construction services" list={CONSTRUCTION}/>
     <ImageBlock
       className="margin-top"
       img={studioImage}
