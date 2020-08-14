@@ -4,7 +4,14 @@
     background: #eaeaea;
     height: 70vh;
     overflow: hidden;
+    @include breakpoint(xs) {
+        height: 50vh;
+    }
     .hero-video {
         width: 100% !important;
+        @include breakpoint(xs) {
+            height: 100%;
+            width: auto !important;
+        }
     }
 }

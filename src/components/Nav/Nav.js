@@ -13,13 +13,14 @@ const Nav = ({ onClick }) => (
                 <Grid item className="nav-items">
                     <ul>
                         <li><NavLink exact onClick={onClick} to="/" className="page-link" activeClassName="page-link-active">Speedboat</NavLink></li>
-                        <li><NavLink exact onClick={onClick} to="/studio" className="page-link" activeClassName="page-link-active">Studio</NavLink></li>
-                        <li><NavLink exact onClick={onClick} to="/contact" className="page-link" activeClassName="page-link-active">Contact</NavLink></li>
+                        {/* <li><NavLink exact onClick={onClick} to="/studio" className="page-link" activeClassName="page-link-active">Studio</NavLink></li>
+                        <li><NavLink exact onClick={onClick} to="/contact" className="page-link" activeClassName="page-link-active">Contact</NavLink></li> */}
                     </ul>
                 </Grid>
                 <Grid item className="nav-cta">
-                    <a href="#" className="cta-wrapper">
-                        <img src={subCTA}/>
+                    <a href="mailto:ckarty@speedboatprojects.com" className="cta-wrapper">
+                        {/* <img src={subCTA}/> */}
+                        Email Us
                     </a>
                 </Grid>
             </Grid>

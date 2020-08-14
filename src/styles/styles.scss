@@ -45,50 +45,50 @@ body {
   .my-node-appear {
     .page-container {
       opacity: 0;
-      @include animation(0s, $easingRegular, 1.5s, fadeIn);
+      @include animation($timing, $easingRegular, .25s, fadeIn);
       overflow-y: hidden;
     }
-    .transition-container {
-      opacity: 0;
-      @include animation(2s, $easingRegular, 0s, transitionPage);
-    }
+    // .transition-container {
+    //   opacity: 0;
+    //   @include animation(2s, $easingRegular, 0s, transitionPage);
+    // }
   }
   .my-node-enter {
     .page-container {
       opacity: 0;
       overflow-y: scroll;
     }
-    .transition-container {
-      opacity: 0;
-    }
+    // .transition-container {
+    //   opacity: 0;
+    // }
   }
   .my-node-enter-active {
     .page-container {
-      @include animation($timing, $easingRegular, 1.5s, fadeIn);
+      @include animation($timing, $easingRegular, 0s, fadeIn);
       overflow-y: hidden;
     }
-    .transition-container {
-      opacity: 0;
-      @include animation(2s, $easingRegular, 0s, transitionPage);
-    }
+    // .transition-container {
+    //   opacity: 0;
+    //   @include animation(2s, $easingRegular, 0s, transitionPage);
+    // }
   }
   .my-node-exit {
     .page-container {
       opacity: 1;
       overflow-y: scroll;
     }
-    .transition-container {
-      opacity: 0;
-    }
+    // .transition-container {
+    //   opacity: 0;
+    // }
   }
   .my-node-exit-active {
     .page-container {
       @include animation($timing, $easingRegular, 0s, fadeOut);
       overflow-y: hidden;
     }
-    .transition-container {
-      opacity: 0;
-      @include animation(2s, $easingRegular, $timing, transitionPage);
-    }
+    // .transition-container {
+    //   opacity: 0;
+    //   @include animation(2s, $easingRegular, $timing, transitionPage);
+    // }
   }
 }//body

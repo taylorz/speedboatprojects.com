@@ -14,7 +14,7 @@ import PILLARS from './constants/pillars'
 const routes = [
   { path: '/', name: 'Home', Component: Home },
   { path: '/studio', name: 'Studio', Component: Studio },
-  { path: '/contact', name: 'Contact', Component: Contact },
+  // { path: '/contact', name: 'Contact', Component: Contact },
 ]
 
 
@@ -39,7 +39,7 @@ export default () => {
                 key={key}
                 appear={true}
                 classNames="my-node"
-                timeout={{enter: 2500, exit: 2500}}
+                timeout={{enter: 500, exit: 500}}
                 >
                 <Switch location={location}>
                   {routes.map(({ path, Component }) => (
