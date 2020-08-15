@@ -3,4 +3,10 @@
     .margin-top {
         margin-top: $buffer*16;
     }
+    .paragraph-temp {
+        margin-bottom: $lineHeight;
+        a {
+            color: $goldenHour;
+        }
+    }
 }//homepage

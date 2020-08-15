@@ -1,7 +1,12 @@
 @import "../../styles/styles.scss";
 
 .image-block-container {
-    img {
-        max-width: 100%;
+    .image-block-inner {
+        .image-block-wrapper {
+            text-align: center;
+            img {
+                max-width: 100%;
+            }
+        }
     }
 }//image-block-container
