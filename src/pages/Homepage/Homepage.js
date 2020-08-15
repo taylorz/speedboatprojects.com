@@ -4,10 +4,11 @@ import PageContainer from '../../components/PageContainer/PageContainer'
 import Hero from '../../components/Hero/Hero'
 import TextBlock from '../../components/TextBlock/TextBlock'
 import ImageBlock from '../../components/ImageBlock/ImageBlock'
-import studioImage from '../../assets/images/studio-image.png'
 
 import DESIGN from '../../constants/design-services'
 import CONSTRUCTION from '../../constants/construction-services'
+
+import worksGif from '../../assets/images/works-gif.gif'
 
 const Homepage = () => (
   <PageContainer className="homepage">
@@ -22,7 +23,7 @@ const Homepage = () => (
     <TextBlock header="construction services" list={CONSTRUCTION}/>
     <ImageBlock
       className="margin-top"
-      img={studioImage}
+      img={worksGif}
     />
   </PageContainer>
 )

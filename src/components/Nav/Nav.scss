@@ -9,6 +9,10 @@
     z-index: $zIndex2;
     position: fixed;
     pointer-events: none;
+    @include breakpoint(xs) {
+        font-size: $fontSizeStatement/1.25;
+        line-height: $lineHeightStatement/1.25;
+    }
     .nav-inner {
         .nav-items {
             pointer-events: auto;
