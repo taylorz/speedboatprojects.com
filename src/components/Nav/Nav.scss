@@ -9,6 +9,7 @@
     z-index: $zIndex2;
     position: fixed;
     pointer-events: none;
+    padding: $margin;
     .nav-inner {
         .nav-items {
             pointer-events: auto;

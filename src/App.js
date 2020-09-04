@@ -6,8 +6,6 @@ import Nav from './components/Nav/Nav'
 import './App.css';
 import createHistory from 'history/createBrowserHistory'
 
-import PILLARS from './constants/pillars'
-
 const routes = [
   { path: '/', name: 'Home', Component: Home },
 ]
