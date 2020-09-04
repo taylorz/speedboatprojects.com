@@ -2,9 +2,24 @@
 
 .hero-container {
     background: #eaeaea;
-    height: 70vh;
+    position: relative;
+    height: 60vh;
     overflow: hidden;
-    .hero-video {
-        width: 100% !important;
+    .video-wrapper {
+        .hero-video {
+            width: 100% !important;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .text-wrapper {
+        z-index: 1;
+        padding: $buffer*12;
+        .hero-text {
+            color: white;
+            font-size: $fontSizeStatement;
+            line-height: $lineHeightStatement;
+        }
     }
 }
