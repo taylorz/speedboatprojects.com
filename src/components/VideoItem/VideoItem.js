@@ -12,7 +12,7 @@ const VideoItem = ({ url }) => (
             loop
             muted
             playsinline
-            width="auto"
+            height="auto"
             url={url}
         />
     </Grid>
