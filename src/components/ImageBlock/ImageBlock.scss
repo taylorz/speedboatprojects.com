@@ -24,7 +24,7 @@
             margin: $buffer*2 $mobileMargin 0 $mobileMargin;
         }
         .outer-project-details {
-            @include breakpoint(xs) {
+            @include breakpoint(md) {
                 font-size: $fontSizeMobile;
                 line-height: $lineHeightMobile;
             }
@@ -76,8 +76,8 @@
                     p {
                         background: white;
                         font-family: $secondaryFont;
-                        font-size: $fontSize;
-                        line-height: $lineHeight;
+                        font-size: $fontSizeSmall;
+                        line-height: $lineHeightSmall;
                         text-align: center;
                         @include breakpoint(xs) {
                             font-size: $fontSizeSmall;

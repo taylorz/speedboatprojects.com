@@ -20,12 +20,12 @@ const Nav = ({ onClick }) => (
                 <Grid item className="nav-cta" xs={6}>
                     <Grid container spacing={2} justify="flex-end">
                         <Grid item>
-                            <a href="#" className="cta-wrapper">
+                            <a href="#" target="_blank" className="cta-wrapper">
                                 <img src={subCTA}/>
                             </a>
                         </Grid>
                         <Grid item>
-                            <a href="#" className="cta-wrapper">
+                            <a href="https://workshop.speedboatprojects.com/" target="_blank" className="cta-wrapper">
                                 <img src={subCTA}/>
                             </a>
                         </Grid>
