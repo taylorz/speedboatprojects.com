@@ -1,7 +1,9 @@
 $buffer:                             5px;
 $margin:                             $buffer*12;
+$mobileMargin:                       $buffer*6;
 
 $primaryFont:                        'Prophet Bold', Helvetica, sans-serif;
+$secondaryFont:                      'Work Sans', Helvetica, sans-serif;
 
 $fontColorDark:                     #000000;
 $fontColorLight:                    #aaaaaa;
@@ -13,12 +15,14 @@ $babyBlue:                          #B9D9EB;
 $seaFoam:                           #00C19F;
 
 $fontSizeSmall:                      14px;
-$fontSize:                           24px;
+$fontSizeMobile:                     22px;
+$fontSize:                           36px;
 $fontSizeStatement:                  48px;
 $fontSizeHero:                       96px;
 
 $lineHeightSmall:                    16px;
-$lineHeight:                         26px;
+$lineHeightMobile:                   24px;
+$lineHeight:                         38px;
 $lineHeightStatement:                50px;
 $lineHeightHero:                     96px;
 

@@ -10,6 +10,11 @@
     position: fixed;
     pointer-events: none;
     padding: $margin;
+    @include breakpoint(xs) {
+        font-size: $fontSizeMobile;
+        line-height: $lineHeightMobile;
+        padding: $mobileMargin;
+    }
     .nav-inner {
         .nav-items {
             pointer-events: auto;
@@ -19,13 +24,10 @@
                 padding: 0;
                 li {
                     .page-link {
-                        color: $goldenHour;
-                        &:hover {
-                            color: $acid;
-                        }
-                    }
-                    .page-link-active {
                         color: $acid;
+                        &:hover {
+                            color: $goldenHour;
+                        }
                     }
                 }
             }

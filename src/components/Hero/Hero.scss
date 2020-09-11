@@ -5,21 +5,36 @@
     position: relative;
     height: 60vh;
     overflow: hidden;
-    .video-wrapper {
-        .hero-video {
-            width: 100% !important;
-            position: absolute;
-            top: 0;
-            bottom: 0;
+    &:hover {
+        .text-wrapper {
+            opacity: 1;
+            @include transition;
         }
     }
     .text-wrapper {
+        opacity: 0;
+        @include transition;
         z-index: 1;
         padding: $buffer*12;
+        @include breakpoint(xs) {
+            display: none;
+        }
         .hero-text {
             color: white;
             font-size: $fontSizeStatement;
             line-height: $lineHeightStatement;
         }
+    }
+}
+.hero-text-mobile {
+    display: none !important;
+    @include breakpoint(xs) {
+        display: block !important;
+    }
+    .text-wrapper {
+        padding: $mobileMargin;
+        color: $babyBlue;
+        font-size: $fontSizeMobile;
+        line-height: $lineHeightMobile;
     }
 }

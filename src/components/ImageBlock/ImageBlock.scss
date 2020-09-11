@@ -1,15 +1,42 @@
 @import "../../styles/styles.scss";
 
 .image-block-container {
+    &:nth-child(even) {
+        .image-block-outer {
+            .outer-project-details {
+                left: auto;
+                right: -$margin;
+                @include breakpoint(xs) {
+                    right: -$mobileMargin;
+                }
+                .details-text {
+                    span {
+                        -webkit-transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
     .image-block-outer {
-        margin: 0 $margin;
+        margin: $buffer*2 $margin 0 $margin;
         position: relative;
+        @include breakpoint(xs) {
+            margin: $buffer*2 $mobileMargin 0 $mobileMargin;
+        }
         .outer-project-details {
+            @include breakpoint(xs) {
+                font-size: $fontSizeMobile;
+                line-height: $lineHeightMobile;
+            }
             position: absolute;
             top: 0;
             bottom: 0;
-            left: -$margin;
             width: $margin;
+            left: -$margin;
+            @include breakpoint(xs) {
+                width: $mobileMargin;
+                left: -$mobileMargin;
+            }
             .details-text {
                 height: 100%;
                 display: flex;
@@ -24,8 +51,39 @@
         }
         .image-block-inner {
             .image-block-wrapper {
+                position: relative;
                 img {
                     width: 100%;
+                    min-height: 100%;
+                }
+                &:hover {
+                    .caption {
+                        opacity: 1;
+                        @include transition;
+                    }
+                }
+                .caption {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    @include transition;
+                    p {
+                        background: white;
+                        font-family: $secondaryFont;
+                        font-size: $fontSize;
+                        line-height: $lineHeight;
+                        text-align: center;
+                        @include breakpoint(xs) {
+                            font-size: $fontSizeSmall;
+                            line-height: $lineHeightSmall;
+                        }
+                    }
                 }
             }
         }

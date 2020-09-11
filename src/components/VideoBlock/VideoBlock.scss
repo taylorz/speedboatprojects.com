@@ -1,0 +1,10 @@
+@import "../../styles/styles.scss";
+
+.video-block-container {
+    margin-top: $buffer*2;
+    height: 60vh;
+    background: gray;
+    overflow: hidden;
+    .video-block-inner {
+    }
+}

@@ -3,6 +3,5 @@
 .page-container {
     position: absolute;
     padding-bottom: $margin;
-    height: 100vh;
-    overflow-y: scroll;
+    overflow-x: hidden;
 }

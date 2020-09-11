@@ -1,7 +1,65 @@
 @import "../../styles/styles.scss";
 
 .footer-container {
-    font-size: $fontSizeSmall;
-    line-height: $lineHeightSmall;
-    margin-top: $margin*4;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    padding: $margin;
+    @include breakpoint(xs) {
+        padding: $mobileMargin;
+        font-size: $fontSizeMobile;
+        line-height: $lineHeightMobile;
+    }
+    .footer-description {
+        margin-bottom: $margin;
+        .description-text {}
+    }
+    .footer-details {
+        .footer-item {
+            font-family: $primaryFont;
+            font-size: $fontSizeStatement;
+            line-height: $lineHeightStatement;
+            position: relative;
+            @include breakpoint(xs) {
+                font-size: $fontSizeMobile;
+                line-height: $lineHeightMobile;
+            }
+            .item-header {
+                text-transform: uppercase;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: $margin*2;
+                .header-text {
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    span {
+                        -webkit-transform: rotate(-90deg);
+                        display: block;
+                        white-space: nowrap;
+                        text-align: right;
+                        position: absolute;
+                        top: 50%;
+                    }
+                }
+            }
+            ul {
+                padding: $margin*2;
+                font-size: $fontSize;
+                line-height: $lineHeight;
+                font-family: $secondaryFont;
+                list-style-type: none;
+                margin: 0;
+                @include breakpoint(xs) {
+                    padding: 0;
+                    padding-left: $margin;
+                    font-size: $fontSizeSmall;
+                    line-height: $lineHeightSmall;
+                }
+                li {}
+            }
+        }
+    }
 }//footer-container
