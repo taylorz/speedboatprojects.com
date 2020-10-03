@@ -1,5 +1,10 @@
 @import "../../styles/styles.scss";
 
+
+mark{
+  background-color: white;
+}
+
 .image-block-container {
     padding-top: $paddingTop;
     &:nth-child(even) {
@@ -70,23 +75,24 @@
                     justify-content: center;
                     top: 0;
                     bottom: 0;
-                    left: 0;
-                    right: 0;
+                    left: 30px;
+                    right: 30px;
                     opacity: 0;
                     @include transition;
                     p {
-                        background: white;
+                        // background: white;
                         font-family: $secondaryFont;
-                        font-size: $fontSizeSmall;
-                        line-height: $lineHeightSmall;
+                        font-size: $fontSize;
+                        line-height: auto;
                         text-align: center;
+                        
                         @include breakpoint(xs) {
                             font-size: $fontSizeSmall;
                             line-height: $lineHeightSmall;
                         }
-                    }
+                    }        
                 }
             }
         }
     }
-}//image-block-container
+}

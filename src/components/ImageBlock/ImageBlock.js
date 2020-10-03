@@ -17,7 +17,7 @@ const ImageBlock = ({ img1, img2, caption1, caption2, projectTitle, projectLocat
                         <img src={img1}/>
                         <div className="caption">
                             <p>
-                                {caption1}
+                                <mark>{caption1}</mark>
                             </p>
                         </div>
                     </Grid>
