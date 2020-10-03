@@ -9,7 +9,7 @@ const ImageBlock = ({ img1, img2, caption1, caption2, projectTitle, projectLocat
             <div className="image-block-outer">
                 <div className={`outer-project-details`}>
                     <div className="details-text">
-                        <span>{projectTitle}, {projectLocation}</span>
+                        <span>{projectTitle} {projectLocation}</span>
                     </div>
                 </div>
                 <Grid container className="image-block-inner">

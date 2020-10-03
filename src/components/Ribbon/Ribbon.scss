@@ -13,17 +13,27 @@
             &.slide-main-title {
                 font-size: $fontSizeStatement;
                 line-height: $lineHeightStatement;
+                white-space: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
                 @include breakpoint(xs) {
                     font-size: $fontSizeMobile;
                     line-height: $lineHeightMobile;
                     white-space: nowrap;
+                    overflow-x: auto;
+                    overflow-y: hidden;
                 }
             }
             &.slide-secondary-title {
                 font-size: $fontSize;
+                white-space: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
                 @include breakpoint(xs) {
                     font-size: $fontSizeSmall;
                     white-space: nowrap;
+                    overflow-x: auto;
+                    overflow-y: hidden;
                 }
             }
         }

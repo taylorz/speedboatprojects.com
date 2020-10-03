@@ -1,6 +1,7 @@
 @import "../../styles/styles.scss";
 
 .image-block-container {
+    padding-top: $paddingTop;
     &:nth-child(even) {
         .image-block-outer {
             .outer-project-details {

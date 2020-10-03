@@ -16,13 +16,27 @@ const Homepage = () => (
   <PageContainer className="homepage">
     <Hero/>
     <WorkSection workType={multifamily}/>
+    <div className="wrapper-Ribbon">
     <Ribbon multifamily/>
+    </div>
+    
     <WorkSection workType={kitchens}/>
+
+    <div className="wrapper-Ribbon">
     <Ribbon kitchens/>
+    </div>
+
     <WorkSection workType={customhomes}/>
-    <Ribbon customhomes/>
+
+ 
+    <div className="wrapper-Ribbon">
+      <Ribbon customhomes/>
+    </div>
     <WorkSection workType={publicurban}/>
-    <Ribbon publicurban/>
+
+    <div className="wrapper-Ribbon">
+      <Ribbon publicurban/>
+    </div>
   </PageContainer>
 )
 

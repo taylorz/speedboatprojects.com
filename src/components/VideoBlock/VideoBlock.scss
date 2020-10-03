@@ -2,8 +2,9 @@
 
 .video-block-container {
     margin-top: $buffer*2;
+    padding-top: $paddingTop;
     height: 60vh;
-    background: gray;
+    background: $bgColor;
     overflow: hidden;
     .video-block-inner {
     }
