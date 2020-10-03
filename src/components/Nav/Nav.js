@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 // import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
 import './Nav.scss'
 import Grid from '@material-ui/core/Grid'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 import subCTA from '../../assets/graphics/subscribe-cta.svg'
 
-const Nav = ({ onClick }) => (
+const Nav = ({ onClick }) => {
+
+    const typeformEmbed = useRef();
+    
+    const openForm = () => {
+        typeformEmbed.current.typeform.open();
+    };
+
+    return (
     <Grid container className="nav-container">
         <MaxWidthWrapper>
             <Grid container className="nav-inner" justify="space-between">
@@ -20,9 +29,21 @@ const Nav = ({ onClick }) => (
                 <Grid item className="nav-cta" xs={6}>
                     <Grid container spacing={2} justify="flex-end">
                         <Grid item>
-                            <a href="https://speedboatprojects.typeform.com/to/CrA1fmIk" target="_blank" className="cta-wrapper">
-                                <img src={subCTA}/>
-                            </a>
+                                <ReactTypeformEmbeded
+                                popup
+                                autoOpen={false}
+                                url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
+                                hideHeaders
+                                hideFooter
+                                buttonText="SHOP"
+                                style={{ top: 100 }}
+                                ref={tf => {
+                                    typeformEmbed.current = tf;
+                                }}
+                                />
+                                <button className="btn" onClick={openForm} style={{ cursor: 'pointer' }}>
+                                   SHOP
+                                </button>
                         </Grid>
                         <Grid item>
                             <a href="https://workshop.speedboatprojects.com/" target="_blank" className="cta-wrapper">
@@ -30,12 +51,11 @@ const Nav = ({ onClick }) => (
                             </a>
                         </Grid>
                     </Grid>
-                    
                 </Grid>
-                
             </Grid>
         </MaxWidthWrapper>
     </Grid>
-)
+    )
+};
 
 export default Nav;
