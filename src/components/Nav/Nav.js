@@ -4,9 +4,13 @@ import './Nav.scss'
 import Grid from '@material-ui/core/Grid'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-import subCTA from '../../assets/graphics/subscribe-cta.svg'
+import shopButton from '../../assets/graphics/SHOP_button.gif'
+import speedBoatBtn from '../../assets/graphics/SPEEDBOAT_button.gif'
+import msgBtn from '../../assets/graphics/MSG_button.png'
+import { Button, Icon } from "@material-ui/core";
+import Avatar from "@material-ui/core/Avatar";
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Nav = ({ onClick }) => {
 
@@ -22,8 +26,7 @@ const Nav = ({ onClick }) => {
             <Grid container className="nav-inner" justify="space-between">
                 <Grid item className="nav-items" xs={6}>
                     <ul>
-                        {/* <li><NavLink exact onClick={onClick} to="/" className="page-link" activeClassName="page-link-active">Speedboat</NavLink></li> */}
-                        <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}>Speedboat</Link></li>
+                        <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}> <img src={speedBoatBtn} width="260" height='auto'/> </Link></li>
                     </ul>
                 </Grid>
                 <Grid item className="nav-cta" xs={6}>
@@ -41,13 +44,14 @@ const Nav = ({ onClick }) => {
                                     typeformEmbed.current = tf;
                                 }}
                                 />
-                                <button className="btn" onClick={openForm} style={{ cursor: 'pointer' }}>
-                                   SHOP
-                                </button>
+                                <Button onClick={openForm} className="message-wrapper"> 
+                                    <img src={msgBtn}/>  
+                                </Button> 
+                                
                         </Grid>
                         <Grid item>
                             <a href="https://workshop.speedboatprojects.com/" target="_blank" className="cta-wrapper">
-                                <img src={subCTA}/>
+                                <img src={shopButton}/>
                             </a>
                         </Grid>
                     </Grid>

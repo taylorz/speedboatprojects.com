@@ -1,5 +1,6 @@
 @import "../../styles/styles.scss";
 
+
 .nav-container {
     font-family: $primaryFont;
     font-size: $fontSizeStatement;
@@ -24,19 +25,27 @@
                 padding: 0;
                 li {
                     .page-link {
-                        color: $acid;
-                        &:hover {
-                            color: $goldenHour;
-                        }
+                        background-color: transparent;
+                        border: 0px;
+                        width: 260px;
+                    }
+                    .img {
+                        width: 20%;
                     }
                 }
             }
         }//nav-items
         .nav-cta {
             pointer-events: auto;
+            .message-wrapper {
+                img {
+                    width: 160px;
+                }
+            }
             .cta-wrapper {
                 img {
-                    width: $fontSizeHero;
+                    width: 400px;
+                    height: auto;
                 }
             }
         }
