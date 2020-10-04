@@ -1,12 +1,5 @@
 @import "../../styles/styles.scss";
-.homepage {
-    .margin-top {
-        margin-top: $buffer*16;
-    }
-    .paragraph-temp {
-        margin-bottom: $lineHeight;
-        a {
-            color: $goldenHour;
-        }
-    }
-}//homepage
+
+.wrapper-Ribbon{
+    padding-top: $paddingTop;
+}

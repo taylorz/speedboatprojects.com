@@ -1,7 +1,9 @@
 @import "../../styles/styles.scss";
 
 .max-width-wrapper {
-    width: $md;
+    width: 100vw;
     margin: 0 auto;
-    padding: 0 $margin;
+    @include breakpoint(xs) {
+        width: 100%;
+    }
 }

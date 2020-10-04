@@ -1,12 +1,98 @@
 @import "../../styles/styles.scss";
 
+
+mark{
+  background-color: white;
+}
+
 .image-block-container {
-    .image-block-inner {
-        .image-block-wrapper {
-            text-align: center;
-            img {
-                max-width: 100%;
+    padding-top: $paddingTop;
+    &:nth-child(even) {
+        .image-block-outer {
+            .outer-project-details {
+                left: auto;
+                right: -$margin;
+                @include breakpoint(xs) {
+                    right: -$mobileMargin;
+                }
+                .details-text {
+                    span {
+                        -webkit-transform: rotate(90deg);
+                    }
+                }
             }
         }
     }
-}//image-block-container
+    .image-block-outer {
+        margin: $buffer*2 $margin 0 $margin;
+        position: relative;
+        @include breakpoint(xs) {
+            margin: $buffer*2 $mobileMargin 0 $mobileMargin;
+        }
+        .outer-project-details {
+            @include breakpoint(md) {
+                font-size: $fontSizeMobile;
+                line-height: $lineHeightMobile;
+            }
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: $margin;
+            left: -$margin;
+            @include breakpoint(xs) {
+                width: $mobileMargin;
+                left: -$mobileMargin;
+            }
+            .details-text {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    -webkit-transform: rotate(-90deg);
+                    display: block;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .image-block-inner {
+            .image-block-wrapper {
+                position: relative;
+                img {
+                    width: 100%;
+                    min-height: 100%;
+                }
+                &:hover {
+                    .caption {
+                        opacity: 1;
+                        @include transition;
+                    }
+                }
+                .caption {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 0;
+                    bottom: 0;
+                    left: 30px;
+                    right: 30px;
+                    opacity: 0;
+                    @include transition;
+                    p {
+                        // background: white;
+                        font-family: $secondaryFont;
+                        font-size: $fontSize;
+                        line-height: auto;
+                        text-align: center;
+                        
+                        @include breakpoint(xs) {
+                            font-size: $fontSizeSmall;
+                            line-height: $lineHeightSmall;
+                        }
+                    }        
+                }
+            }
+        }
+    }
+}

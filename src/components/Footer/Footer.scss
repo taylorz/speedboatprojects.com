@@ -1,8 +1,50 @@
 @import "../../styles/styles.scss";
 
 .footer-container {
-    font-size: $fontSizeSmall;
-    line-height: $lineHeightSmall;
-    margin-top: $margin*4;
-    color: $goldenHour;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    padding: $margin;
+    padding-left: $margin;
+    @include breakpoint(xs) {
+        padding: $mobileMargin;
+        font-size: $fontSizeMobile;
+        line-height: $lineHeightMobile;
+    }
+    .footer-description {
+        margin-bottom: $margin;
+    }
+    .footer-details {
+        .footer-item {
+            font-family: $secondaryFont;
+            position: relative;
+            @include breakpoint(xs) {
+                font-size: $fontSizeMobile;
+                line-height: $lineHeightMobile;
+            }
+            .people-title {
+                padding-bottom: 5vh;
+            }
+            .design-services-title {
+                padding-bottom: $margin;
+            }
+            .friends-list {
+                padding-left: 0%;
+            }
+            ul {
+                padding: $margin;
+                padding-left: 0;
+                font-size: $fontSize;
+                line-height: $lineHeight;
+                font-family: $secondaryFont;
+                list-style-type: none;
+                margin: 0;
+                @include breakpoint(xs) {
+                    padding: 0;
+                    padding-left: $margin;
+                    font-size: $fontSizeSmall;
+                    line-height: $lineHeightSmall;
+                }
+            }
+        }
+    }
 }//footer-container

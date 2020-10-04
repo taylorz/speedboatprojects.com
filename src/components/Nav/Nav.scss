@@ -1,5 +1,6 @@
 @import "../../styles/styles.scss";
 
+
 .nav-container {
     font-family: $primaryFont;
     font-size: $fontSizeStatement;
@@ -9,9 +10,11 @@
     z-index: $zIndex2;
     position: fixed;
     pointer-events: none;
+    padding: $margin;
     @include breakpoint(xs) {
-        font-size: $fontSizeStatement/1.25;
-        line-height: $lineHeightStatement/1.25;
+        font-size: $fontSizeMobile;
+        line-height: $lineHeightMobile;
+        padding: $mobileMargin;
     }
     .nav-inner {
         .nav-items {
@@ -22,23 +25,34 @@
                 padding: 0;
                 li {
                     .page-link {
-                        color: $goldenHour;
-                        &:hover {
-                            color: $acid;
-                        }
+                        background-color: transparent;
+                        display: inline-block;     
+                        position: relative;  
+                        z-index: 1;     
+                        padding: 0.1em;     
+                        margin: -0.1em; 
+                        border: 0px;
+                        width: 260px;
                     }
-                    .page-link-active {
-                        color: $acid;
+                    .img {
+                        width: 20%;
                     }
                 }
             }
-        }//nav-items
+        }
         .nav-cta {
             pointer-events: auto;
-            color: $seaFoam;
-            .cta-wrapper {
+            .message-wrapper {
                 img {
-                    width: $fontSizeHero;
+                    width: 160px;
+                }
+            }
+            .cta-wrapper {
+                display: inline-block;     
+                position: relative;       
+                img {
+                    width: 400px;
+                    height: auto;
                 }
             }
         }
