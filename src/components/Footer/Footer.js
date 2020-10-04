@@ -3,17 +3,11 @@ import './Footer.scss'
 import Grid from '@material-ui/core/Grid'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import foote from '../../constants/footerContants'
-import designServices from '../../constants/design-services'
-import constructionServices from '../../constants/construction-services'
 import FOOTER_CONTENT from '../../constants/footerContants'
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 
 const Footer = () => {
 
-    const {Description, Divisions, People, Friends} = FOOTER_CONTENT;
+    const {Description, Divisions, People, Friends, Social} = FOOTER_CONTENT;
 
     function nameList(names) {
         const listItems = names.map((name) =>
@@ -28,7 +22,6 @@ const Footer = () => {
 
     return (
         <Grid container className="footer-container">
-        <Element name="test1"/>
         <MaxWidthWrapper>
             <Grid container className="footer-description">
                 <Grid item xs={12} className="description-text">
@@ -69,7 +62,26 @@ const Footer = () => {
                             ))}
                         </Grid>
                 </Grid>
+                <Grid item xs={12} className="footer-item friends">
+                    <Grid container spacing={10} className="footer-item contact-list">
+                        <Grid item xs={6} className="footer-item contact">
+                            {Social.contact.map(({item}) => (
+                                <Grid item xs={6} className="footer-item design-services">
+                                    <a href= {item.link} target="_blank"> {item.name} </a>
+                                </Grid>
+                            ))}
+                        </Grid>
+                        <Grid item xs={6} className="footer-item place">
+                            {Social.place.map(({item}) => (
+                                <Grid item xs={6} className="footer-item design-services">
+                                    <a href= {item.link} target="_blank"> {item.name} </a>
+                                </Grid>
+                            ))}
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Grid>
+            <Element name="test1"/>
         </MaxWidthWrapper>
     </Grid>
     )

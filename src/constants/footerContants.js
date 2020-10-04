@@ -72,6 +72,32 @@ const FOOTER_CONTENT = {
                     ['Uzma Tapia', 'Darcey Solis', 'Celyn Freeman', 'Rhys Parks','Devante Livingston', 'Milton Knights']
                 }
             ]
+        }, 
+        Social : {
+            contact : [
+                {item: {
+                    name: 'studio@speedboatprojects.com', 
+                    link: 'mailto: studio@speedboatprojects.com'
+                    }
+                }, 
+                {item: {
+                    name: '@speedboatprojects',
+                    link: 'https://www.instagram.com/speedboatprojects/'
+                    }
+                },
+            ], 
+            place: [
+                {item: {
+                    name: 'Los Angeles, CA', 
+                    link: 'https://goo.gl/maps/yhmG89N8N7wqQF2k8', 
+                    }
+                }, 
+                {item: {
+                    name: 'New York, NY', 
+                    link: 'https://goo.gl/maps/VzfHjDRb78eqd5vr6'
+                    }
+                }
+            ]
         }
 };
 
