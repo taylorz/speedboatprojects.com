@@ -7,10 +7,24 @@ import foote from '../../constants/footerContants'
 import designServices from '../../constants/design-services'
 import constructionServices from '../../constants/construction-services'
 import FOOTER_CONTENT from '../../constants/footerContants'
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 const Footer = () => {
 
     const {Description, Divisions, People, Friends} = FOOTER_CONTENT;
+
+    function nameList(names) {
+        const listItems = names.map((name) =>
+          <li>
+            {name}
+          </li>
+        );
+        return (
+          <ul>{listItems}</ul>
+        );
+      }
 
     return (
         <Grid container className="footer-container">
@@ -25,30 +39,35 @@ const Footer = () => {
             <Grid container spacing={10} className="footer-details">   
                         {Divisions.map(({ title, text }) => (
                         <Grid item xs={4} className="footer-item design-services">
-                        <div className = "footer-item design-services-title">
-                            <b>{title}</b>
-                        </div>
-                        <td key={`tablevalue-${text}`}>{text}</td>
+                            <div className = "footer-item design-services-title">
+                                <b>{title}</b>
+                            </div>
+                            <td key={`tablevalue-${text}`}>{text}</td>
                         </Grid>
                         ))}
-                    <div className = 'footer-item people'>
+                 <Grid item xs={12} className="footer-item people">
                         <div className = 'footer-item people-title'>
                             <b>{People.title}</b>
                         </div>
-                        <Grid item xs={6} className="footer-item people-list">
-                            <div className = "footer-item ">
-                                <p> {People.pers1}</p>
-                                <p> {People.pers2}</p>
-                            </div>
+                        <Grid container spacing={10}>
+                            {People.peoples.map(({text }) => (
+                                <Grid item xs={6} className="footer-item people-list" wrap='nowrap'>
+                                    <td key={`tablevalue-${text}`}>{text}</td>
+                                </Grid>
+                            ))}
                         </Grid>
-                    </div>
-                <Grid item xs={4} className="footer-item contact">
-                    <div className="footer-item friends">
+                 </Grid>
+                 <Grid item xs={12} className="footer-item friends">
                         <div className="header-text">
                             <b>{Friends.title}</b>
-
                         </div>
-                    </div>
+                        <Grid container spacing={10} className="footer-item friends-list">
+                            {Friends.lists.map(({list}) => (
+                            <Grid item xs={4} className="footer-item design-services">
+                                {nameList(list)}
+                            </Grid>
+                            ))}
+                        </Grid>
                 </Grid>
             </Grid>
         </MaxWidthWrapper>

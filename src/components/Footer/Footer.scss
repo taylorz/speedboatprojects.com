@@ -22,13 +22,17 @@
                 line-height: $lineHeightMobile;
             }
             .people-title {
-                padding: $margin;
+                padding-bottom: 5vh;
             }
             .design-services-title {
                 padding-bottom: $margin;
             }
+            .friends-list {
+                padding-left: 0%;
+            }
             ul {
-                padding: $margin*2;
+                padding: $margin;
+                padding-left: 0;
                 font-size: $fontSize;
                 line-height: $lineHeight;
                 font-family: $secondaryFont;

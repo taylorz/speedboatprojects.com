@@ -8,8 +8,7 @@ import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
 import shopButton from '../../assets/graphics/SHOP_button.gif'
 import speedBoatBtn from '../../assets/graphics/SPEEDBOAT_button.gif'
 import msgBtn from '../../assets/graphics/MSG_button.png'
-import { Button, Icon } from "@material-ui/core";
-import Avatar from "@material-ui/core/Avatar";
+import { Button } from "@material-ui/core";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Nav = ({ onClick }) => {
@@ -44,7 +43,7 @@ const Nav = ({ onClick }) => {
                                     typeformEmbed.current = tf;
                                 }}
                                 />
-                                <Button onClick={openForm} className="message-wrapper"> 
+                                <Button disableRipple onClick={openForm} className="message-wrapper" style={{ backgroundColor: 'transparent' }}> 
                                     <img src={msgBtn}/>  
                                 </Button> 
                                 
