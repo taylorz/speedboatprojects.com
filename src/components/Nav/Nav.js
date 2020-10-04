@@ -49,7 +49,7 @@ const Nav = ({ onClick }) => {
                                 
                         </Grid>
                         <Grid item>
-                            <a href="https://workshop.speedboatprojects.com/" target="_blank" className="cta-wrapper">
+                            <a href="https://speedboatprojects.bigcartel.com" target="_blank" className="cta-wrapper">
                                 <img src={shopButton}/>
                             </a>
                         </Grid>
