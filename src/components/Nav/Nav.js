@@ -9,14 +9,13 @@ import shopButton from '../../assets/graphics/SHOP_button.gif'
 import speedBoatBtn from '../../assets/graphics/SPEEDBOAT_button.gif'
 import msgBtn from '../../assets/graphics/MSG_button.png'
 import { Button } from "@material-ui/core";
-import FOOTER_CONTENT from '../../constants/footerContants'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Nav = ({ onClick }) => {
 
     const typeformEmbed = useRef();
 
-    const { Social} = FOOTER_CONTENT;
+    
 
     
     
@@ -38,10 +37,10 @@ const Nav = ({ onClick }) => {
     return (
     <Grid container className="nav-container">
         <MaxWidthWrapper>
-            <Grid container className="nav-inner" justify="space-between">
+            <Grid container className="nav-inner">
                 <Grid item className="nav-items" xs={6}>
                     <ul>
-                        <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}> <img src={speedBoatBtn} width="260" height='auto'/> </Link></li>
+                        <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}> SPEEDBOAT </Link></li>
                     </ul>
                 </Grid>
                 <Grid item className="nav-cta" xs={6}>
@@ -65,28 +64,39 @@ const Nav = ({ onClick }) => {
                         <Grid item>
                             <Button disableRipple className="message-wrapper" >
                             <a href="workshop.speedboatprojects.com" target="_blank">
-                                SHOP
+                                SHOP ARCHITECTURE
                             </a>
                             </Button>
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid container spacing={10} className="footer-item">
-                        <Grid item xs={6} className="footer-item contact">
-                        {Social.contact.map(({item}) => (
-                            <Grid item xs={6} className="footer-item design-services">
-                                <a href= {item.link} target="_blank"> {item.name} </a>
-                            </Grid>
-                            ))}
+                {/* <Grid item className="footer" xs={12}>
+                    <div className='leftFooter'>
+                    <Grid container className="footer contact" spacing={10}>
+                        <Grid item xs={4}>
+                            <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank"> instagram </a>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <p> 323-450-7551 </p>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={6} className="footer-item location">
-                        {Social.place.map(({item}) => (
-                            <Grid item xs={6} className="footer-item design-services">
-                                <a href= {item.link} target="_blank"> {item.name} </a>
-                            </Grid>
-                        ))}
+                    <Grid container spacing={10} className="footer mail">
+                        <Grid item xs={3} className="footer contact-mail">
+                            <a href= 'mailto: studio@speedboatprojects.com' target="_blank"> studio@speedboatprojects.com </a>
+                        </Grid>
                     </Grid>
-                </Grid>
+                    </div>
+                    <div className='rightFooter'>
+                        <Grid container spacing={10} className="footer location">
+                            <Grid item xs={3} className="footer location-LA">
+                                <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> Los Angeles, CA </a>
+                            </Grid>
+                            <Grid item xs={3} className="footer location-NY">
+                                <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York, NY</a>
+                            </Grid>    
+                        </Grid>
+                    </div>
+                </Grid> */}
             </Grid>
         </MaxWidthWrapper>
     </Grid>

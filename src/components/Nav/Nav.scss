@@ -5,6 +5,7 @@
     font-family: $primaryFont;
     font-size: $fontSizeStatement;
     line-height: $lineHeightStatement;
+    color: $acid;
     text-transform: uppercase;
     padding-top: $margin;
     z-index: $zIndex2;
@@ -29,13 +30,11 @@
                         display: inline-block;     
                         position: relative;  
                         z-index: 1;     
-                        padding: 0.1em;     
+                        padding: 0.5em;     
                         margin: -0.1em; 
                         border: 0px;
                         width: 260px;
-                    }
-                    .img {
-                        width: 20%;
+                        padding-left: 5px;
                     }
                 }
             }
@@ -43,35 +42,34 @@
         .nav-cta {
             pointer-events: auto;
             .message-wrapper {
+                background-color: transparent;
+                font-family: $primaryFont;
+                font-size: $fontSizeStatement;
                 display: inline-block;     
                 text-align: center;
                 position: relative;       
-                font-size: $fontSize;
                 width: auto;
-                height: 100px;
+                height: auto;
                 color: $seaFoam;
             }
         }
-        .footer-item {
+        .footer {
+            pointer-events: auto;
+            background-color: red; 
+            font-weight: normal; 
+            font-size: $fontSizeStatement; 
             position: fixed;
-            bottom: 100px;       
+            bottom: 200px;
             .contact {
-                display: inline-block;     
-                position: fixed;
-                bottom: 100px;       
-                font-size: $fontSize;
-                width: auto;
-                height: 100px;
-                font-weight: normal;
-            }
-            .location {
-                display: inline-block;    
                 position: relative;
-                font-size: $fontSize;
-                width: auto;
-                height: 100px;
-                font-weight: normal;
+            }
+            .mail {
+                position: relative;
             }
         }
     }
 }
+
+// .footer-items:active {
+//     color: $goldenHour;
+// }

@@ -28,6 +28,7 @@ const Footer = () => {
                 <Grid item xs={12} className="description-text">
                     <p>{Description.para1}</p>
                     <p>{Description.para2}</p>
+                    <p>{Description.para3}</p>
                 </Grid>
             </Grid>
             <Grid container spacing={10} className="footer-details">   

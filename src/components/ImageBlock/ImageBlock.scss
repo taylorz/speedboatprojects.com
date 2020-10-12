@@ -58,6 +58,7 @@ mark{
         .image-block-inner {
             .image-block-wrapper {
                 position: relative;
+                padding-bottom: $paddingBottom;
                 img {
                     width: 100%;
                     min-height: 100%;
