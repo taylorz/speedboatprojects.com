@@ -63,40 +63,38 @@ const Nav = ({ onClick }) => {
                         </Grid>
                         <Grid item>
                             <Button disableRipple className="message-wrapper" >
-                            <a href="workshop.speedboatprojects.com" target="_blank">
+                            <a href="https://workshop.speedboatprojects.com" target="_blank">
                                 SHOP ARCHITECTURE
                             </a>
                             </Button>
                         </Grid>
                     </Grid>
                 </Grid>
-                {/* <Grid item className="footer" xs={12}>
-                    <div className='leftFooter'>
-                    <Grid container className="footer contact" spacing={10}>
+            </Grid>  
+            <Grid container className="footer">
+                <Grid container className='left-footer' xs={6}>
+                    <Grid container className="left-footer contact" spacing={10}>
                         <Grid item xs={4}>
                             <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank"> instagram </a>
                         </Grid>
                         <Grid item xs={4}>
-                            <p> 323-450-7551 </p>
+                            323-450-7551
                         </Grid>
                     </Grid>
-                    <Grid container spacing={10} className="footer mail">
-                        <Grid item xs={3} className="footer contact-mail">
-                            <a href= 'mailto: studio@speedboatprojects.com' target="_blank"> studio@speedboatprojects.com </a>
-                        </Grid>
+                    <Grid item className='left-footer mail' xs={6}>
+                        <a href= 'mailto: studio@speedboatprojects.com' target="_blank"> studio@speedboatprojects.com </a>
                     </Grid>
-                    </div>
-                    <div className='rightFooter'>
-                        <Grid container spacing={10} className="footer location">
-                            <Grid item xs={3} className="footer location-LA">
-                                <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> Los Angeles, CA </a>
-                            </Grid>
-                            <Grid item xs={3} className="footer location-NY">
-                                <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York, NY</a>
-                            </Grid>    
+                </Grid>
+                <Grid container className='right-footer' xs={6}>
+                    <Grid container spacing={10} className="right-footer location">
+                        <Grid item xs={6} className="location-LA">
+                            <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> Los Angeles, CA </a>
                         </Grid>
-                    </div>
-                </Grid> */}
+                        <Grid item xs={6} className="location-NY">
+                            <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York, NY</a>
+                        </Grid>    
+                    </Grid>
+                </Grid>
             </Grid>
         </MaxWidthWrapper>
     </Grid>
