@@ -62,12 +62,6 @@ mark{
                     width: 100%;
                     min-height: 100%;
                 }
-                &:hover {
-                    .caption {
-                        opacity: 1;
-                        @include transition;
-                    }
-                }
                 .caption {
                     position: absolute;
                     display: flex;

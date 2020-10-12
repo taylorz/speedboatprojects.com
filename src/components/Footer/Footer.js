@@ -23,6 +23,7 @@ const Footer = () => {
     return (
         <Grid container className="footer-container">
         <MaxWidthWrapper>
+        <Element name="test1"/>
             <Grid container className="footer-description">
                 <Grid item xs={12} className="description-text">
                     <p>{Description.para1}</p>
@@ -56,32 +57,13 @@ const Footer = () => {
                         </div>
                         <Grid container spacing={10} className="footer-item friends-list">
                             {Friends.lists.map(({list}) => (
-                            <Grid item xs={4} className="footer-item design-services">
+                            <Grid item xs={4} className="footer-item friends-item">
                                 {nameList(list)}
                             </Grid>
                             ))}
                         </Grid>
                 </Grid>
-                <Grid item xs={12} className="footer-item friends">
-                    <Grid container spacing={10} className="footer-item contact-list">
-                        <Grid item xs={6} className="footer-item contact">
-                            {Social.contact.map(({item}) => (
-                                <Grid item xs={6} className="footer-item design-services">
-                                    <a href= {item.link} target="_blank"> {item.name} </a>
-                                </Grid>
-                            ))}
-                        </Grid>
-                        <Grid item xs={6} className="footer-item place">
-                            {Social.place.map(({item}) => (
-                                <Grid item xs={6} className="footer-item design-services">
-                                    <a href= {item.link} target="_blank"> {item.name} </a>
-                                </Grid>
-                            ))}
-                        </Grid>
-                    </Grid>
-                </Grid>
             </Grid>
-            <Element name="test1"/>
         </MaxWidthWrapper>
     </Grid>
     )

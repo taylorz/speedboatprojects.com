@@ -81,7 +81,7 @@ const FOOTER_CONTENT = {
                     }
                 }, 
                 {item: {
-                    name: '@speedboatprojects',
+                    name: 'instagram',
                     link: 'https://www.instagram.com/speedboatprojects/'
                     }
                 },

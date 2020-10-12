@@ -9,14 +9,30 @@ import shopButton from '../../assets/graphics/SHOP_button.gif'
 import speedBoatBtn from '../../assets/graphics/SPEEDBOAT_button.gif'
 import msgBtn from '../../assets/graphics/MSG_button.png'
 import { Button } from "@material-ui/core";
+import FOOTER_CONTENT from '../../constants/footerContants'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Nav = ({ onClick }) => {
 
     const typeformEmbed = useRef();
+
+    const { Social} = FOOTER_CONTENT;
+
+    
     
     const openForm = () => {
         typeformEmbed.current.typeform.open();
+    };
+
+    const nameList = (names) => {
+        const listItems = names.map((name) =>
+          <li>
+            {name}
+          </li>
+        );
+        return (
+          <ul>{listItems}</ul>
+        );
     };
 
     return (
@@ -35,24 +51,40 @@ const Nav = ({ onClick }) => {
                                 popup
                                 autoOpen={false}
                                 url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
-                                hideHeaders
+                                hideHeader
                                 hideFooter
-                                buttonText="SHOP"
-                                style={{ top: 100 }}
                                 ref={tf => {
                                     typeformEmbed.current = tf;
                                 }}
                                 />
-                                <Button disableRipple onClick={openForm} className="message-wrapper" style={{ backgroundColor: 'transparent' }}> 
-                                    <img src={msgBtn}/>  
+                                <Button disableRipple onClick={openForm} className="message-wrapper" >  
+                                    MSG US
                                 </Button> 
                                 
                         </Grid>
                         <Grid item>
-                            <a href="https://speedboatprojects.bigcartel.com" target="_blank" className="cta-wrapper">
-                                <img src={shopButton}/>
+                            <Button disableRipple className="message-wrapper" >
+                            <a href="workshop.speedboatprojects.com" target="_blank">
+                                SHOP
                             </a>
+                            </Button>
                         </Grid>
+                    </Grid>
+                </Grid>
+                <Grid container spacing={10} className="footer-item">
+                        <Grid item xs={6} className="footer-item contact">
+                        {Social.contact.map(({item}) => (
+                            <Grid item xs={6} className="footer-item design-services">
+                                <a href= {item.link} target="_blank"> {item.name} </a>
+                            </Grid>
+                            ))}
+                    </Grid>
+                    <Grid item xs={6} className="footer-item location">
+                        {Social.place.map(({item}) => (
+                            <Grid item xs={6} className="footer-item design-services">
+                                <a href= {item.link} target="_blank"> {item.name} </a>
+                            </Grid>
+                        ))}
                     </Grid>
                 </Grid>
             </Grid>
@@ -62,3 +94,6 @@ const Nav = ({ onClick }) => {
 };
 
 export default Nav;
+
+
+// style={{ backgroundColor: 'transparent' }}

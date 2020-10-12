@@ -43,17 +43,34 @@
         .nav-cta {
             pointer-events: auto;
             .message-wrapper {
-                img {
-                    width: 160px;
-                }
-            }
-            .cta-wrapper {
                 display: inline-block;     
+                text-align: center;
                 position: relative;       
-                img {
-                    width: 400px;
-                    height: auto;
-                }
+                font-size: $fontSize;
+                width: auto;
+                height: 100px;
+                color: $seaFoam;
+            }
+        }
+        .footer-item {
+            position: fixed;
+            bottom: 100px;       
+            .contact {
+                display: inline-block;     
+                position: fixed;
+                bottom: 100px;       
+                font-size: $fontSize;
+                width: auto;
+                height: 100px;
+                font-weight: normal;
+            }
+            .location {
+                display: inline-block;    
+                position: relative;
+                font-size: $fontSize;
+                width: auto;
+                height: 100px;
+                font-weight: normal;
             }
         }
     }
