@@ -34,7 +34,7 @@ const Ribbon = ({kitchens, customhomes, multifamily, publicurban}) => (
                         </span>
                         <span className="slide-secondary-title">
                             {multifamily ?
-                                "LA, CA."
+                                "LA, CA. NY, NY."
                             : customhomes ?
                                 "ON BUDGET ON TIME" 
                             : kitchens ? 

@@ -1,9 +1,9 @@
-import customKitchen01 from '../assets/images/01_CustomKitchen_NewYorkCity.png'
-import customKitchen02 from '../assets/images/02_CustomKitchen_NewYorkCity.png'
-import grocers01 from '../assets/images/03_OurFavouriteIndependentGrocers_LosAngeles.png'
-import grocers02 from '../assets/images/04_OurFavouriteIndependentGrocers_LosAngeles.png'
-import newYorkCity01 from '../assets/images/05_NewYorkCity.png'
-import newYorkCity02 from '../assets/images/06_NewYorkCity.png'
+import customKitchen01 from '../assets/images/01_Kitchen.png'
+import customKitchen02 from '../assets/images/02_Kitchen_Lines.png'
+import grocers01 from '../assets/images/03_LA_map.png'
+import grocers02 from '../assets/images/04_LA_zine.png'
+import newYorkCity01 from '../assets/images/05_CPW.png'
+import newYorkCity02 from '../assets/images/06_CPW_plan.png'
 
 const KITCHENS = [
     {

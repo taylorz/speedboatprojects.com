@@ -5,6 +5,7 @@
     line-height: $lineHeight;
     padding: $margin;
     padding-left: $margin;
+    line-height: 1.5em;
     @include breakpoint(xs) {
         padding: $mobileMargin;
         font-size: $fontSizeMobile;
@@ -12,6 +13,7 @@
     }
     .footer-description {
         margin-bottom: $margin;
+        font-size: 42px;
     }
     .footer-details {
         .footer-item {

@@ -5,9 +5,15 @@
     padding: $buffer*4 0;
     color: $fontColorLightest;
     overflow: hidden;
+    color: black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
     .wrapper-slide {
         display: flex;
         align-items: center;
+        ::selection { 
+            color: white !important; 
+        }
         span {
             margin-right: $margin*2;
             &.slide-main-title {
@@ -16,6 +22,7 @@
                 white-space: nowrap;
                 overflow-x: auto;
                 overflow-y: hidden;
+                
                 @include breakpoint(xs) {
                     font-size: $fontSizeMobile;
                     line-height: $lineHeightMobile;
@@ -39,16 +46,15 @@
         }
     }
     &.multi-family {
-        background: $seaFoam;
+        background: transparent;
     }
     &.custom-homes {
-        background: $babyBlue;
+        background: transparent;
     }
     &.kitchens {
-        background: $goldenHour;
+        background: transparent;
     }
     &.public-urban {
-        background: white;
-        color: $fontColorDark;
+        background: transparent;
     }
 }
