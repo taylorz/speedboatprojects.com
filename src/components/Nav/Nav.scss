@@ -1,6 +1,5 @@
 @import "../../styles/styles.scss";
 
-
 .nav-container {
     font-family: $primaryFont;
     font-size: $fontSizeStatement;
@@ -53,13 +52,18 @@
                 color: $seaFoam;
             }
         }
-        .footer {
-            pointer-events: auto;
-            background-color: red; 
-            font-weight: normal; 
-            font-size: $fontSizeStatement; 
-            position: fixed;
-            bottom: 200px;
+    }
+    .footer {
+        pointer-events: auto;
+        color: black;
+        font-weight: normal; 
+        font-size: $fontSizeStatement; 
+        position: fixed;
+        bottom: 100px;
+        white-space: nowrap;
+        padding-right: $margin;
+        .left-footer {
+            color: $babyBlue;
             .contact {
                 position: relative;
             }
@@ -67,6 +71,13 @@
                 position: relative;
             }
         }
+        .right-footer {
+            color: $goldenHour;
+            .location {
+                position: relative;
+            }
+        }
+       
     }
 }
 
