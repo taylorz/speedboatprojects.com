@@ -45,9 +45,9 @@ const Footer = () => {
                             <b>{People.title}</b>
                         </div>
                         <Grid container spacing={10}>
-                            {People.peoples.map(({text }) => (
+                            {People.peoples.map(({name, text }) => (
                                 <Grid item xs={6} className="footer-item people-list" wrap='nowrap'>
-                                    <td key={`tablevalue-${text}`}>{text}</td>
+                                    <td key={`tablevalue-${text}`}><b>{name}</b>{text}</td>
                                 </Grid>
                             ))}
                         </Grid>
