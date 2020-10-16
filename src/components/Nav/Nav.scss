@@ -55,16 +55,30 @@
             pointer-events: auto;
             .message-wrapper {
                 text-transform: none !important;
-                background-color: transparent;
+                background-color:transparent;
                 font-family: $primaryFont;
                 font-size: $fontSizeButton;
                 display: inline-block;     
-                text-align: center;
+                text-align: left;
                 position: relative;       
                 width: auto;
                 height: auto;
                 color: $seaFoam;
                 padding-right: $margin;
+            }
+            .shop {
+                text-transform: none !important;
+                background-color: transparent;
+                font-family: $primaryFont;
+                font-size: $fontSizeButton;
+                display: inline-block;     
+                text-align: left;
+                position: relative;       
+                height: auto;
+                color: $seaFoam;
+                width: 525px;
+                padding-right: $margin;
+                
             }
         }
     }
