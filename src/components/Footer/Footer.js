@@ -2,12 +2,12 @@ import React from 'react'
 import './Footer.scss'
 import Grid from '@material-ui/core/Grid'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import FOOTER_CONTENT from '../../constants/footerContants'
 
 const Footer = () => {
 
-    const {Description, Divisions, People, Friends, Social} = FOOTER_CONTENT;
+    const {Description, Divisions, People, Friends} = FOOTER_CONTENT;
 
     function nameList(names) {
         const listItems = names.map((name) =>
@@ -23,7 +23,6 @@ const Footer = () => {
     return (
         <Grid container className="footer-container">
         <MaxWidthWrapper>
-        <Element name="test1"/>
             <Grid container className="footer-description">
                 <Grid item xs={12} className="description-text">
                     <p>{Description.para1}</p>
@@ -58,7 +57,7 @@ const Footer = () => {
                         </div>
                         <Grid container spacing={10} className="footer-item friends-list">
                             {Friends.lists.map(({list}) => (
-                            <Grid item xs={4} className="footer-item friends-item">
+                            <Grid item xs={4} className="footer-item friends-item" wrap='nowrap'>
                                 {nameList(list)}
                             </Grid>
                             ))}

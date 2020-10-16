@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
 import { Button } from "@material-ui/core";
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Nav = ({ onClick }) => {
 

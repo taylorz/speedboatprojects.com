@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-str */
 const FOOTER_CONTENT = {
         Description: {
             para1: 'SPEEDBOAT is a vertically-integrated company of cross-functional design professionals motivated by architectural excellence,\
@@ -12,7 +13,7 @@ const FOOTER_CONTENT = {
         },
         Divisions: [
             {
-            title: 'FIELD OPERATIONS ', 
+            title: 'WORKSHOP', 
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet justo nisl, vitae vehicula tortor rhoncus vitae. Curabitur vel \
             dolor facilisis, vehicula mauris sit amet, mattis magna. Quisque sit amet leo a orci consectetur cursus at eu lorem. Pellentesque quis\
             enim vitae nibh vehicula tincidunt. Nunc ac mauris eu quam vehicula tincidunt vitae tincidunt enim. Vestibulum diam ipsum, molestie a\
@@ -26,12 +27,13 @@ const FOOTER_CONTENT = {
             semper in, ullamcorper id nisi.'
                 }, 
             {
-            title: 'WORKSHOP', 
+            title: 'FIELD OPERATIONS ', 
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet justo nisl, vitae vehicula tortor rhoncus vitae. Curabitur vel \
             dolor facilisis, vehicula mauris sit amet, mattis magna. Quisque sit amet leo a orci consectetur cursus at eu lorem. Pellentesque quis\
             enim vitae nibh vehicula tincidunt. Nunc ac mauris eu quam vehicula tincidunt vitae tincidunt enim. Vestibulum diam ipsum, molestie a\
             semper in, ullamcorper id nisi.'
                 },
+            
         ],
         People: {
             title: 'PARTNERS', 
