@@ -11,7 +11,6 @@ const Nav = ({ onClick }) => {
 
     const typeformEmbed = useRef();
     
-
     const openForm = () => {
         typeformEmbed.current.typeform.open();
     };
@@ -83,8 +82,8 @@ const Nav = ({ onClick }) => {
                         +1 323-450-7551
                     </Grid>
                     <Grid item xs={3}>
-                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> Los Angeles</a>
-                    & 
+                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> Los Angeles </a>
+                     & 
                     <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>
                     </Grid>
             </Grid>

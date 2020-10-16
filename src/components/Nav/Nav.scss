@@ -92,9 +92,9 @@
         bottom: $fontSizeFooter;
         white-space: nowrap;
         padding-left: $margin;
-    }
-    .footer-items:active {
-        color: $goldenHour;
+        :visited {
+            color: $goldenHour;
+        }
     }
 }
 
