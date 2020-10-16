@@ -6,11 +6,13 @@
     line-height: $lineHeightStatement;
     color: $acid;
     text-transform: uppercase;
-    padding-top: $margin;
+    //padding-top: $margin;
     z-index: $zIndex2;
     position: fixed;
     pointer-events: none;
-    padding: $margin;
+    white-space: nowrap !important;
+    overflow-x: auto;
+    overflow-y: hidden;
     @include breakpoint(xs) {
         font-size: $fontSizeMobile;
         line-height: $lineHeightMobile;
@@ -28,12 +30,12 @@
                         background-color: transparent;
                         display: inline-block;     
                         position: relative;  
-                        z-index: 1;     
+                        z-index: $zIndex1;     
                         padding: 0.5em;     
                         margin: -0.1em; 
+                        padding-left: $margin;
                         border: 0px;
                         width: 260px;
-                        padding-left: 5px;
                     }
                 }
             }
@@ -43,13 +45,14 @@
             .message-wrapper {
                 background-color: transparent;
                 font-family: $primaryFont;
-                font-size: $fontSizeStatement;
+                font-size: $fontSizeButton;
                 display: inline-block;     
                 text-align: center;
                 position: relative;       
                 width: auto;
                 height: auto;
                 color: $seaFoam;
+                padding-right: $margin;
             }
         }
     }
@@ -57,30 +60,14 @@
         pointer-events: auto;
         color: black;
         font-weight: normal; 
-        font-size: $fontSizeStatement; 
+        font-size: $fontSizeFooter; 
         position: fixed;
-        bottom: 100px;
+        bottom: $fontSizeFooter;
         white-space: nowrap;
-        padding-right: $margin;
-        .left-footer {
-            color: $babyBlue;
-            .contact {
-                position: relative;
-            }
-            .mail {
-                position: relative;
-            }
-        }
-        .right-footer {
-            color: $goldenHour;
-            .location {
-                position: relative;
-            }
-        }
-       
+        padding-left: $margin;
+    }
+    .footer-items:active {
+        color: $goldenHour;
     }
 }
 
-// .footer-items:active {
-//     color: $goldenHour;
-// }

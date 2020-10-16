@@ -1,10 +1,8 @@
-import React, { component } from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid'
 import './Hero.scss'
 import VideoBlock from '../VideoItem/VideoItem'
-
 import heroVideo from '../../assets/videos/hero-video.mp4'
-import heroGif from '../../assets/images/hero-gif.gif'
 
 const Hero = () => (
     <>

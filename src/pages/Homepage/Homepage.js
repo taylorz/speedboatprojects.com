@@ -1,4 +1,4 @@
-import React, {component} from 'react';
+import React from 'react';
 import './Homepage.scss';
 import PageContainer from '../../components/PageContainer/PageContainer'
 import Hero from '../../components/Hero/Hero'
@@ -9,8 +9,6 @@ import multifamily from '../../constants/multifamily'
 import kitchens from '../../constants/kitchens'
 import customhomes from '../../constants/customhomes'
 import publicurban from '../../constants/publicurban'
-
-const workTypes=[multifamily, kitchens, customhomes, publicurban]
 
 const Homepage = () => (
   <PageContainer className="homepage">
