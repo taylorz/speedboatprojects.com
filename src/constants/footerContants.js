@@ -20,7 +20,7 @@ const FOOTER_CONTENT = {
             semper in, ullamcorper id nisi.'
                 },
             {
-            title: 'DESIGN STUDIO', 
+            title: 'STUDIO', 
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet justo nisl, vitae vehicula tortor rhoncus vitae. Curabitur vel \
             dolor facilisis, vehicula mauris sit amet, mattis magna. Quisque sit amet leo a orci consectetur cursus at eu lorem. Pellentesque quis\
             enim vitae nibh vehicula tincidunt. Nunc ac mauris eu quam vehicula tincidunt vitae tincidunt enim. Vestibulum diam ipsum, molestie a\

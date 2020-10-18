@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect} from 'react'
 // import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
 import './Nav.scss'
 import Grid from '@material-ui/core/Grid'
@@ -10,10 +10,31 @@ import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll
 const Nav = ({ onClick }) => {
 
     const typeformEmbed = useRef();
-
+    
     const openForm = () => {
         typeformEmbed.current.typeform.open();
     };
+
+    const shopTextArray = ['FURNITURE', 'ARCHITECTURE', 'BOOKS', 'ADUs', 'KITCHENS'];
+    const [shopIndex, setShopIndex] = useState(0);
+
+   
+
+    useEffect(() => {
+        let timeout;
+        const setIndex = (previousVal) => {
+            if (previousVal < shopTextArray.length - 1) {
+              return previousVal + 1;
+            }
+            return 0;
+        };
+        timeout = setTimeout(() => setShopIndex(setIndex(shopIndex)), 500);
+        return () => {
+            clearTimeout(timeout);
+        };
+      }, [shopTextArray, shopIndex]);
+    
+    
 
     return (
     <Grid container className="nav-container">
@@ -21,7 +42,7 @@ const Nav = ({ onClick }) => {
             <Grid container className="nav-inner">
                 <Grid item className="nav-items" xs={4}>
                     <ul>
-                        <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}> SPEEDBOAT </Link></li>
+                        <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}>  <span className="changeColor">SPEEDBOAT </span> </Link></li>
                     </ul>
                 </Grid>
                 <Grid item className="nav-cta" xs={8}>
@@ -41,9 +62,9 @@ const Nav = ({ onClick }) => {
                                 
                         </Grid>
                         <Grid item>
-                            <Button disableRipple className="message-wrapper" >
+                            <Button disableRipple className="shop" >
                             <a href="https://workshop.speedboatprojects.com" target="_blank">
-                                SHOP ARCHITECTURE
+                                SHOP  {shopTextArray[shopIndex]}
                             </a>
                             </Button>
                         </Grid>
@@ -61,8 +82,8 @@ const Nav = ({ onClick }) => {
                         +1 323-450-7551
                     </Grid>
                     <Grid item xs={3}>
-                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> Los Angeles</a>
-                    & 
+                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
+                     & 
                     <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>
                     </Grid>
             </Grid>
