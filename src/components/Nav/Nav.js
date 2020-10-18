@@ -15,7 +15,7 @@ const Nav = ({ onClick }) => {
         typeformEmbed.current.typeform.open();
     };
 
-    const shopTextArray = ['FURNITURE', 'ARCHITECTURE', 'BOOKS', 'AUDs', 'KITCHENS'];
+    const shopTextArray = ['FURNITURE', 'ARCHITECTURE', 'BOOKS', 'ADUs', 'KITCHENS'];
     const [shopIndex, setShopIndex] = useState(0);
 
    
@@ -82,7 +82,7 @@ const Nav = ({ onClick }) => {
                         +1 323-450-7551
                     </Grid>
                     <Grid item xs={3}>
-                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> Los Angeles </a>
+                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
                      & 
                     <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>
                     </Grid>
