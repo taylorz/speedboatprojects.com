@@ -5,7 +5,7 @@
     line-height: $lineHeight;
     padding: $margin;
     padding-left: $margin;
-    line-height: 1.40em;
+    line-height: 1.35em;
     @include breakpoint(xs) {
         padding: $mobileMargin;
         font-size: $fontSizeMobile;
