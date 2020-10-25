@@ -9,7 +9,7 @@
     z-index: $zIndex2;
     position: fixed;
     pointer-events: none;
-    white-space: nowrap !important;
+    white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
         @include breakpoint(xs) {
@@ -18,7 +18,7 @@
             padding: $mobileMargin;
         }
     .nav-inner {
-        .nav-items {
+        .mainBtn {
             pointer-events: auto;
             ul {
                 list-style-type: none;
@@ -46,12 +46,15 @@
 	                        -webkit-animation-iteration-count: infinite;
 	                        -webkit-animation-direction: alternate;
                             -webkit-animation-timing-function: ease-in-out; 
+                            :active {
+                                animation: .8s jump ease infinite alternate;
+                            }
                         }
                     }
                 }
             }
         }
-        .nav-cta {
+        .rightBtn {
             pointer-events: auto;
             .message-wrapper {
                 text-transform: none !important;
@@ -65,6 +68,19 @@
                 height: auto;
                 color: $seaFoam;
                 padding-right: $margin;
+                animation: changeColor step-end infinite;
+                transition:transform 2s ease-in 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-duration: 5s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: ease-in-out; 
+                :active {
+                    animation: .8s jump ease infinite alternate;
+                }
             }
             .shop {
                 text-transform: none !important;
@@ -78,6 +94,19 @@
                 color: $seaFoam;
                 width: 525px;
                 padding-right: $margin;
+                animation: changeColor step-end infinite;
+                transition:transform 2s ease-in 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-duration: 5s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: ease-in-out; 
+                :active {
+                    animation: .8s jump ease infinite alternate;
+                }
                 
             }
         }
@@ -92,8 +121,24 @@
         bottom: $fontSizeFooter;
         white-space: nowrap;
         padding-left: $margin;
-        :visited {
-            color: $goldenHour;
+        animation: changeColor step-end infinite;
+        transition:transform 2s ease-in 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: ease-in-out; 
+        .instagram {
+            padding-left: 7px;
+        }
+        .phoneNumber {
+            padding-left: 11px;
+        }
+        :active {
+            animation: .8s jump ease infinite alternate;
         }
     }
 }
@@ -112,3 +157,13 @@
         color:$goldenHour
     }
 }
+
+@keyframes jump {
+    0% {
+      transform: scale(1);
+     
+    }
+    100% {
+      transform: scale(1.8);
+    }
+  }

@@ -40,12 +40,12 @@ const Nav = ({ onClick }) => {
     <Grid container className="nav-container">
         <MaxWidthWrapper>
             <Grid container className="nav-inner">
-                <Grid item className="nav-items" xs={4}>
+                <Grid item className="mainBtn" xs={4}>
                     <ul>
                         <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}>  <span className="changeColor">SPEEDBOAT </span> </Link></li>
                     </ul>
                 </Grid>
-                <Grid item className="nav-cta" xs={8}>
+                <Grid item className="rightBtn" xs={8}>
                     <Grid container spacing={2} justify="flex-end">
                         <Grid item>
                                 <ReactTypeformEmbeded
@@ -72,19 +72,19 @@ const Nav = ({ onClick }) => {
                 </Grid>
             </Grid>  
             <Grid container className="footer" xs={12}>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className='mail'>
                         <a href= 'mailto: studio@speedboatprojects.com' target="_blank"> studio@speedboatprojects.com </a>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={2} className='instagram'>
                         <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank"> instagram </a>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={3} className = 'phoneNumber'>
                         +1 323-450-7551
                     </Grid>
-                    <Grid item xs={3}>
-                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
+                    <Grid item xs={3} className='location'>
+                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank" className = "california"> California </a>
                      & 
-                    <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>
+                    <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank" className="newYork"> New York</a>
                     </Grid>
             </Grid>
         </MaxWidthWrapper>
