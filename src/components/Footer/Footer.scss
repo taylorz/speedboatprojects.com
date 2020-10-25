@@ -14,6 +14,11 @@
     .footer-description {
         margin-bottom: $margin;
         font-size: 42px;
+        .description-list {
+            li {
+                padding-top: 5vh;
+            }
+        }
     }
     .footer-details {
         .footer-item {
@@ -23,7 +28,7 @@
                 font-size: $fontSizeMobile;
                 line-height: $lineHeightMobile;
             }
-            .people-title {
+            .people-text {
                 padding-bottom: 5vh;
             }
             .design-services-title {

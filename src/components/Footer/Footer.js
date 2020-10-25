@@ -26,9 +26,21 @@ const Footer = () => {
             <Grid container className="footer-description">
                 <Grid item xs={12} className="description-text">
                     <p>{Description.para1}</p>
+                    <p>{Description.para11} </p>
+                    <p>{Description.para12}</p>
                     <p>{Description.para2}</p>
                     <p>{Description.para3}</p>
                 </Grid>
+                <Grid item xs={12} className="description-list">
+                    <p>{Description.para4}</p>
+                    <ol>
+                    {Description.platforms.map(({text }) => (
+                        <Grid item>
+                            <li key={`tablevalue-${text}`}>{text}</li>
+                        </Grid>
+                    ))}
+                    </ol>
+                </Grid>  
             </Grid>
             <Grid container spacing={10} className="footer-details">   
                         {Divisions.map(({ title, text }) => (
@@ -43,6 +55,9 @@ const Footer = () => {
                         <div className = 'footer-item people-title'>
                             <b>{People.title}</b>
                         </div>
+                        <div className = 'footer-item people-text'>
+                            <p>{People.text}</p>
+                        </div>
                         <Grid container spacing={10}>
                             {People.peoples.map(({name, text }) => (
                                 <Grid item xs={6} className="footer-item people-list" wrap='nowrap'>
@@ -51,7 +66,7 @@ const Footer = () => {
                             ))}
                         </Grid>
                  </Grid>
-                 <Grid item xs={12} className="footer-item friends">
+                 {/* <Grid item xs={12} className="footer-item friends">
                         <div className="header-text">
                             <b>{Friends.title}</b>
                         </div>
@@ -62,7 +77,7 @@ const Footer = () => {
                             </Grid>
                             ))}
                         </Grid>
-                </Grid>
+                </Grid> */}
             </Grid>
         </MaxWidthWrapper>
     </Grid>
