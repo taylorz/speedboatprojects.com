@@ -32,7 +32,10 @@ const Footer = () => {
                     <p>{Description.para3}</p>
                 </Grid>
                 <Grid item xs={12} className="description-list">
+                    <p> SERVICE DIVISIONS</p>    
                     <p>{Description.para4}</p>
+                </Grid>
+                <Grid item xs={8} className='service-division'>
                     <ol>
                     {Description.platforms.map(({text }) => (
                         <Grid item>
@@ -43,11 +46,8 @@ const Footer = () => {
                 </Grid>  
             </Grid>
             <Grid container spacing={10} className="footer-details">   
-                        {Divisions.map(({ title, text }) => (
+                        {Divisions.map(({ text }) => (
                         <Grid item xs={4} className="footer-item design-services">
-                            <div className = "footer-item design-services-title">
-                                <b>{title}</b>
-                            </div>
                             <td key={`tablevalue-${text}`}>{text}</td>
                         </Grid>
                         ))}

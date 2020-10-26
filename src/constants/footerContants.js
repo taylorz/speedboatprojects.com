@@ -10,10 +10,6 @@ const FOOTER_CONTENT = {
             para12: 'THE PARTNERSHIP combines the creativity & personalized experience of a boutique design firm with the technical finesse &\
             management acumen of a much larger organization. Our unique collaboration enables the imagination of exceptional clients and makes \
             the delivery of challenging projects more fun.',  
-            para2: 'Our projects are informed by timeless architectural concepts and supported by spatial clarity and detail. The partnership \
-            is capable of delivering spaces, systems, and buildings of all scales to individuals, brands, and institutions. We serve owners \
-            directly and establish joint ventures with investors and architects seeking to enhance delivery through an engagement with technology,\
-             craft, and the master-builder tradition.', 
             para3: 'SPEEDBOAT combines the creativity & personalized experience of a boutique design firm with the technical finesse & management \
             acumen of a much larger organization to create uncommon value. Our unique collaboration enables the imagination of exceptional clients\
              and makes building projects more fun.', 
@@ -47,10 +43,8 @@ const FOOTER_CONTENT = {
         ],
         People: {
             title: 'PARTNERS', 
-            text: 'LAUREN, CLARA, HUNTER, HALLE, & CHAD have come together to offer our clients a better alternative to conventional project delivery models.\
-             We work together as a professional guild, with every partner personally vested in creating a positive outcome for the projects. \
-             Because we are an entirely owner-operated company, our clients’ projects receive an unparalleled level of care, attention, and \
-            dedication to success.', 
+            text: 'LAUREN, CLARA, HUNTER, HALLE, & CHAD work together as an integrated product team, with every partner personally vested in creating a positive outcome\
+             for the projects. Because we are an entirely owner-operated company, our clients’ projects receive an unparalleled level of care, attention, and dedication to success.', 
             peoples: [
                 {
                 name: 'LAUREN JORDAN', 
