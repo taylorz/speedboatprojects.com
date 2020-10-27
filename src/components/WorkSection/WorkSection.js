@@ -11,8 +11,6 @@ const WorkSection = ({ workType }) => (
                 <ImageBlock
                 img1={band.images[0]}
                 img2={band.images[1]}
-                caption1={band.captions[0]}
-                caption2={band.captions[1]}
                 />
                 {band.video &&
                     <VideoBlock url={band.video}/>

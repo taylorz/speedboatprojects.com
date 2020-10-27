@@ -7,8 +7,8 @@ const styleDefault = {
   position: 'absolute',
   top: 0,
   left: 0,
-  width: '100%',
-  height: '100%',
+  width: '50%', 
+  height: '50%',
   overflow: 'hidden'
 };
 
@@ -42,6 +42,7 @@ class ReactTypeformEmbeded extends Component {
   // Popup Mode
   if (popup) {
     // Load Typeform embed popup
+    console.log(options)
     this.typeform = typeformEmbed.makePopup(url, options);
 
     // Widget Mode (default)
@@ -84,7 +85,7 @@ ReactTypeformEmbeded.propTypes = {
 };
 
 ReactTypeformEmbeded.defaultProps = {
-  style: {},
+  style: {styleDefault},
   popup: false,
   hideHeaders: false,
   hideFooter: false,
@@ -94,8 +95,7 @@ ReactTypeformEmbeded.defaultProps = {
   opacity: 100,
   buttonText: 'Start',
 
-  // Popup options
-  mode: 'popup', // options: "popup", "drawer_left", "drawer_right"
+  mode: 'popup', 
   autoOpen: false,
   autoClose: 5
 };

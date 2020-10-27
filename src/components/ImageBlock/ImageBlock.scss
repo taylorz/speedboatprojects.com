@@ -1,6 +1,5 @@
 @import "../../styles/styles.scss";
 
-
 mark{
   background-color: white;
 }
@@ -14,11 +13,6 @@ mark{
                 right: -$margin;
                 @include breakpoint(xs) {
                     right: -$mobileMargin;
-                }
-                .details-text {
-                    span {
-                        -webkit-transform: rotate(90deg);
-                    }
                 }
             }
         }
@@ -48,11 +42,6 @@ mark{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                span {
-                    -webkit-transform: rotate(-90deg);
-                    display: block;
-                    white-space: nowrap;
-                }
             }
         }
         .image-block-inner {
@@ -62,30 +51,6 @@ mark{
                 img {
                     width: 100%;
                     min-height: 100%;
-                }
-                .caption {
-                    position: absolute;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    top: 0;
-                    bottom: 0;
-                    left: 30px;
-                    right: 30px;
-                    opacity: 0;
-                    @include transition;
-                    p {
-                        // background: white;
-                        font-family: $secondaryFont;
-                        font-size: $fontSize;
-                        line-height: auto;
-                        text-align: center;
-                        
-                        @include breakpoint(xs) {
-                            font-size: $fontSizeSmall;
-                            line-height: $lineHeightSmall;
-                        }
-                    }        
                 }
             }
         }

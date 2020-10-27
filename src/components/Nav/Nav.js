@@ -28,7 +28,7 @@ const Nav = ({ onClick }) => {
             }
             return 0;
         };
-        timeout = setTimeout(() => setShopIndex(setIndex(shopIndex)), 500);
+        timeout = setTimeout(() => setShopIndex(setIndex(shopIndex)), 900);
         return () => {
             clearTimeout(timeout);
         };
@@ -82,8 +82,8 @@ const Nav = ({ onClick }) => {
                         <a href="tel:+1 323-450-7551">+1 323-450-7551</a>
                     </Grid>
                     <Grid item xs={3} className='location'>
-                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank" className = "california"> California </a>
-                     & 
+                    <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank" className = "california"> California &</a>
+                     
                     <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank" className="newYork"> New York</a>
                     </Grid>
             </Grid>
@@ -93,6 +93,3 @@ const Nav = ({ onClick }) => {
 };
 
 export default Nav;
-
-
-// style={{ backgroundColor: 'transparent' }}

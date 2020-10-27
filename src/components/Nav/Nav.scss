@@ -20,13 +20,15 @@
     .nav-inner {
         .mainBtn {
             pointer-events: auto;
+            :hover {
+                animation: .8s jumpMain ease infinite alternate;
+            }
             ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
                 li {
                     .page-link {
-                        background-color: transparent;
                         display: inline-block;     
                         position: relative;  
                         z-index: $zIndex1;     
@@ -38,17 +40,12 @@
                         .changeColor {
                             animation: changeColor step-end infinite;
                             transition:transform 2s ease-in 2s;
-	                        animation-iteration-count: infinite;
                             animation-direction: alternate;
                             animation-duration: 5s;
                             animation-timing-function: ease-in-out;
                             -webkit-animation-duration: 5s;
-	                        -webkit-animation-iteration-count: infinite;
 	                        -webkit-animation-direction: alternate;
                             -webkit-animation-timing-function: ease-in-out; 
-                            :hover {
-                                animation: .8s jump ease infinite alternate;
-                            }
                         }
                     }
                 }
@@ -57,6 +54,7 @@
         .rightBtn {
             pointer-events: auto;
             .message-wrapper {
+                color: $acid;
                 text-transform: none !important;
                 background-color:transparent;
                 font-family: $primaryFont;
@@ -66,8 +64,8 @@
                 position: relative;       
                 width: auto;
                 height: auto;
-                color: $seaFoam;
                 padding-right: $margin;
+
                 animation: changeColor step-end infinite;
                 transition:transform 2s ease-in 2s;
                 animation-iteration-count: infinite;
@@ -83,65 +81,72 @@
                 }
             }
             .shop {
-                text-transform: none !important;
-                background-color: transparent;
-                font-family: $primaryFont;
-                font-size: $fontSizeButton;
-                display: inline-block;     
-                text-align: left;
-                position: relative;       
-                height: auto;
-                color: $seaFoam;
-                width: 525px;
-                padding-right: $margin;
-                animation: changeColor step-end infinite;
-                transition:transform 2s ease-in 2s;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                animation-duration: 5s;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-duration: 5s;
-                -webkit-animation-iteration-count: infinite;
-                -webkit-animation-direction: alternate;
-                -webkit-animation-timing-function: ease-in-out; 
+                color: $acid;
                 :hover {
                     animation: .8s jump ease infinite alternate;
                 }
-                
+                a:link {
+                    text-transform: none !important;
+                    background-color: transparent;
+                    font-family: $primaryFont;
+                    font-size: $fontSizeButton;
+                    display: inline-block;     
+                    text-align: left;
+                    position: relative;       
+                    height: auto;
+                    width: 525px;
+                    padding-right: $margin;
+                    animation: changeColor step-end infinite;
+                    transition:transform 2s ease-in 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-duration: 5s;
+                    animation-timing-function: ease-in-out;
+                    -webkit-animation-duration: 5s;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-direction: alternate;
+                    -webkit-animation-timing-function: ease-in-out; 
+                   
+                }
             }
         }
     }
     .footer {
         text-transform: lowercase;
         pointer-events: auto;
-        color: black;
+        color: $acid;
         font-weight: normal; 
         font-size: $fontSizeFooter; 
         position: fixed;
         bottom: $fontSizeFooter;
         white-space: nowrap;
         padding-left: $margin;
-        animation: changeColor step-end infinite;
-        transition:transform 2s ease-in 2s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        -webkit-animation-duration: 5s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-timing-function: ease-in-out; 
+        :hover {
+            animation: changeColor step-end infinite, .8s jump ease infinite alternate;
+        }
+        a:link {
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
+        }
         .instagram {
             padding-left: 7px;
         }
         .phoneNumber {
             padding-left: 11px;
         }
-        :hover {
-            animation: .8s jump ease infinite alternate;
-        }
+       
     }
 }
+
+
 
 @keyframes changeColor {
     0% {
@@ -165,5 +170,15 @@
     }
     100% {
       transform: scale(1.8);
+    }
+  }
+
+  @keyframes jumpMain {
+    0% {
+      transform: scale(1);
+     
+    }
+    100% {
+      transform: scale(1.2);
     }
   }
