@@ -1,18 +1,22 @@
-import housingNYC1 from '../assets/images/10_Housing_Bronx.png'
-import housingNYC2 from '../assets/images/11_Housing_Section.png'
 import hudsonRiver1 from '../assets/images/15_Hudson.png'
-import hudsonRiver2 from '../assets/images/16_Hudson.png'
+import wallSection from '../assets/images/23_Wall_Section.png'
+import hudsonPlan from '../assets/images/24_Hudson_Plan.png'
+import hudsonPlan2 from '../assets/images/25_Hudson_Plan2.png'
+import hudsonSection from '../assets/images/26_Hudson_Section.png'
+import compostPark1 from '../assets/images/12_Compost_NYC.png'
+
 
 
 const CUSTOMHOMES = [
     {
-        images: [housingNYC1, housingNYC2],
-        captions: ["Housing, New York City", "Housing, New York City"],
+        images: [hudsonRiver1, compostPark1],
     },
     {
-        images: [hudsonRiver1, hudsonRiver2],
-        captions: ["Hudson River, New York City", "Hudson River, New York City"],
+        images: [wallSection, hudsonPlan], 
     },
+    {
+        images: [hudsonPlan2, hudsonSection], 
+    }
 ]
 
 export default CUSTOMHOMES

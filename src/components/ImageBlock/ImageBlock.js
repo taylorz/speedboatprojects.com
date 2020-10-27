@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid'
 import './ImageBlock.scss'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 
-const ImageBlock = ({ img1, img2, caption1, caption2, projectTitle, projectLocation }) => (
+const ImageBlock = ({ img1, img2, projectTitle, projectLocation }) => (
     <Grid container className="image-block-container">
         <MaxWidthWrapper>
             <div className="image-block-outer">
@@ -15,19 +15,9 @@ const ImageBlock = ({ img1, img2, caption1, caption2, projectTitle, projectLocat
                 <Grid container className="image-block-inner">
                     <Grid item xs={12}  className="image-block-wrapper">
                         <img src={img1}/>
-                        <div className="caption">
-                            <p>
-                                <mark>{caption1}</mark>
-                            </p>
-                        </div>
                     </Grid>
                     <Grid item xs={12} className="image-block-wrapper">
                         <img src={img2}/>
-                        <div className="caption">
-                            <p>
-                                <mark>{caption2}</mark>
-                            </p>
-                        </div>
                     </Grid>
                 </Grid>
             </div>

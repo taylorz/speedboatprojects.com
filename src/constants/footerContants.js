@@ -4,16 +4,16 @@ const FOOTER_CONTENT = {
             para1: 'SPEEDBOAT is a platform for creative architecture, engineering, and construction project delivery. We’re a partnership of\
              design professionals motivated by the pursuit of architectural excellence and higher project performance. We serve owners & brands,\
               partner with architects, and form & operate special purpose vehicles for real estate investors.' , 
-            para11: 'THE PROJECTS are informed by timeless architectural concepts and supported by spatial clarity and refined detailing. Our \
+            para11Title: 'THE PROJECTS', 
+            para11: ' are informed by timeless architectural concepts and supported by spatial clarity and refined detailing. Our \
             process leverages strategic thinking, technology, craft, and the master-builder tradition to add uncommon and hidden value to the \
             projects. We are capable of delivering spaces, objects, systems, and buildings at any scale and level of complexity.', 
-            para12: 'THE PARTNERSHIP combines the creativity & personalized experience of a boutique design firm with the technical finesse &\
+            para12Title: 'THE PARTNERSHIP', 
+            para12: ' combines the creativity & personalized experience of a boutique design firm with the technical finesse &\
             management acumen of a much larger organization. Our unique collaboration enables the imagination of exceptional clients and makes \
             the delivery of challenging projects more fun.',  
-            para3: 'SPEEDBOAT combines the creativity & personalized experience of a boutique design firm with the technical finesse & management \
-            acumen of a much larger organization to create uncommon value. Our unique collaboration enables the imagination of exceptional clients\
-             and makes building projects more fun.', 
-            para4: 'OUR PLATFORM is composed of three service divisions: the Workshop, Studio, and Field Operations. The divisions provide consulting, \
+            para4Title: 'OUR PLATFORM', 
+            para4: ' is composed of three service divisions: the Workshop, Studio, and Field Operations. The divisions provide consulting, \
             design, development, and general contracting & construction management services for:',
             platforms: [
                     {text: 'Direct-to-owner delivery of complex or architecturally-significant construction projects.'}, 
@@ -23,19 +23,19 @@ const FOOTER_CONTENT = {
         },
         Divisions: [
             {
-            title: 'WORKSHOP', 
-            text: 'THE WORKSHOP is an innovation space focused on analytics, strategy, ideation, & prototyping. This division develops our brand partnerships, \
+            title: 'THE WORKSHOP', 
+            text: ' is an innovation space focused on analytics, strategy, ideation, & prototyping. This division develops our brand partnerships, \
             residential & commercial real estate products, materials & environments, computational design techniques, and design-to-fabrication services. The Workshop is our clients’ primary entry point to the platform and manages all Speedboat accounts.'
                 },
             {
-            title: 'STUDIO', 
-            text: 'THE STUDIO centers our practice and integrates services across the platform. It provides comprehensive architecture, urban planning, \
+            title: 'THe STUDIO', 
+            text: ' centers our practice and integrates services across the platform. It provides comprehensive architecture, urban planning, \
             structural & civil engineering, and consultant coordination services for all the projects. The Speedboat Studio is composed of licensed professionals \
             providing design & permitting in California and New York.'
                 }, 
             {
-            title: 'FIELD OPERATIONS ', 
-            text: 'FIELD OPERATIONS is responsible for the execution of the construction projects. The division provides preconstruction consulting, \
+            title: 'THE FIELD OPERATIONS ', 
+            text: ' is responsible for the execution of the construction projects. The division provides preconstruction consulting, \
             general contracting, cost estimating & control, procurement management, design-assist, constructability review, & project supervision. \
             Our Field Operations team has on-the-ground construction experience in Los Angeles, San Francisco, Detroit, & New York City.'
                 },
@@ -43,7 +43,8 @@ const FOOTER_CONTENT = {
         ],
         People: {
             title: 'PARTNERS', 
-            text: 'LAUREN, CLARA, HUNTER, HALLE, & CHAD work together as an integrated product team, with every partner personally vested in creating a positive outcome\
+            names: 'LAUREN, CLARA, HUNTER, HALLE, & CHAD', 
+            text: ' work together as an integrated product team, with every partner personally vested in creating a positive outcome\
              for the projects. Because we are an entirely owner-operated company, our clients’ projects receive an unparalleled level of care, attention, and dedication to success.', 
             peoples: [
                 {
