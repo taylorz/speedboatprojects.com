@@ -28,7 +28,7 @@ const FOOTER_CONTENT = {
             residential & commercial real estate products, materials & environments, computational design techniques, and design-to-fabrication services. The Workshop is our clients’ primary entry point to the platform and manages all Speedboat accounts.'
                 },
             {
-            title: 'THe STUDIO', 
+            title: 'THE STUDIO', 
             text: ' centers our practice and integrates services across the platform. It provides comprehensive architecture, urban planning, \
             structural & civil engineering, and consultant coordination services for all the projects. The Speedboat Studio is composed of licensed professionals \
             providing design & permitting in California and New York.'

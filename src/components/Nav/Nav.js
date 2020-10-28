@@ -63,7 +63,7 @@ const Nav = ({ onClick }) => {
                         </Grid>
                         <Grid item>
                             <Button disableRipple className="shop" >
-                            <a href="https://workshop.speedboatprojects.com" target="_blank">
+                            <a href="https://speedboatprojects.bigcartel.com/" target="_blank">
                                 SHOP  {shopTextArray[shopIndex]}
                             </a>
                             </Button>
