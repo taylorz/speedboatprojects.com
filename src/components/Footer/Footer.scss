@@ -1,12 +1,13 @@
 @import "../../styles/styles.scss";
 
 .footer-container {
-    font-size: $fontSize;
+    font-size: $fontSizeFooter;
     line-height: $lineHeight;
     padding: $margin;
     padding-left: $margin;
     line-height: 1.35em;
     font-family: $secondaryFont;
+    font-weight: 300;
     @include breakpoint(xs) {
         padding: $mobileMargin;
         font-size: $fontSizeMobile;
@@ -14,12 +15,17 @@
     }
     .footer-description {
         padding-bottom: $margin;
+        font-family: $secondaryFont;
+        font-weight: 300 !important;
         .description-text {
-            .speedboat {
-                font-family: $primaryFont;
+            .title {
+                font-weight: 400 !important;
             }
         }
         .description-list {
+            .title {
+                font-weight: 400 !important;
+            }
             font-family: $secondaryFont;
             ol {
                 li { 
@@ -35,6 +41,9 @@
             @include breakpoint(xs) {
                 font-size: $fontSizeMobile;
                 line-height: $lineHeightMobile;
+            }
+            .people-title {
+                font-weight: 400 !important;
             }
             .people-text {
                 padding-bottom: 5vh;

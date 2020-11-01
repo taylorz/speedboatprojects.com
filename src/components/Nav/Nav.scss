@@ -6,9 +6,9 @@
     line-height: $lineHeightStatement;
     color: $acid;
     text-transform: uppercase;
-    z-index: $zIndex2;
+    z-index: $zIndex1;
     position: fixed;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     @include breakpoint(xs) {
         font-size: $fontSizeMobile;
@@ -32,7 +32,6 @@
                         margin: -0.1em; 
                         padding: 0.5em;   
                         padding-left: $margin;
-                        overflow:hidden
                         .changeColor {
                             animation: changeColor step-end infinite;
                             transition:transform 2s ease-in 2s;
@@ -50,9 +49,9 @@
         .rightBtn {
             pointer-events: auto;
             .message-wrapper {
+                background-color: transparent;
                 color: $acid;
                 text-transform: none !important;
-                background-color:transparent;
                 font-family: $primaryFont;
                 font-size: $fontSizeButton;
                 display: inline-block;     
@@ -60,8 +59,7 @@
                 position: relative;       
                 width: auto;
                 height: auto;
-                padding-right: $margin;
-                overflow:hidden;
+                
                 animation: changeColor step-end infinite;
                 transition:transform 2s ease-in 2s;
                 animation-iteration-count: infinite;
@@ -78,7 +76,7 @@
             }
             .shop {
                 color: $acid;
-                background-color:transparent;
+                background-color: transparent;
                 :hover {
                     animation: .8s jump ease infinite alternate;
                 }
@@ -92,7 +90,7 @@
                     position: relative;       
                     height: auto;
                     width: 500px;
-                    overflow:hidden;
+                    
                     animation: changeColor step-end infinite;
                     transition:transform 2s ease-in 2s;
                     animation-iteration-count: infinite;

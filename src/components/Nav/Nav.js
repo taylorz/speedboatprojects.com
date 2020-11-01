@@ -39,15 +39,15 @@ const Nav = ({ onClick }) => {
     return (
     <Grid container className="nav-container">
         <MaxWidthWrapper>
-            <Grid container className="nav-inner">
-                <Grid item className="mainBtn" xs={4}>
+            <Grid container  className="nav-inner" spacing={10}>
+                <Grid item className="mainBtn" xs={6}>
                     <ul>
                         <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}>  <span className="changeColor">SPEEDBOAT </span> </Link></li>
                     </ul>
                 </Grid>
-                <Grid item className="rightBtn" xs={8}>
-                    <Grid container spacing={2} justify="flex-end">
-                        <Grid item>
+                <Grid item className="rightBtn" xs={6} >
+                    <Grid container justify="flex-end">
+                        <Grid item xs={4}>
                                 <ReactTypeformEmbeded
                                 popup
                                 autoOpen={false}
@@ -56,12 +56,10 @@ const Nav = ({ onClick }) => {
                                     typeformEmbed.current = tf;
                                 }}
                                 />
-                                <Button disableRipple onClick={openForm} className="message-wrapper" >  
-                                    MSG US
-                                </Button> 
+                                <Button disableRipple onClick={openForm} className="message-wrapper" >MSG US</Button> 
                                 
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={8}>
                             <Button disableRipple className="shop" >
                             <a href="https://speedboatprojects.bigcartel.com/" target="_blank">
                                 SHOP  {shopTextArray[shopIndex]}

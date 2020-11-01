@@ -25,56 +25,50 @@ const Footer = () => {
         <MaxWidthWrapper>
             <Grid container className="footer-description">
                 <Grid item xs={12} className="description-text">
+                <div className = 'description-text title'>
+                        COMPAGNY
+                    </div>
                     <div className = 'description-text speedboat'>
-
                         <p>{Description.para1}</p>
                     </div>
-                    <p><b>{Description.para11Title}</b>{Description.para11} </p>
-                    <p><b>{Description.para12Title}</b>{Description.para12}</p>
-                    <p>{Description.para2}</p>
-                    <p><b>{Description.para4Title}</b>{Description.para4}</p>
+                    <Grid container spacing={10} className="description-text items">
+                        <Grid item xs={6}> 
+                            <p>{Description.para11} </p>
+                        </Grid>
+                        <Grid item xs={6}> 
+                            <p>{Description.para12}</p>
+                        </Grid>
+                    </Grid>
                 </Grid>
-                <Grid item xs={8} className='description-list'>
-                    <ol>
-                    {Description.platforms.map(({text }) => (
-                        <li> {text} </li> 
-                    ))}
-                    </ol>
+                <Grid item xs={12} className='description-list'>
+                    <p className='description-list title'> SERVICES</p>
+                    <p>{Description.para4Title}{Description.para4}</p>
                 </Grid>  
             </Grid>
             <Grid container spacing={10} className="footer-details">   
-                        {Divisions.map(({ title, text }) => (
+                        {Divisions.map(({text }) => (
                         <Grid item xs={4} className="footer-item design-services">
-                            <td key={`tablevalue-${text}`}> <b>{title}</b>{text}</td>
+                            <td key={`tablevalue-${text}`}>{text}</td>
                         </Grid>
                         ))}
                  <Grid item xs={12} className="footer-item people">
                         <div className = 'footer-item people-title'>
-                            <b>{People.title}</b>
+                            <p>{People.title}</p>
                         </div>
                         <div className = 'footer-item people-text'>
-                            <p><b>{People.names}</b>{People.text}</p>
+                            <p>{People.text}</p>
                         </div>
                         <Grid container spacing={10}>
-                            {People.peoples.map(({name, text }) => (
-                                <Grid item xs={6} className="footer-item people-list" wrap='nowrap'>
-                                    <td key={`tablevalue-${text}`}><b>{name}</b>{text}</td>
+                            {People.peoples.map(({text }) => (
+                                <Grid item xs={12} className="footer-item people-list" wrap='nowrap'>
+                                    <td key={`tablevalue-${text}`}>{text}</td>
                                 </Grid>
                             ))}
                         </Grid>
                  </Grid>
-                 {/* <Grid item xs={12} className="footer-item friends">
-                        <div className="header-text">
-                            <b>{Friends.title}</b>
-                        </div>
-                        <Grid container spacing={10} className="footer-item friends-list">
-                            {Friends.lists.map(({list}) => (
-                            <Grid item xs={4} className="footer-item friends-item" wrap='nowrap'>
-                                {nameList(list)}
-                            </Grid>
-                            ))}
-                        </Grid>
-                </Grid> */}
+                 <Grid item xs={12}>
+                    © SPEEDBOAT INC., 2021. All rights reserved.
+                 </Grid>
             </Grid>
         </MaxWidthWrapper>
     </Grid>
