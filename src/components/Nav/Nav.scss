@@ -6,8 +6,8 @@
     line-height: $lineHeightStatement;
     color: $acid;
     text-transform: uppercase;
-    z-index: $zIndex2;
-    position: relative;
+    //@at-root: $zIndex1;
+    position: fixed;
     overflow-x: auto;
     overflow-y: hidden;
     @include breakpoint(xs) {
