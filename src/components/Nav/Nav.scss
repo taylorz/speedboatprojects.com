@@ -119,9 +119,9 @@
         font-weight: normal; 
         font-size: $fontSizeFooter; 
         position: fixed;
-        bottom: $fontSizeFooter;
+        bottom: $fontSizeFooter/4;
         white-space: nowrap;
-        padding-left: $margin;
+        padding-left: $margin/2;
         .and {
             animation: changeColor step-end infinite;
             transition:transform 2s ease-in 2s;
@@ -144,12 +144,6 @@
         }
         .location {
             padding-left: 50px;
-        }
-        .instagram {
-            padding-left: 7px;
-        }
-        .phoneNumber {
-            padding-left: 11px;
         }
         a:link {
             animation: changeColor step-end infinite;
