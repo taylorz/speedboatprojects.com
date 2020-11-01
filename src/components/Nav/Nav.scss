@@ -12,11 +12,11 @@
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-        @include breakpoint(xs) {
-            font-size: $fontSizeMobile;
-            line-height: $lineHeightMobile;
-            padding: $mobileMargin;
-        }
+    @include breakpoint(xs) {
+        font-size: $fontSizeMobile;
+        line-height: $lineHeightMobile;
+        padding: $mobileMargin;
+    }
     .nav-inner {
         .mainBtn {
             pointer-events: auto;
@@ -36,7 +36,6 @@
                         margin: -0.1em; 
                         padding-left: $margin;
                         border: 0px;
-                        width: 260px;
                         .changeColor {
                             animation: changeColor step-end infinite;
                             transition:transform 2s ease-in 2s;
@@ -95,7 +94,7 @@
                     text-align: left;
                     position: relative;       
                     height: auto;
-                    width: 525px;
+                    width: 500px;
                     padding-right: $margin;
                     animation: changeColor step-end infinite;
                     transition:transform 2s ease-in 2s;
