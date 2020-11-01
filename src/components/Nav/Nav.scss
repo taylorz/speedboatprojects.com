@@ -7,7 +7,7 @@
     color: $acid;
     text-transform: uppercase;
     z-index: $zIndex2;
-    position: fixed;
+    position: relative;
     overflow-x: auto;
     overflow-y: hidden;
     @include breakpoint(xs) {
