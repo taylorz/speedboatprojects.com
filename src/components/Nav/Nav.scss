@@ -117,6 +117,7 @@
         bottom: $fontSizeFooter/4;
         white-space: nowrap;
         padding-left: $margin/2;
+        z-index: $zIndex1;
         .and {
             animation: changeColor step-end infinite;
             transition:transform 2s ease-in 2s;
