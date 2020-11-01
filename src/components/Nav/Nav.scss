@@ -82,6 +82,7 @@
             }
             .shop {
                 color: $acid;
+                background-color:transparent;
                 :hover {
                     animation: .8s jump ease infinite alternate;
                 }
@@ -112,6 +113,7 @@
         }
     }
     .footer {
+        font-family: $primaryFont;
         text-transform: lowercase;
         pointer-events: auto;
         color: $acid;
@@ -121,8 +123,34 @@
         bottom: $fontSizeFooter;
         white-space: nowrap;
         padding-left: $margin;
-        :hover {
-            animation: changeColor step-end infinite, .8s jump ease infinite alternate;
+        .and {
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
+        }
+        .item {
+            background-color: transparent;
+            display: inline-block;     
+            position: relative;  
+            :hover {
+                animation: .8s jump ease infinite alternate;
+            }
+        }
+        .location {
+            padding-left: 50px;
+        }
+        .instagram {
+            padding-left: 7px;
+        }
+        .phoneNumber {
+            padding-left: 11px;
         }
         a:link {
             animation: changeColor step-end infinite;
@@ -136,27 +164,19 @@
             -webkit-animation-direction: alternate;
             -webkit-animation-timing-function: ease-in-out; 
         }
-        .instagram {
-            padding-left: 7px;
-        }
-        .phoneNumber {
-            padding-left: 11px;
-        }
-       
     }
 }
 
 
-
 @keyframes changeColor {
     0% {
-      color: $acid
+        color: $acid
     }
     25% {
-      color: $babyBlue
+        color: $babyBlue
     }
     50% {
-      color: $seaFoam
+        color: $seaFoam
     }
     75% {
         color:$goldenHour
@@ -182,3 +202,5 @@
       transform: scale(1.2);
     }
   }
+
+
