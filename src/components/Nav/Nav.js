@@ -73,7 +73,7 @@ const Nav = ({ onClick }) => {
             </Grid>  
             <Grid container className="footer" xs={12}>
                     <Grid item xs={4} className='mail'>
-                        <a href= 'mailto: studio@speedboatprojects.com' target="_blank"> studio@speedboatprojects.com </a>
+                        <a href= 'mailto: info@speedboatprojects.com' target="_blank"> info@speedboatprojects.com </a>
                     </Grid>
                     <Grid item xs={2} className='instagram'>
                         <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank"> instagram </a>
