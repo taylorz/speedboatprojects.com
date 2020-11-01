@@ -6,7 +6,7 @@
     line-height: $lineHeightStatement;
     color: $acid;
     text-transform: uppercase;
-    //@at-root: $zIndex1;
+    z-index: $zIndex1;
     position: fixed;
     overflow-x: hidden;
     overflow-y: hidden;
