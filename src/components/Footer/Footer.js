@@ -26,7 +26,7 @@ const Footer = () => {
             <Grid container className="footer-description">
                 <Grid item xs={12} className="description-text">
                 <div className = 'description-text title'>
-                        COMPAGNY
+                        COMPANY
                     </div>
                     <div className = 'description-text speedboat'>
                         <p>{Description.para1}</p>

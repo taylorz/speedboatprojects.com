@@ -2,7 +2,6 @@
 
 .nav-container {
     font-family: $primaryFont;
-    font-size: $fontSizeStatement;
     line-height: $lineHeightStatement;
     color: $acid;
     text-transform: uppercase;
@@ -17,6 +16,7 @@
         padding: $mobileMargin;
     }
     .nav-inner {
+        font-size: 36px;
         .mainBtn {
             pointer-events: auto;
             :hover {
@@ -53,11 +53,11 @@
         .rightBtn {
             pointer-events: auto;
             .message-wrapper {
+                font-size: 36px;
+                font-family: $primaryFont;
                 background-color: transparent;
                 color: $acid;
                 text-transform: none !important;
-                font-family: $primaryFont;
-                font-size: $fontSizeButton;
                 display: inline-block;     
                 text-align: left;
                 position: relative;       
@@ -85,16 +85,15 @@
                     animation: .8s jump ease infinite alternate;
                 }
                 a:link {
+                    font-size: 36px;
+                    font-family: $primaryFont;
                     text-transform: none !important;
                     background-color: transparent;
-                    font-family: $primaryFont;
-                    font-size: $fontSizeButton;
                     display: inline-block;     
                     text-align: left;
                     position: relative;       
                     height: auto;
                     width: 500px;
-                    
                     animation: changeColor step-end infinite;
                     transition:transform 2s ease-in 2s;
                     animation-iteration-count: infinite;
@@ -112,6 +111,7 @@
     }
     .footer {
         font-family: $primaryFont;
+        font-size: 24px;
         text-transform: lowercase;
         pointer-events: auto;
         color: $acid;
