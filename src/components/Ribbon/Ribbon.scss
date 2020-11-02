@@ -5,19 +5,26 @@
     padding: $buffer*4 0;
     color: $fontColorLightest;
     overflow: hidden;
-    color: black;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    color: $seaFoam;
+    //border-top: 5px solid black;
+    //border-bottom: 5px solid black;
+    font-family: $primaryFont;
     .wrapper-slide {
         display: flex;
         align-items: center;
-        ::selection { 
-            color: white !important; 
-        }
         span {
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation: changeColor step-end infinite;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
             margin-right: $margin*2;
             &.slide-main-title {
-                font-size: $fontSizeStatement;
+                font-size: 36px;
                 line-height: $lineHeightStatement;
                 white-space: nowrap;
                 overflow-x: auto;
@@ -32,7 +39,7 @@
                 }
             }
             &.slide-secondary-title {
-                font-size: $fontSize;
+                font-size: 24px;
                 white-space: nowrap;
                 overflow-x: auto;
                 overflow-y: hidden;
@@ -56,5 +63,36 @@
     }
     &.public-urban {
         background: transparent;
+    }
+}
+
+
+@-webkit-keyframes changeColor {
+    0% {
+        color: $acid
+    }
+    25% {
+        color: $babyBlue
+    }
+    50% {
+        color: $seaFoam
+    }
+    75% {
+        color:$goldenHour
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: $acid
+    }
+    25% {
+        color: $babyBlue
+    }
+    50% {
+        color: $seaFoam
+    }
+    75% {
+        color:$goldenHour
     }
 }
