@@ -31,11 +31,11 @@ const Footer = () => {
                     <div className = 'description-text speedboat'>
                         <p>{Description.para1}</p>
                     </div>
-                    <Grid container spacing={10} className="description-text items">
-                        <Grid item xs={6}> 
+                    <Grid container spacing={1} className="description-text items">
+                        <Grid item xs={12}  lg={6}> 
                             <p>{Description.para11} </p>
                         </Grid>
-                        <Grid item xs={6}> 
+                        <Grid item xs={12}  lg={6}> 
                             <p>{Description.para12}</p>
                         </Grid>
                     </Grid>
@@ -45,9 +45,9 @@ const Footer = () => {
                     <p>{Description.para4Title}{Description.para4}</p>
                 </Grid>  
             </Grid>
-            <Grid container spacing={10} className="footer-details">   
+            <Grid container spacing={4} className="footer-details">   
                         {Divisions.map(({text }) => (
-                        <Grid item xs={4} className="footer-item design-services">
+                        <Grid item xs={12} lg={4} className="footer-item design-services">
                             <td key={`tablevalue-${text}`}>{text}</td>
                         </Grid>
                         ))}
@@ -58,17 +58,18 @@ const Footer = () => {
                         <div className = 'footer-item people-text'>
                             <p>{People.text}</p>
                         </div>
-                        <Grid container spacing={10}>
+                        <Grid container spacing={6}>
                             {People.peoples.map(({text }) => (
-                                <Grid item xs={12} className="footer-item people-list" wrap='nowrap'>
+                                <Grid item xs={12} lg={8} className="footer-item people-list" wrap='nowrap'>
                                     <td key={`tablevalue-${text}`}>{text}</td>
                                 </Grid>
                             ))}
+                            <Grid item xs={12}>
+                                 © SPEEDBOAT INC., 2021. All rights reserved.
+                            </Grid>
                         </Grid>
                  </Grid>
-                 <Grid item xs={12}>
-                    © SPEEDBOAT INC., 2021. All rights reserved.
-                 </Grid>
+                 
             </Grid>
         </MaxWidthWrapper>
     </Grid>

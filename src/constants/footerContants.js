@@ -38,37 +38,35 @@ const FOOTER_CONTENT = {
              for the projects. Because we are an entirely owner-operated company, our clients’ projects receive an unparalleled level of care, attention, and dedication to success.', 
             peoples: [
                 {
-                text: 'LAUREN JORDAN is an architectural designer with over a decade of experience working on environments of all scales and configurations in California.\
-                 Her approach is influenced by the dialectics of art and rooted in a questioning of the normative relationships between public and private space. Previously \
-                 she worked at Envelope Architecture + Design in Berkeley. She is a native Angeleno living in northeast LA with her two young sons and dirt-worshipping husband.\
-                She holds a B.A. from the Art Center College of Design and an M.Arch from the California College of the Arts.'
+                text: 'LAUREN JORDAN is an architectural designer with over a decade of experience working on environments of all scales and configurations in California. Her approach is influenced by the dialectics of art and rooted \
+                in a questioning of the normative relationships between public and private space. Previously she worked at Envelope Architecture + Design in Berkeley. She is a native Angeleno living in northeast LA with her two young \
+                sons and dirt-worshipping husband. She holds a B.A. from the Art Center College of Design and an M.Arch from the California College of the Arts.'
                 }, 
                 {
-                text: 'CLARA DYKSTRA is an architectural & urban designer with a background in anthropology. Her desire is to work meaningfully within the political, environmental, social,\
-                 and financial forces that shape cities and buildings. She is dedicated to designing compelling and equitable spaces that create a positive impact at all scales. \
+                text: 'CLARA DYKSTRA is an architectural & urban designer with a background in anthropology. Her desire is to work meaningfully within the political, environmental,\
+                 social, and financial forces that shape cities and buildings. She is dedicated to designing compelling and equitable spaces that create a positive impact at all scales. \
                  Clara has extensive experience working with NYC developers and nonprofit clients to support their surrounding communities through the development of their landholdings. \
                  She holds a B.A. from UCLA and an M.Arch from Columbia University.'
                 }, 
                 {
-                text: 'HUNTER KNIGHT is an architect with over eighteen years of experience on residential, commercial, and institutional projects in\
-                Los Angeles, New York, and Paris. Previously he taught at USC, Cal-Poly Pomona, Ecole Speciale d’Architecture, and SCI_Arc. He has \
-                practiced with Weather Projects and Morphosis Architects as lead designer on several large-scale projects, including the Phare Tower \
-                in Paris and the Cornell Tech building in New York. He holds a B.Arch from the University of North Carolina and an M.Arch from the\
-                Southern California Institute of Architecture, where he received the AIA Henry Adams Gold Medal. R.A.: CA, C38635'
+                text: 'HUNTER KNIGHT is an architect with over eighteen years of experience on residential, commercial, and institutional projects in Los Angeles, New York, and Paris. \
+                Previously he taught at USC, Cal-Poly Pomona, Ecole Speciale d’Architecture, and SCI_Arc. He has practiced with Weather Projects and Morphosis Architects as lead designer\
+                 on several large-scale projects, including the Phare Tower in Paris and the Cornell Tech building in New York. He holds a B.Arch from the University of North Carolina \
+                 and an M.Arch from the Southern California Institute of Architecture, where he received the AIA Henry Adams Gold Medal. R.A.: CA, C38635'
                 }, 
                 {
                 text: 'HALLE DOENITZ is an engineer with over a decade of professional experience on a wide-range of institutional building types, \
                 including museums, hospitals, mixed-use high rises, university buildings, parking structures, and renovations. Utilizing her experience \
-                and passion for design, Halle approaches projects with a focus on performance, efficiency and innovation. She previously worked with \
-                Ghafari Associates in Michigan and LERA Consulting Structural Engineers in New York and Los Angeles. Halle holds a M.S.E. and B.S.E. \
-                in Civil Engineering with an emphasis on structures from the University of Michigan. P.E.: CA 91458, NY 093268'
+                and passion for design, Halle approaches projects with a focus on performance, efficiency and innovation. She previously worked with Ghafari \
+                Associates in Michigan and LERA Consulting Structural Engineers in New York and Los Angeles. Halle holds a M.S.E. and B.S.E. in Civil \
+                Engineering with an emphasis on structures from the University of Michigan. P.E.: CA 91458, NY 093268'
                 }, 
                 {
-                text : 'CHAD KARTY is an architectural professional delivering unique projects to clients in the arts, \
-                entertainment, technology, & finance industries. In the past he worked as a carpenter, fabricating contemporary artworks and restoring Greek \
-                Revival townhomes. He earned his B.A. and M.Arch at Columbia University, where he received honors and taught design in the New York–Paris Studio. \
-                Before forming Speedboat, Chad practiced at several nationally-recognized firms, including MADE, M1DTW, Schuchart/Dow, and Radius Track. \
-                He is admitted to the ARE in New York and is a licensed general contractor in California. He lives in Silver Lake, Los Angeles.'
+                text : 'CHAD KARTY is an architectural professional working in the master- builder tradition and delivering unique projects to clients \
+                in the arts, entertainment, technology, & finance industries. In the past he was a carpenter, specializing in art fabrication and the \
+                restoration of Greek Revival townhomes. He earned his B.A. and M.Arch at Columbia University, where he received honors and taught design\
+                in the New York–Paris Studio. Before forming Speedboat, Chad practiced at several blue-chip firms, including MADE NYC, M1DTW, Schuchart/Dow,\
+                and Radius Track. He is admitted to the A.R.E. in New York and is a licensed general contractor in California. G.C.: CA 1064007'
                 }, 
             ]
     },

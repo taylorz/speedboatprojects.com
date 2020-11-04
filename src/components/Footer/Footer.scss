@@ -1,30 +1,33 @@
 @import "../../styles/styles.scss";
 
+@mixin mobile {
+    @media (max-width: 899px) { @content; }
+}
+
 .footer-container {
     font-size: $fontSizeFooter;
     line-height: $lineHeight;
     padding: $margin;
-    padding-left: $margin;
     line-height: 1.35em;
     font-family: $secondaryFont;
-    font-weight: 300;
-    @include breakpoint(xs) {
+    font-weight: 400;
+    justify-content: space-evenly;
+    @include mobile { 
         padding: $mobileMargin;
-        font-size: $fontSizeMobile;
-        line-height: $lineHeightMobile;
+        font-size: $fontSizeSmall;
     }
     .footer-description {
         padding-bottom: $margin;
         font-family: $secondaryFont;
-        font-weight: 300 !important;
+        font-weight: 400 ;
         .description-text {
             .title {
-                font-weight: 400 !important;
+                font-weight: 1000 ;
             }
         }
         .description-list {
             .title {
-                font-weight: 400 !important;
+                font-weight: 500 !important;
             }
             font-family: $secondaryFont;
             ol {
@@ -32,6 +35,9 @@
                     //padding-top: 2vh;
                 }
             }
+        }
+        @include mobile { 
+            font-size: $fontSizeSmall;
         }
     }
     .footer-details {
@@ -65,12 +71,9 @@
                 font-family: $secondaryFont;
                 list-style-type: none;
                 margin: 0;
-                @include breakpoint(xs) {
-                    padding: 0;
-                    padding-left: $margin;
-                    font-size: $fontSizeSmall;
-                    line-height: $lineHeightSmall;
-                }
+            }
+            @include mobile { 
+                font-size: $fontSizeSmall;
             }
         }
     }

@@ -39,15 +39,13 @@ const Nav = ({ onClick }) => {
     return (
     <Grid container className="nav-container">
         <MaxWidthWrapper>
-            <Grid container  className="nav-inner" spacing={10}>
-                <Grid item className="mainBtn" xs={6}>
-                    <ul>
-                        <li><Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}>  <span className="changeColor">SPEEDBOAT </span> </Link></li>
-                    </ul>
+            <Grid container  className="nav-inner">
+                <Grid item className="mainBtn" xs={12}  lg={6}>
+                    <Link className="page-link" to="test1" spy={true} smooth={true} duration={1000}>  <span className="changeColor">SPEEDBOAT </span> </Link>
                 </Grid>
-                <Grid item className="rightBtn" xs={6} >
+                <Grid item className="rightBtn" xs={12} md={6}>
                     <Grid container justify="flex-end">
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={4}>
                                 <ReactTypeformEmbeded
                                 popup
                                 autoOpen={false}
@@ -59,9 +57,9 @@ const Nav = ({ onClick }) => {
                                 <Button disableRipple onClick={openForm} className="message-wrapper" >MSG US</Button> 
                                 
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid item xs={12} md={8}>
                             <Button disableRipple className="shop" >
-                            <a href="https://speedboatprojects.bigcartel.com/" target="_blank">
+                            <a href="https://workshop.speedboatprojects.com/" target="_blank">
                                 SHOP  {shopTextArray[shopIndex]}
                             </a>
                             </Button>
@@ -69,23 +67,23 @@ const Nav = ({ onClick }) => {
                     </Grid>
                 </Grid>
             </Grid>  
-            <Grid container className="footer" xs={12}>
-                    <Grid item xs={4}>
+            <Grid container className="footer" xs={12} justify="space-evenly" direction="row" >
+                    <Grid item xs={12}  lg={4}>
                         <Button disableRipple className='footer item'>
                             <a href= 'mailto: info@speedboatprojects.com' target="_blank"> info@speedboatprojects.com </a>
                         </Button>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12}  lg={2}>
                         <Button disableRipple className='footer item'>
                             <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' target="_blank"> instagram </a>
                         </Button>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12}  lg={3}>
                         <Button disableRipple className = 'footer item'> 
                             <a href="tel:+1 323-450-7551" className='phoneNumber'>+1 323-450-7551</a>
                         </Button>
                     </Grid>
-                    <Grid item xs={4} className='location'>
+                    <Grid item xs={12}  lg={3} className='location'>
                         <Button disableRipple className='footer item'>
                             <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
                             <span className='and'>& </span>
