@@ -6,75 +6,52 @@
 
 .footer-container {
     font-size: $fontSizeFooter;
+    font-family: $secondaryFont;
+    font-weight: $fontWeight400;
     line-height: $lineHeight;
     padding: $margin;
+    padding-bottom: 2vh;
     line-height: 1.35em;
-    font-family: $secondaryFont;
-    font-weight: 400;
-    justify-content: space-evenly;
+    .title {
+        font-weight: $fontWeight600 !important;
+    }
     @include mobile { 
-        padding: $mobileMargin;
         font-size: $fontSizeSmall;
+        padding-left: $mobileMargin;
     }
-    .footer-description {
-        padding-bottom: $margin;
-        font-family: $secondaryFont;
-        font-weight: 400 ;
-        .description-text {
-            .title {
-                font-weight: 1000 ;
-            }
+    .footer-company {
+        .title {
+            padding-top: 0px !important;
+            padding-bottom: 15px !important;
         }
-        .description-list {
-            .title {
-                font-weight: 500 !important;
-            }
-            font-family: $secondaryFont;
-            ol {
-                li { 
-                    //padding-top: 2vh;
-                }
-            }
+        .speedboat {
+           
         }
-        @include mobile { 
-            font-size: $fontSizeSmall;
+        .items {
+            
         }
     }
-    .footer-details {
-        .footer-item {
-            font-family: $secondaryFont;
-            position: relative;
-            @include breakpoint(xs) {
-                font-size: $fontSizeMobile;
-                line-height: $lineHeightMobile;
-            }
-            .people-title {
-                font-weight: 400 !important;
-            }
-            .people-text {
-                padding-bottom: 5vh;
-            }
-            .design-services-title {
-                padding-bottom: $margin;
-            }
-            .friends-list {
-                padding-left: 0%;
-                li {
-                    padding-top: 10px;
-                }
-            }
-            ul {
-                padding: $margin;
-                padding-left: 0;
-                font-size: $fontSize;
-                line-height: $lineHeight;
-                font-family: $secondaryFont;
-                list-style-type: none;
-                margin: 0;
-            }
-            @include mobile { 
-                font-size: $fontSizeSmall;
-            }
+    .footer-services {
+        .title  {
+            padding-top: 15px !important;
+            padding-bottom: 1px !important;
+        }
+        .text {
+          
+        }
+        .items {
+           
+        }
+    }
+    .footer-partnership {
+        .title {
+            font-weight: $fontWeight600 !important;
+            padding-top: 15px;
+            padding-bottom: 1px !important;
+        }
+        .incorporated {
+            padding-top: 15px !important;
+            padding-bottom: 1px !important;
         }
     }
 }

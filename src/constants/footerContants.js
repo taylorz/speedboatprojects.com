@@ -4,14 +4,13 @@ const FOOTER_CONTENT = {
             para1: 'SPEEDBOAT is a platform for creative architecture, engineering, and construction project delivery. We’re a partnership of\
              design professionals motivated by the pursuit of architectural excellence and higher project performance. We serve owners & brands,\
               partner with architects, and form & operate special purpose vehicles for real estate investors.' , 
-            para11: 'THE PROJECTS are informed by timeless architectural concepts and supported by spatial clarity and refined detailing. Our \
+            para2: 'THE PROJECTS are informed by timeless architectural concepts and supported by spatial clarity and refined detailing. Our \
             process leverages strategic thinking, technology, craft, and the master-builder tradition to add uncommon and hidden value to the \
             projects. We are capable of delivering spaces, objects, systems, and buildings at any scale and level of complexity.',  
-            para12: 'THE PARTNERSHIP combines the creativity & personalized experience of a boutique design firm with the technical finesse &\
+            para3: 'THE PARTNERSHIP combines the creativity & personalized experience of a boutique design firm with the technical finesse &\
             management acumen of a much larger organization. Our unique collaboration enables the imagination of exceptional clients and makes \
             the delivery of challenging projects more fun.',  
-            para4Title: 'OUR PLATFORM', 
-            para4: ' is composed of three service divisions: the Workshop, Studio, and Field Operations. The divisions provide consulting, \
+            para4: 'OUR PLATFORM is composed of three service divisions: the Workshop, Studio, and Field Operations. The divisions provide consulting, \
             design, development, and general contracting & construction management services for 1) Direct-to-owner delivery of complex or architecturally-significant construction projects, 2) Design-build ventures with partnering architects, \
             3) Integrated real estate development for Speedboat SPV investors.', 
         },
