@@ -28,9 +28,6 @@
 }
 .hero-text-mobile {
     display: none !important;
-    @include breakpoint(xs) {
-        display: block !important;
-    }
     .text-wrapper {
         padding: $mobileMargin;
         color: $babyBlue;

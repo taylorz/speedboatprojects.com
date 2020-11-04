@@ -1,69 +1,59 @@
 @import "../../styles/styles.scss";
 
+@mixin mobile {
+    @media (max-width: 899px) { @content; }
+}
+
 .nav-container {
-    font-family: $primaryFont;
-    line-height: $lineHeightStatement;
     color: $acid;
     text-transform: uppercase;
     z-index: $zIndex1;
     position: fixed;
     overflow-x: hidden;
     overflow-y: hidden;
-    pointer-events: none;
-    @include breakpoint(xs) {
-        font-size: $fontSizeMobile;
-        line-height: $lineHeightMobile;
-        padding: $mobileMargin;
+    padding-left: $margin;
+    padding-right: $margin;
+    @include mobile { 
+        padding-left: $mobileMargin;
     }
     .nav-inner {
-        font-size: 36px;
         .mainBtn {
             pointer-events: auto;
-            :hover {
-                animation: .8s jumpMain ease infinite alternate;
-                -webkit-animation: .8s jumpMain ease infinite alternate; 
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
+            display: inline-block; 
+            height: auto;
+            width: auto;   
+            list-style-type: none;
+            span{   
+                //background-color: green;
+                font-size: $fontSize;
+                font-family: $primaryFont;
                 padding: 0;
-                li {
-                    .page-link {
-                        display: inline-block;     
-                        position: relative;    
-                        margin: -0.1em; 
-                        padding: 0.5em;   
-                        padding-left: $margin;
-                        pointer-events: auto;
-                        .changeColor {
-                            animation: changeColor step-end infinite;
-                            transition:transform 2s ease-in 2s;
-                            animation-direction: alternate;
-                            animation-duration: 5s;
-                            animation-timing-function: ease-in-out;
-                            -webkit-animation: changeColor step-end infinite;
-                            -webkit-animation-duration: 5s;
-	                        -webkit-animation-direction: alternate;
-                            -webkit-animation-timing-function: ease-in-out; 
-                        }
-                    }
+                animation: changeColor step-end infinite;
+                transition:transform 2s ease-in 2s;
+                animation-direction: alternate;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                -webkit-animation: changeColor step-end infinite;
+                -webkit-animation-duration: 5s;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: ease-in-out; 
+                @include mobile { 
+                    font-size: $fontSizeMobile;
                 }
             }
         }
         .rightBtn {
             pointer-events: auto;
             .message-wrapper {
-                font-size: 36px;
+                font-size: $fontSize;
                 font-family: $primaryFont;
-                background-color: transparent;
+                padding: 0;
                 color: $acid;
                 text-transform: none !important;
-                display: inline-block;     
-                text-align: left;
-                position: relative;       
+                display: inline-block;      
                 width: auto;
                 height: auto;
-                
+                //background-color: purple;
                 animation: changeColor step-end infinite;
                 transition:transform 2s ease-in 2s;
                 animation-iteration-count: infinite;
@@ -77,23 +67,25 @@
                 :hover {
                     animation: .8s jump ease infinite alternate;
                 }
+                @include mobile { 
+                    font-size: $fontSizeMobile;
+                }
             }
             .shop {
                 color: $acid;
-                background-color: transparent;
+                display: inline-block; 
+                overflow-x: hidden;
+                text-align: left; 
+                font-size: $fontSize;
+                font-family: $primaryFont;
+                padding: 0;   
+                height: auto;
+                width: 420px;
+                //background-color: blue;
                 :hover {
                     animation: .8s jump ease infinite alternate;
                 }
                 a:link {
-                    font-size: 36px;
-                    font-family: $primaryFont;
-                    text-transform: none !important;
-                    background-color: transparent;
-                    display: inline-block;     
-                    text-align: left;
-                    position: relative;       
-                    height: auto;
-                    width: 500px;
                     animation: changeColor step-end infinite;
                     transition:transform 2s ease-in 2s;
                     animation-iteration-count: infinite;
@@ -106,12 +98,15 @@
                     -webkit-animation-timing-function: ease-in-out; 
                    
                 }
+                @include mobile { 
+                    font-size: $fontSizeMobile;
+                }
             }
         }
     }
     .footer {
         font-family: $primaryFont;
-        font-size: 24px;
+        font-size: $fontSizeFooter;
         text-transform: lowercase;
         pointer-events: auto;
         color: $acid;
@@ -120,8 +115,13 @@
         position: fixed;
         bottom: $fontSizeFooter/4;
         white-space: nowrap;
-        padding-left: $margin/2;
         z-index: $zIndex2;
+        @include mobile { 
+            font-size: $fontSizeSmall;
+            display: inline;
+            text-align: right !important;
+            padding-right: $mobileMargin !important;
+        }
         .and {
             animation: changeColor step-end infinite;
             transition:transform 2s ease-in 2s;
@@ -136,16 +136,14 @@
             -webkit-animation-timing-function: ease-in-out; 
         }
         .item {
-            background-color: transparent;
             display: inline-block;     
             position: relative;  
+            padding: 0;
+            //background-color: yellow;
             :hover {
                 animation: .8s jump ease infinite alternate;
                 -webkit-animation: .8s jump ease infinite alternate;
             }
-        }
-        .location {
-            padding-left: 50px;
         }
         a:link {
             animation: changeColor step-end infinite;
