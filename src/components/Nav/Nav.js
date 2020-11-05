@@ -6,7 +6,6 @@ import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
 import { Button } from "@material-ui/core";
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import Footer from '../Footer/Footer'
 
 const Nav = ({ onClick }) => {
 
@@ -18,11 +17,6 @@ const Nav = ({ onClick }) => {
 
     const shopTextArray = ['FURNITURE', 'ARCHITECTURE', 'BOOKS', 'ADUs', 'KITCHENS'];
     const [shopIndex, setShopIndex] = useState(0);
-
-    const scroll = () => {
-        Footer.scrollIntoView({ behavior: "smooth" });
-    }
-
    
 
     useEffect(() => {
@@ -44,25 +38,27 @@ const Nav = ({ onClick }) => {
     return (
     <MaxWidthWrapper>    
         <Grid container className="nav-container">
-            <Grid container className="top" xs={12} direction="row">
-                <Grid item xs={12}  lg={3}>
-                    <Button disableRipple onClick={scroll} className="top speedboat" >SPEEDBOAT</Button>   
+            <Grid container className="header" xs={12} direction="row">
+                <Grid item xs={12} lg={6}>
+                    <Button disableRipple className="header speedboat" > 
+                        <Link to="test1" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
+                    </Button>   
                 </Grid>
-                <ReactTypeformEmbeded
-                    popup
-                    autoOpen={false}
-                    url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
-                    ref={tf => {
-                        typeformEmbed.current = tf;
-                    }}
-                />
-                <Grid item xs={12} lg={3}>
-                    <Button disableRipple onClick={openForm} className="top message" >MSG US</Button>                 
+                <Grid item xs={12} lg={2}>
+                    <ReactTypeformEmbeded
+                        popup
+                        autoOpen={false}
+                        url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
+                        ref={tf => {
+                            typeformEmbed.current = tf;
+                        }}
+                    />
+                    <Button disableRipple onClick={openForm} className="header message" > <span>MSG US</span></Button>                 
                 </Grid>
                 <Grid item xs={12} lg={3}>
-                    <Button disableRipple className="top shop" >
+                    <Button disableRipple className="header shop" >
                     <a href="https://workshop.speedboatprojects.com/" target="_blank">
-                        SHOP  {shopTextArray[shopIndex]}
+                        <span>SHOP {shopTextArray[shopIndex]}</span>
                     </a>
                     </Button>
                 </Grid>

@@ -10,52 +10,47 @@
     position: fixed;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding-left: $margin;
-    padding-right: $margin;
+    padding-left: 55px;
+    padding-right: 55px;
     background-color: transparent;
     @include mobile { 
         padding-left: $mobileMargin;
     }
-    .top {
+    .header {
+        background-color: transparent;
         font-size: $fontSize;
         font-family: $primaryFont;
         line-height: $fontSize;
         pointer-events: auto;
-        display: inline-block; 
-        text-align: left;
+        text-align: left !important;
         color: $acid;
-        animation: changeColor step-end infinite;
-        transition:transform 2s ease-in 2s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        -webkit-animation-duration: 5s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-timing-function: ease-in-out; 
         @include mobile { 
             font-size: $fontSizeMobile;
+            position: sticky;
         }
-        .speedboat{  
-            background-color: red;
+        Button {
+            background-color: transparent;
         }
-        .message {
-            background-color: blue;  
-            :hover {
-                animation: .8s jump ease infinite alternate;
-            }
+        span {
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
+        }
+        span:hover {
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
         }
         .shop {
-            background-color: yellow;
+            display: inline-block; 
+            text-align: start;
             width: 500px;
             height: auto;
-            :hover {
-                animation: .8s jump ease infinite alternate;
-            }
-        }
-        :hover {
-            animation: .8s jump ease infinite alternate;
         }
     }
     .footer {
@@ -72,6 +67,7 @@
         z-index: $zIndex2;
         @include mobile { 
             font-size: $fontSizeSmall;
+            font-family: $primaryFont;
         }
         .first {
             padding-left: 14px
@@ -162,7 +158,7 @@
      
     }
     100% {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 
@@ -172,7 +168,7 @@
      
     }
     100% {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 

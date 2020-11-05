@@ -17,6 +17,7 @@
     }
     @include mobile { 
         font-size: $fontSizeSmall;
+        font-family: $secondaryFont;
         padding-left: $mobileMargin;
     }
     .footer-company {
