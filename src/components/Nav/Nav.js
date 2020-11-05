@@ -40,7 +40,7 @@ const Nav = ({ onClick }) => {
         <Grid container className="nav-container">
             <Grid container className="header" xs={12} direction="row">
                 <Grid item xs={12} lg={6}>
-                    <Button disableRipple className="header speedboat" > 
+                    <Button disableRipple className="header speedboat"> 
                         <Link to="test1" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
                     </Button>   
                 </Grid>
@@ -74,7 +74,7 @@ const Nav = ({ onClick }) => {
                             <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' target="_blank"> instagram </a>
                         </Button>
                     </Grid>
-                    <Grid item xs={12} lg={3}>
+                    <Grid item xs={12} lg={2}>
                         <Button disableRipple className = 'footer item'> 
                             <a href="tel:+1 323-450-7551" className='phoneNumber'>+1 323-450-7551</a>
                         </Button>
