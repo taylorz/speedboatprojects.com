@@ -36,7 +36,15 @@ const Nav = ({ onClick }) => {
     
 
     return (
-    <MaxWidthWrapper>    
+    <MaxWidthWrapper>  
+        <ReactTypeformEmbeded
+                        popup
+                        autoOpen={false}
+                        url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
+                        ref={tf => {
+                            typeformEmbed.current = tf;
+                        }}
+                    />  
         <Grid container className="nav-container">
             <Grid container className="header" xs={12} direction="row">
                 <Grid item xs={12} lg={6}>
@@ -45,14 +53,6 @@ const Nav = ({ onClick }) => {
                     </Button>   
                 </Grid>
                 <Grid item xs={12} lg={2}>
-                    <ReactTypeformEmbeded
-                        popup
-                        autoOpen={false}
-                        url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
-                        ref={tf => {
-                            typeformEmbed.current = tf;
-                        }}
-                    />
                     <Button disableRipple onClick={openForm} className="header message" > <span>MSG US</span></Button>                 
                 </Grid>
                 <Grid item xs={12} lg={3}>
@@ -64,27 +64,19 @@ const Nav = ({ onClick }) => {
                 </Grid>
             </Grid> 
             <Grid container className="footer" xs={12} direction="row">
-                    <Grid item xs={12} lg={4}>
-                        <Button disableRipple className='footer item'>
-                            <a href= 'mailto: info@speedboatprojects.com' target="_blank"> info@speedboatprojects.com </a>
-                        </Button>
+                    <Grid item xs={12} lg={4} className="mail">
+                            <a href= 'mailto: info@speedboatprojects.com' className='mail' target="_blank"> info@speedboatprojects.com </a>
                     </Grid>
-                    <Grid item xs={12} lg={2}>
-                        <Button disableRipple className='footer item'>
-                            <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' target="_blank"> instagram </a>
-                        </Button>
+                    <Grid item xs={12} lg={2} className="instagram">
+                        <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' target="_blank"> instagram </a>
                     </Grid>
-                    <Grid item xs={12} lg={2}>
-                        <Button disableRipple className = 'footer item'> 
+                    <Grid item xs={12} lg={2} className="number">       
                             <a href="tel:+1 323-450-7551" className='phoneNumber'>+1 323-450-7551</a>
-                        </Button>
                     </Grid>
-                    <Grid item xs={12}  lg={3}>
-                        <Button disableRipple className='footer item'>
+                    <Grid item xs={12}  lg={3} className="location">
                             <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
                             <span className='and'>& </span>
-                            <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>
-                        </Button>                
+                            <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>        
                     </Grid>
             </Grid>
         </Grid>
