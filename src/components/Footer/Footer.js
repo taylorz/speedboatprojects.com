@@ -11,16 +11,16 @@ const Footer = () => {
 
     const SPACING = 3;
 
-    function nameList(names) {
-        const listItems = names.map((name) =>
-          <li>
-            {name}
-          </li>
-        );
-        return (
-          <ul>{listItems}</ul>
-        );
-      }
+    // function nameList(names) {
+    //     const listItems = names.map((name) =>
+    //       <li>
+    //         {name}
+    //       </li>
+    //     );
+    //     return (
+    //       <ul>{listItems}</ul>
+    //     );
+    //   }
 
     return (
         <MaxWidthWrapper>

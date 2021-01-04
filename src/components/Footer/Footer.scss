@@ -10,7 +10,6 @@
     font-weight: $fontWeight400;
     padding: $margin;
     padding-bottom: 2vh;
-    background-color: green;
     .title {
         font-weight: $fontWeight500 !important;
     }
@@ -20,12 +19,12 @@
         padding-left: $mobileMargin;
     }
     .footer-company {
+        padding-left: 0;
         .title {
             padding-top: 0px !important;
             padding-bottom: 15px !important;
         }
         .speedboat {
-           
         }
         .items {
             
