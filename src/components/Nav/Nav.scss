@@ -93,17 +93,34 @@
             font-size: $fontSizeSmall;
             font-family: $primaryFont;
         }
-        .mail {
-
+        .mail:hover {
+            background-color: transparent;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
         }
         .instagram {
-            padding-left: $spacing-gap/2 - 1;
+            padding-left: $spacing-gap/2 + 2;
+        }
+        .instagram:hover {
+            background-color: blue;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
         }
         .number {
             padding-left: $spacing-gap;
         }
+        .number:hover {
+            background-color: transparent;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+        }
         .location{
             padding-left: $spacing-gap * 2 - 3;
+        }
+        .location:hover {
+            background-color: transparent;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
         }
 
         .and {

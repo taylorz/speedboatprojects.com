@@ -79,11 +79,11 @@ const Nav = ({ onClick }) => {
                     <Grid item xs={12} lg={4} className="mail">
                         <a href= 'mailto: info@speedboatprojects.com' target="_blank"> info@speedboatprojects.com </a>
                     </Grid>
-                    <Grid item xs={12} lg={2} className="instagram">
-                        <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' target="_blank"> instagram </a>
+                    <Grid item xs={12} lg={2} className="instagram"> 
+                        <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank"> instagram </a>
                     </Grid>
                     <Grid item xs={12} lg={2} className="number">       
-                        <a href="tel:+1 323-450-7551" className='phoneNumber'>+1 323-450-7551</a>
+                        <a href="tel:+1 323-450-7551" >+1 323-450-7551</a>
                     </Grid>
                     <Grid item xs={12}  lg={3} className="location">
                         <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
