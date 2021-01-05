@@ -9,7 +9,7 @@ const WorkSection = ({ workType }) => (
         {workType.map((band) => 
             <>
                 <ImageBlock
-                img1={band.images[0]}
+                img1={band.image}
                 />
                 {band.video &&
                     <VideoBlock url={band.video}/>

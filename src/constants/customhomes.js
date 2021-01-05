@@ -9,13 +9,22 @@ import compostPark1 from '../assets/images/12_Compost_NYC.png'
 
 const CUSTOMHOMES = [
     {
-        images: [hudsonRiver1, compostPark1],
+        image: hudsonRiver1
     },
     {
-        images: [wallSection, hudsonPlan], 
+        image: compostPark1
     },
     {
-        images: [hudsonPlan2, hudsonSection], 
+        image: wallSection   
+    },
+    {
+        image: hudsonPlan
+    },
+    {
+        image: hudsonPlan2 
+    }, 
+    {
+        image: hudsonSection
     }
 ]
 

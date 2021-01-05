@@ -4,8 +4,10 @@ import vid from '../assets/videos/20200809_02.mp4'
 
 const MULTIFAMILY = [
     {
-        images: [everyTableLA, hudsonRiver2],
-        video: vid
+        image: everyTableLA,
+    },
+    {
+        image: hudsonRiver2,
     }
 ]
 
