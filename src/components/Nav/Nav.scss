@@ -1,44 +1,206 @@
 @import "../../styles/styles.scss";
 
+@mixin mobile {
+    @media (max-width: 899px) { @content; }
+}
+
+@mixin tab {
+    @media (max-width: 1280px) { @content; }
+}
+
 .nav-container {
-    font-family: $primaryFont;
-    font-size: $fontSizeStatement;
-    line-height: $lineHeightStatement;
-    text-transform: uppercase;
-    padding-top: $margin;
-    z-index: $zIndex2;
-    position: fixed;
-    pointer-events: none;
-    padding: $margin;
-    @include breakpoint(xs) {
-        font-size: $fontSizeMobile;
-        line-height: $lineHeightMobile;
-        padding: $mobileMargin;
+    @include mobile { 
+        padding-left: $mobileMargin;
     }
-    .nav-inner {
-        .nav-items {
-            pointer-events: auto;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                li {
-                    .page-link {
-                        color: $acid;
-                        &:hover {
-                            color: $goldenHour;
-                        }
-                    }
-                }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        padding-top: 0.5em;
+        color: $acid;
+        z-index: $zIndex1;
+        text-transform: uppercase;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-left: $margin;
+        padding-right: $margin;
+    }
+    .fixed-header{
+        
+        @include mobile { 
+            font-size: $fontSizeMobile;
+            margin-left: -$buffer;
+        }
+        .speedboat {
+            .speedboat-btn:hover {
+                animation: .8s jump ease infinite alternate;
             }
-        }//nav-items
-        .nav-cta {
+        }
+        span {
+            color: $acid;
+            line-height: $fontSize;
+            font-size: $fontSize;
+            font-family: $primaryFont;
             pointer-events: auto;
-            .cta-wrapper {
-                img {
-                    width: $fontSizeHero;
-                }
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
+        }
+        .message {
+            padding-left: $spacing-gap;
+            color: $acid;
+            .message-span:hover{
+                animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            }
+        }
+        .shop {
+            padding-left: $spacing-gap;
+            .shop-span {
+                color: $acid;
+                animation: changeColor step-end infinite;
+                transition:transform 2s ease-in 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-duration: 5s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: ease-in-out; 
+            }
+            .shop-span:hover {
+                animation: .8s jump ease infinite alternate, changeColor step-end infinite;
             }
         }
     }
+    .fixed-footer{
+        bottom: $paddingBottom;
+        font-family: $primaryFont;
+        font-size: $fontSizeFooter;
+        text-align: left;
+        font-weight: normal; 
+        text-transform: lowercase;
+        pointer-events: auto;
+        color: $acid;
+        background-color: transparent;
+        @include mobile { 
+            font-size: $fontSizeSmall;
+            font-family: $primaryFont;
+        }
+        .mail:hover {
+            background-color: transparent;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+        }
+        .instagram {
+            padding-left: $spacing-gap/2 + 2;
+        }
+        .instagram:hover {
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+        }
+        .number {
+            padding-left: $spacing-gap;
+        }
+        .number:hover {
+            background-color: transparent;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+        }
+        .location{
+            padding-left: $spacing-gap * 2 - 3;
+        }
+        .location:hover {
+            background-color: transparent;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+        }
+
+        .and {
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation: changeColor step-end infinite;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
+        }
+        a:link {
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation: changeColor step-end infinite;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
+        }
+        a:hover {
+            background-color: transparent;
+            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+        }
+    }    
 }
+
+@-webkit-keyframes changeColor {
+    0% {
+        color: $acid
+    }
+    25% {
+        color: $babyBlue
+    }
+    50% {
+        color: $seaFoam
+    }
+    75% {
+        color:$goldenHour
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: $acid
+    }
+    25% {
+        color: $babyBlue
+    }
+    50% {
+        color: $seaFoam
+    }
+    75% {
+        color:$goldenHour
+    }
+}
+@-webkit-keyframes jump {
+    0% {
+      transform: scale(1);
+     
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+
+@keyframes jump {
+    0% {
+      transform: scale(1);
+     
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }

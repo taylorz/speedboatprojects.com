@@ -2,43 +2,97 @@
 
 .ribbon-container {
     margin: $buffer*2 0 0 0;
-    padding: $buffer*4 0;
+    padding: $buffer*2 0;
     color: $fontColorLightest;
     overflow: hidden;
+    color: $seaFoam;
+    //border-top: 5px solid black;
+    //border-bottom: 5px solid black;
+    font-family: $primaryFont;
     .wrapper-slide {
         display: flex;
         align-items: center;
         span {
+            animation: changeColor step-end infinite;
+            transition:transform 2s ease-in 2s;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation: changeColor step-end infinite;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out; 
             margin-right: $margin*2;
             &.slide-main-title {
-                font-size: $fontSizeStatement;
+                font-size: 36px;
                 line-height: $lineHeightStatement;
+                white-space: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
+                
                 @include breakpoint(xs) {
                     font-size: $fontSizeMobile;
                     line-height: $lineHeightMobile;
                     white-space: nowrap;
+                    overflow-x: auto;
+                    overflow-y: hidden;
                 }
             }
             &.slide-secondary-title {
-                font-size: $fontSize;
+                font-size: 24px;
+                white-space: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
                 @include breakpoint(xs) {
                     font-size: $fontSizeSmall;
                     white-space: nowrap;
+                    overflow-x: auto;
+                    overflow-y: hidden;
                 }
             }
         }
     }
     &.multi-family {
-        background: $seaFoam;
+        background: transparent;
     }
     &.custom-homes {
-        background: $babyBlue;
+        background: transparent;
     }
     &.kitchens {
-        background: $goldenHour;
+        background: transparent;
     }
     &.public-urban {
-        background: white;
-        color: $fontColorDark;
+        background: transparent;
+    }
+}
+
+
+@-webkit-keyframes changeColor {
+    0% {
+        color: $acid
+    }
+    25% {
+        color: $babyBlue
+    }
+    50% {
+        color: $seaFoam
+    }
+    75% {
+        color:$goldenHour
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: $acid
+    }
+    25% {
+        color: $babyBlue
+    }
+    50% {
+        color: $seaFoam
+    }
+    75% {
+        color:$goldenHour
     }
 }

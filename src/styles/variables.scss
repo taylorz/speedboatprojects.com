@@ -1,23 +1,34 @@
 $buffer:                             5px;
 $margin:                             $buffer*12;
 $mobileMargin:                       $buffer*6;
+$paddingTop:                         15px;  
+$paddingBottom:                      15px;  
+$spacing:                            3; //24px (3 * 8px)
+$spacing-gap:                        10px;                            
 
 $primaryFont:                        'Prophet Bold', Helvetica, sans-serif;
 $secondaryFont:                      'Work Sans', Helvetica, sans-serif;
+
+$fontWeight300:                     300; 
+$fontWeight400:                     400; 
+$fontWeight500:                     500;
+$fontWeight600:                     600; 
 
 $fontColorDark:                     #000000;
 $fontColorLight:                    #aaaaaa;
 $fontColorLightest:                 #ffffff;
 
-$bgColor:                           #f3f0ec;
+$bgColor:                           #f1f2f0;
 
 $goldenHour:                        #DEB83B;
 $acid:                              #FC4C02;
 $babyBlue:                          #B9D9EB;
 $seaFoam:                           #00C19F;
+$green:                             #17B78D;
 
 $fontSizeSmall:                      14px;
 $fontSizeMobile:                     22px;
+$fontSizeFooter:                     32px;
 $fontSize:                           36px;
 $fontSizeStatement:                  48px;
 $fontSizeHero:                       96px;

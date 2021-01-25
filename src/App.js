@@ -26,7 +26,7 @@ export default () => {
                 key={key}
                 appear={true}
                 classNames="my-node"
-                timeout={{enter: 2500, exit: 2500}}
+                timeout={{enter: 500, exit: 500}}
                 >
                 <Switch location={location}>
                   {routes.map(({ path, Component }) => (

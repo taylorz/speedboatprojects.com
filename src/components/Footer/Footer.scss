@@ -1,65 +1,57 @@
 @import "../../styles/styles.scss";
 
+@mixin mobile {
+    @media (max-width: 899px) { @content; }
+}
+
 .footer-container {
-    font-size: $fontSize;
-    line-height: $lineHeight;
+    font-size: $fontSizeFooter;
+    font-family: $secondaryFont;
+    font-weight: $fontWeight400;
+    line-height: 1.6;
     padding: $margin;
-    @include breakpoint(xs) {
-        padding: $mobileMargin;
-        font-size: $fontSizeMobile;
-        line-height: $lineHeightMobile;
+    padding-bottom: 2vh;
+    .title {
+        font-weight: $fontWeight500 !important;
     }
-    .footer-description {
-        margin-bottom: $margin;
-        .description-text {}
+    @include mobile { 
+        font-size: $fontSizeSmall;
+        font-family: $secondaryFont;
+        padding-left: $mobileMargin;
     }
-    .footer-details {
-        .footer-item {
-            font-family: $primaryFont;
-            font-size: $fontSizeStatement;
-            line-height: $lineHeightStatement;
-            position: relative;
-            @include breakpoint(xs) {
-                font-size: $fontSizeMobile;
-                line-height: $lineHeightMobile;
-            }
-            .item-header {
-                text-transform: uppercase;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                width: $margin*2;
-                .header-text {
-                    height: 100%;
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    span {
-                        -webkit-transform: rotate(-90deg);
-                        display: block;
-                        white-space: nowrap;
-                        text-align: right;
-                        position: absolute;
-                        top: 50%;
-                    }
-                }
-            }
-            ul {
-                padding: $margin*2;
-                font-size: $fontSize;
-                line-height: $lineHeight;
-                font-family: $secondaryFont;
-                list-style-type: none;
-                margin: 0;
-                @include breakpoint(xs) {
-                    padding: 0;
-                    padding-left: $margin;
-                    font-size: $fontSizeSmall;
-                    line-height: $lineHeightSmall;
-                }
-                li {}
-            }
+    .footer-company {
+        padding-left: 0;
+        .title {
+            padding-top: 0px !important;
+            padding-bottom: 15px !important;
+        }
+        .speedboat {
+        }
+        .items {
+            
         }
     }
-}//footer-container
+    .footer-services {
+        .title  {
+            padding-top: 15px !important;
+            padding-bottom: 1px !important;
+        }
+        .text {
+          
+        }
+        .items {
+           
+        }
+    }
+    .footer-partnership {
+        .title {
+            font-weight: $fontWeight500 !important;
+            padding-top: 15px;
+            padding-bottom: 1px !important;
+        }
+        .incorporated {
+            padding-top: 15px !important;
+            padding-bottom: 1px !important;
+        }
+    }
+}

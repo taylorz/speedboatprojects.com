@@ -1,6 +1,11 @@
 @import "../../styles/styles.scss";
 
+mark{
+  background-color: white;
+}
+
 .image-block-container {
+    padding-top: $paddingTop;
     &:nth-child(even) {
         .image-block-outer {
             .outer-project-details {
@@ -9,19 +14,17 @@
                 @include breakpoint(xs) {
                     right: -$mobileMargin;
                 }
-                .details-text {
-                    span {
-                        -webkit-transform: rotate(90deg);
-                    }
-                }
             }
         }
     }
     .image-block-outer {
-        margin: $buffer*2 $margin 0 $margin;
+        margin-top: $buffer;
+        margin-right: $margin; 
+        margin-bottom: $buffer;
+        margin-left: $margin;
         position: relative;
         @include breakpoint(xs) {
-            margin: $buffer*2 $mobileMargin 0 $mobileMargin;
+            margin: $buffer $mobileMargin 0 $mobileMargin;
         }
         .outer-project-details {
             @include breakpoint(md) {
@@ -42,11 +45,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                span {
-                    -webkit-transform: rotate(-90deg);
-                    display: block;
-                    white-space: nowrap;
-                }
             }
         }
         .image-block-inner {
@@ -55,37 +53,9 @@
                 img {
                     width: 100%;
                     min-height: 100%;
-                }
-                &:hover {
-                    .caption {
-                        opacity: 1;
-                        @include transition;
-                    }
-                }
-                .caption {
-                    position: absolute;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    opacity: 0;
-                    @include transition;
-                    p {
-                        background: white;
-                        font-family: $secondaryFont;
-                        font-size: $fontSizeSmall;
-                        line-height: $lineHeightSmall;
-                        text-align: center;
-                        @include breakpoint(xs) {
-                            font-size: $fontSizeSmall;
-                            line-height: $lineHeightSmall;
-                        }
-                    }
+                    background-color: grey;
                 }
             }
         }
     }
-}//image-block-container
+}

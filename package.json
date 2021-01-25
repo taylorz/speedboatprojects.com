@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.0",
+    "@typeform/embed": "^0.25.1",
     "react": "^16.10.2",
     "react-dom": "^16.13.1",
+    "react-lazy-load-image-component": "^1.5.1",
     "react-player": "^2.6.2",
     "react-responsive-carousel": "^3.2.4",
     "react-router": "^5.1.2",
@@ -14,6 +16,7 @@
     "react-scroll": "^1.8.1",
     "react-slideshow-image": "^1.4.2",
     "react-ticker": "^1.2.2",
+    "typeform": "^1.0.1",
     "typescript": "^3.6.3"
   },
   "scripts": {
