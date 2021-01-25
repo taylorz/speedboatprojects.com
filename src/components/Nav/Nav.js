@@ -61,7 +61,7 @@ const Nav = ({ onClick }) => {
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
                     }}>
-                    <span className='message-span'>MSG US</span>
+                    <span className='message-span'>ABOUT US</span>
                     </Button>                 
                 </Grid>
                 <Grid item xs={12} lg={4} className="shop">
@@ -69,7 +69,8 @@ const Nav = ({ onClick }) => {
                         backgroundColor: 'transparent',
                     }}>
                     <a className='shop-span' href="https://workshop.speedboatprojects.com/" target="_blank">
-                        SHOP {shopTextArray[shopIndex]}
+                        {/* SHOP {shopTextArray[shopIndex]} */}
+                        MSG US
                     </a>
                     </Button>
                 </Grid>

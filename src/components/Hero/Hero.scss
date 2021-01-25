@@ -1,7 +1,7 @@
 @import "../../styles/styles.scss";
 
 .hero-container {
-    background: #eaeaea;
+    background: $backgroundTest; //#eaeaea;
     position: relative;
     height: 60vh;
     overflow: hidden;
