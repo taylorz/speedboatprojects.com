@@ -62,6 +62,9 @@
             @include mobile { 
                 padding-left: 0;
             }
+            @include tab { 
+                padding-left: 0;
+            }
         }
         .shop {
             padding-left: $spacing-gap;
@@ -82,7 +85,11 @@
                 animation: .8s jump ease infinite alternate, changeColor step-end infinite;
             }
             @include mobile { 
-                padding-left: -5 !important;
+                padding-left: 0;
+                background-color: red;
+            }
+            @include tab { 
+                padding-left: 0 !important;
                 background-color: red;
             }
         }
@@ -111,6 +118,9 @@
             @include mobile { 
                 padding-left: 0;
             }
+            @include tab { 
+                padding-left: 0;
+            }
         }
         .instagram:hover {
             animation: .8s jump ease infinite alternate, changeColor step-end infinite;
@@ -119,6 +129,9 @@
         .number {
             padding-left: $spacing-gap;
             @include mobile { 
+                padding-left: 0;
+            }
+            @include tab { 
                 padding-left: 0;
             }
         }
@@ -130,6 +143,9 @@
         .location{
             padding-left: $spacing-gap * 2 - 3;
             @include mobile { 
+                padding-left: 0;
+            }
+            @include tab { 
                 padding-left: 0;
             }
         }

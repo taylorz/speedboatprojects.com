@@ -12,6 +12,7 @@
     font-weight: $fontWeight400;
     line-height: 1.6;
     padding: $margin;
+    padding-bottom: 1vh;
     @include mobile { 
         font-size: $fontSizeSmall;
         font-family: $secondaryFont;
@@ -44,8 +45,6 @@
         }
     }
     .footer-partnership {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
         .title  {
             font-weight: $fontWeight500;
         }
@@ -53,11 +52,9 @@
         }
         .items {
         }
+        .incorporated {
+            font-weight: $fontWeight500;
+        } 
     }
-    .footer-incorporated {
-        font-weight: $fontWeight500;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        padding-left: $buffer;
-    } 
+    
 }

@@ -66,7 +66,6 @@ const Nav = ({ onClick }) => {
                 </Grid>
                 <Grid item xs={12} lg={4} className="shop">
                     <Button disableRipple style={{
-                        paddingLeft: 5,
                         backgroundColor: 'transparent',
                     }}>
                     <a className='shop-span' href="https://workshop.speedboatprojects.com/" target="_blank">
