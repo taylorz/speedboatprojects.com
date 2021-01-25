@@ -1,57 +1,63 @@
 @import "../../styles/styles.scss";
 
+
 @mixin mobile {
     @media (max-width: 899px) { @content; }
-}
+}    
+
 
 .footer-container {
     font-size: $fontSizeFooter;
-    font-family: $secondaryFont;
+    font-family: $footerFont;
     font-weight: $fontWeight400;
     line-height: 1.6;
     padding: $margin;
-    padding-bottom: 2vh;
-    .title {
-        font-weight: $fontWeight500 !important;
-    }
     @include mobile { 
         font-size: $fontSizeSmall;
         font-family: $secondaryFont;
         padding-left: $mobileMargin;
     }
+    .title {
+        font-weight: $fontWeight500;
+    }
     .footer-company {
         padding-left: 0;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
         .title {
-            padding-top: 0px !important;
-            padding-bottom: 15px !important;
+            font-weight: $fontWeight500;
         }
         .speedboat {
         }
         .items {
-            
         }
     }
     .footer-services {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
         .title  {
-            padding-top: 15px !important;
-            padding-bottom: 1px !important;
+            font-weight: $fontWeight500;
         }
         .text {
-          
         }
         .items {
-           
         }
     }
     .footer-partnership {
-        .title {
-            font-weight: $fontWeight500 !important;
-            padding-top: 15px;
-            padding-bottom: 1px !important;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        .title  {
+            font-weight: $fontWeight500;
         }
-        .incorporated {
-            padding-top: 15px !important;
-            padding-bottom: 1px !important;
+        .text {
+        }
+        .items {
         }
     }
+    .footer-incorporated {
+        font-weight: $fontWeight500;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: $buffer;
+    } 
 }

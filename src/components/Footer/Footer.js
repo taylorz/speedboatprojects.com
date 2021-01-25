@@ -1,31 +1,21 @@
-import React from 'react'
-import './Footer.scss'
-import Grid from '@material-ui/core/Grid'
-import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import Grid from '@material-ui/core/Grid';
+import React from 'react';
 // import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import FOOTER_CONTENT from '../../constants/footerContants'
+import FOOTER_CONTENT from '../../constants/footerContants';
+import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper';
+import './Footer.scss';
 
 const Footer = () => {
 
     const {Description, Divisions, People} = FOOTER_CONTENT;
 
     const SPACING = 3;
-
-    // function nameList(names) {
-    //     const listItems = names.map((name) =>
-    //       <li>
-    //         {name}
-    //       </li>
-    //     );
-    //     return (
-    //       <ul>{listItems}</ul>
-    //     );
-    //   }
+    const VERT_SPACING = 400; //px
 
     return (
         <MaxWidthWrapper>
         <Grid container className="footer-container" justify-content='space-evenly' spacing = {12}>
-            <Grid container className="footer-company" justify-content='space-evenly' spacing={SPACING} >
+            <Grid container className="footer-company" justify-content='space-evenly' spacing={SPACING}>
                 <Grid item xs={12}>
                     <div className = 'footer-company title'>
                         COMPANY
@@ -87,9 +77,11 @@ const Footer = () => {
                         ))}
                     </Grid>
                 </Grid>
-                <Grid item xs={12} className='footer-partnership incorporated'>
-                    © SPEEDBOAT INC., 2021. All rights reserved.
-                </Grid>
+            </Grid>
+            <Grid container className="footer-incorporated" justify-content='space-evenly'spacing={SPACING} >  
+                <Grid item xs={12}>
+                    <span>© SPEEDBOAT INC., 2021. All rights reserved.</span>
+                </Grid>   
             </Grid>
         </Grid>
     </Grid>

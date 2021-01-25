@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "Soehne";
+    src: url("./fonts/soehne-web-buch.woff") format("woff"),
+    url("./fonts/soehne-web-buch.woff2") format("woff2"),
+}
+
 $buffer:                             5px;
 $margin:                             $buffer*12;
-$mobileMargin:                       $buffer*6;
+$mobileMargin:                       $buffer*12;
 $paddingTop:                         15px;  
 $paddingBottom:                      15px;  
 $spacing:                            3; //24px (3 * 8px)
@@ -8,6 +14,7 @@ $spacing-gap:                        10px;
 
 $primaryFont:                        'Prophet Bold', Helvetica, sans-serif;
 $secondaryFont:                      'Work Sans', Helvetica, sans-serif;
+$footerFont:                         'Soehne';
 
 $fontWeight300:                     300; 
 $fontWeight400:                     400; 

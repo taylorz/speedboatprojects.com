@@ -23,12 +23,13 @@
         overflow-y: hidden;
         padding-left: $margin;
         padding-right: $margin;
+        @include mobile { 
+            padding-left: 0;
+        }
     }
     .fixed-header{
-        
         @include mobile { 
             font-size: $fontSizeMobile;
-            margin-left: -$buffer;
         }
         .speedboat {
             .speedboat-btn:hover {
@@ -58,6 +59,9 @@
             .message-span:hover{
                 animation: .8s jump ease infinite alternate, changeColor step-end infinite;
             }
+            @include mobile { 
+                padding-left: 0;
+            }
         }
         .shop {
             padding-left: $spacing-gap;
@@ -76,6 +80,10 @@
             }
             .shop-span:hover {
                 animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            }
+            @include mobile { 
+                padding-left: -5 !important;
+                background-color: red;
             }
         }
     }
@@ -100,6 +108,9 @@
         }
         .instagram {
             padding-left: $spacing-gap/2 + 2;
+            @include mobile { 
+                padding-left: 0;
+            }
         }
         .instagram:hover {
             animation: .8s jump ease infinite alternate, changeColor step-end infinite;
@@ -107,6 +118,9 @@
         }
         .number {
             padding-left: $spacing-gap;
+            @include mobile { 
+                padding-left: 0;
+            }
         }
         .number:hover {
             background-color: transparent;
@@ -115,6 +129,9 @@
         }
         .location{
             padding-left: $spacing-gap * 2 - 3;
+            @include mobile { 
+                padding-left: 0;
+            }
         }
         .location:hover {
             background-color: transparent;
