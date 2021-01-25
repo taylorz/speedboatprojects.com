@@ -1,8 +1,8 @@
-import React, { component, useEffect } from 'react'
 import Grid from '@material-ui/core/Grid'
-import './PageContainer.scss'
+import React, { useEffect } from 'react'
+import { Element } from 'react-scroll'
 import Footer from '../Footer/Footer'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import './PageContainer.scss'
 
 const PageContainer = ({ className, children }) => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const PageContainer = ({ className, children }) => {
           {children}
       </Grid>
       <Footer/>
-      <Element name="test1"/>
+      <Element name="footer"/>
     </Grid>
     </>
   )

@@ -1,11 +1,11 @@
-import React, { useRef, useState, useEffect} from 'react'
-// import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
-import './Nav.scss'
+import { Button } from "@material-ui/core"
 import Grid from '@material-ui/core/Grid'
+import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-scroll'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
-import { Button } from "@material-ui/core";
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
+import './Nav.scss'
 
 const Nav = ({ onClick }) => {
 
@@ -48,11 +48,11 @@ const Nav = ({ onClick }) => {
         <Grid container className="nav-container">
             <Grid container className="fixed-header" xs={12} direction="row">
                 <Grid item xs={12} lg={6} className="speedboat">
-                    <Button disableRipples style={{
+                    <Button disableRipple style={{
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
                     }} className= 'speedboat-btn'>
-                        <Link to="test1" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
+                        <Link to="footer" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
                     </Button>   
                    
                 </Grid>
