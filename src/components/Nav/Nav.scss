@@ -102,7 +102,6 @@
             padding-left: $spacing-gap/2 + 2;
         }
         .instagram:hover {
-            background-color: blue;
             animation: .8s jump ease infinite alternate, changeColor step-end infinite;
             -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
         }
