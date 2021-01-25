@@ -14,7 +14,7 @@
     padding: $margin;
     padding-bottom: 1vh;
     @include mobile { 
-        font-size: $fontSizeSmall;
+        font-size: $fontSizeMobile;
         font-family: $secondaryFont;
         padding-left: $mobileMargin;
     }
