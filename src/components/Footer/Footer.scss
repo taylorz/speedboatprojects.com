@@ -22,10 +22,10 @@
         font-weight: $fontWeight500;
     }
     .footer-company {
-        background-color: red;
+        background-color: transparent;
         padding-left: 0;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        padding-top: $footerPaddingTop;
+        padding-bottom: $footerPaddingBottom;
         .title {
             font-weight: $fontWeight500;
         }
@@ -35,9 +35,9 @@
         }
     }
     .footer-services {
-        background-color:green;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        background-color:  transparent;
+        padding-top: $footerPaddingTop;
+        padding-bottom: $footerPaddingBottom;
         .title  {
             font-weight: $fontWeight500;
         }
@@ -48,6 +48,8 @@
     }
     .footer-partnership {
         background-color: transparent;
+        padding-top: $footerPaddingTop;
+        padding-bottom: $footerPaddingTop;
         .title  {
             font-weight: $fontWeight500;
         }

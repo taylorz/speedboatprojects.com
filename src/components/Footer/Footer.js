@@ -13,17 +13,16 @@ const Footer = () => {
 
     return (
         <MaxWidthWrapper>
-        <Grid container className="footer-container" spacing = {12}>
-            <Grid item xs={12} p={100}>
-                <Grid container className="footer-company" justify-content='space-evenly' spacing={SPACING}>
+        <div className="footer-container">
+            <Grid container className="footer-company" justify-content='space-evenly' spacing={SPACING}>
                 <Grid item xs={12}>
-                    <div className = 'footer-company title'>
+                    <div className = 'title'>
                         COMPANY
                     </div>
-                    <div className = 'footer-company speedboat'>
+                    <div className = 'speedboat'>
                         <p>{Description.para1}</p>
                     </div>
-                    <Grid container justify-content='space-evenly'spacing={SPACING} className='footer-company items'>
+                    <Grid container justify-content='space-evenly'spacing={SPACING} className='items'>
                         <Grid item xs={12}  lg={6}> 
                             <p>{Description.para2} </p>
                         </Grid>
@@ -32,50 +31,45 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                </Grid>
             </Grid>
-            <Grid item xs={12}>
             <Grid container className="footer-services" justify-content='space-evenly'spacing={SPACING} >
                 <Grid item xs={12}>
-                <div className='services title'>
+                <div className='title'>
                         <p> SERVICES</p>
                     </div>
-                    <div className='services text'>
+                    <div className='text'>
                         <p>{Description.para4}</p>
                     </div>
                     <Grid container justify-content='space-evenly' spacing={SPACING} >   
                         {Divisions.map(({text }) => (
-                            <Grid item xs={12} lg={4} className="services items">
+                            <Grid item xs={12} lg={4} className="items">
                                 <p> {text} </p>
                             </Grid>
                         ))} 
-                     </Grid>
-                </Grid> 
+                     </Grid> 
+                </Grid>
             </Grid>
-            </Grid>
-            <Grid item xs={12}>
             <Grid container className="footer-partnership" justify-content='space-evenly'spacing={SPACING} >   
                 <Grid item xs={12}>
-                    <div className = 'footer-partnership title'>
+                    <div className = 'title'>
                         <p>{People.title}</p>
                     </div>
-                    <div className = 'footer-partnership text'>
+                    <div className = 'text'>
                         <p>{People.text}</p>
                     </div>
                     <Grid container justify-content='space-evenly' spacing={0} >
                         {People.peoples.map(({text }) => (
-                            <Grid item xs={12} lg={8} className = 'footer-partnership people'>
+                            <Grid item xs={12} lg={8} className = 'people'>
                                 <p> {text}</p>
                             </Grid>
                         ))}
                     </Grid>
-                <Grid item xs={12} className='footer-partnership incorporated'>
+                <Grid item xs={12} className='incorporated'>
                     © SPEEDBOAT INC., 2021. All rights reserved.
                 </Grid>
             </Grid>
-            </Grid>
         </Grid>
-    </Grid>
+    </div>
     </MaxWidthWrapper>
     )
 };
