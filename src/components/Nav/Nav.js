@@ -52,27 +52,25 @@ const Nav = ({ onClick }) => {
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
                     }} className= 'speedboat-btn'>
-                        <Link to="footer" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
+                        <Link to="top" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
                     </Button>   
                    
                 </Grid>
                 <Grid item xs={12} lg={2} className="message">
+                <Button disableRipple style={{
+                        paddingLeft: 0,
+                        backgroundColor: 'transparent',
+                    }} className= 'message-span'>
+                        <Link to="footer" spy={true} smooth={true} duration={1000}>  <span>ABOUT US</span> </Link>
+                    </Button>                  
+                </Grid>
+                <Grid item xs={12} lg={4} className="shop">
                     <Button disableRipple onClick={openForm} style={{
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
                     }}>
-                    <span className='message-span'>ABOUT US</span>
-                    </Button>                 
-                </Grid>
-                <Grid item xs={12} lg={4} className="shop">
-                    <Button disableRipple style={{
-                        backgroundColor: 'transparent',
-                    }}>
-                    <a className='shop-span' href="https://workshop.speedboatprojects.com/" target="_blank">
-                        {/* SHOP {shopTextArray[shopIndex]} */}
-                        MSG US
-                    </a>
-                    </Button>
+                    <span className='shop-span'>MSG US</span>
+                    </Button> 
                 </Grid>
             </Grid> 
             <Grid container className="fixed-footer" xs={12} direction="row">

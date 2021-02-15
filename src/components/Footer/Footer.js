@@ -13,8 +13,9 @@ const Footer = () => {
 
     return (
         <MaxWidthWrapper>
-        <Grid container className="footer-container" justify-content='space-evenly' spacing = {12}>
-            <Grid container className="footer-company" justify-content='space-evenly' spacing={SPACING}>
+        <Grid container className="footer-container" spacing = {12}>
+            <Grid item xs={12} p={100}>
+                <Grid container className="footer-company" justify-content='space-evenly' spacing={SPACING}>
                 <Grid item xs={12}>
                     <div className = 'footer-company title'>
                         COMPANY
@@ -31,7 +32,9 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Grid>
+                </Grid>
             </Grid>
+            <Grid item xs={12}>
             <Grid container className="footer-services" justify-content='space-evenly'spacing={SPACING} >
                 <Grid item xs={12}>
                 <div className='services title'>
@@ -49,6 +52,8 @@ const Footer = () => {
                      </Grid>
                 </Grid> 
             </Grid>
+            </Grid>
+            <Grid item xs={12}>
             <Grid container className="footer-partnership" justify-content='space-evenly'spacing={SPACING} >   
                 <Grid item xs={12}>
                     <div className = 'footer-partnership title'>
@@ -67,6 +72,7 @@ const Footer = () => {
                 <Grid item xs={12} className='footer-partnership incorporated'>
                     © SPEEDBOAT INC., 2021. All rights reserved.
                 </Grid>
+            </Grid>
             </Grid>
         </Grid>
     </Grid>
