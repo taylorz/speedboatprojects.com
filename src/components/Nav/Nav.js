@@ -51,8 +51,8 @@ const Nav = ({ onClick }) => {
                     <Button disableRipple style={{
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
-                    }} className= 'speedboat-btn'>
-                        <Link to="top" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
+                    }}>
+                        <Link to="top" spy={true} smooth={true} duration={1000}>  <span className= 'speedboat-span'>SPEEDBOAT</span> </Link>
                     </Button>   
                    
                 </Grid>
@@ -60,8 +60,8 @@ const Nav = ({ onClick }) => {
                 <Button disableRipple style={{
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
-                    }} className= 'message-span'>
-                        <Link to="footer" spy={true} smooth={true} duration={1000}>  <span>ABOUT US</span> </Link>
+                    }}>
+                        <Link to="footer" spy={true} smooth={true} duration={1000}>  <span className='message-span'>ABOUT US</span> </Link>
                     </Button>                  
                 </Grid>
                 <Grid item xs={12} lg={4} className="shop">

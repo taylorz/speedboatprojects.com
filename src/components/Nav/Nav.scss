@@ -16,7 +16,7 @@
         width: 100%;
         position: fixed;        
         padding-top: 0.5em;
-        color: $acid;
+        color: black;
         z-index: $zIndex1;
         text-transform: uppercase;
         overflow-x: hidden;
@@ -33,33 +33,63 @@
         }
         .speedboat {
             font-size: $fontSizeStaticHeader;
-            .speedboat-btn:hover {
-                animation: .8s jump ease infinite alternate;
+            // .speedboat-btn:hover {
+            //     animation: .8s jump ease infinite alternate;
+            // }
+            .speedboat-span {
+                color: black;
+                // animation: changeColor step-end infinite;
+                // transition:transform 2s ease-in 2s;
+                // animation-iteration-count: infinite;
+                // animation-direction: alternate;
+                // animation-duration: 5s;
+                // animation-timing-function: ease-in-out;
+                // -webkit-animation-duration: 5s;
+                // -webkit-animation-iteration-count: infinite;
+                // -webkit-animation-direction: alternate;
+                // -webkit-animation-timing-function: ease-in-out; 
+            }
+            .speedboat-span:hover{
+               // animation: changeColor step-end infinite;  //.8s jump ease infinite alternate,
+               color: $acid
             }
         }
         span {
-            color: $acid;
+            color: black;
             line-height: $fontSizeStaticHeader;
             font-size: $fontSizeStaticHeader;
             font-family: $primaryFont;
             pointer-events: auto;
-            animation: changeColor step-end infinite;
-            transition:transform 2s ease-in 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-duration: 5s;
-            animation-timing-function: ease-in-out;
-            -webkit-animation-duration: 5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            -webkit-animation-timing-function: ease-in-out; 
+            // animation: changeColor step-end infinite;
+            // transition:transform 2s ease-in 2s;
+            // animation-iteration-count: infinite;
+            // animation-direction: alternate;
+            // animation-duration: 5s;
+            // animation-timing-function: ease-in-out;
+            // -webkit-animation-duration: 5s;
+            // -webkit-animation-iteration-count: infinite;
+            // -webkit-animation-direction: alternate;
+            // -webkit-animation-timing-function: ease-in-out; 
         }
         .message {
             padding-left: $spacing-gap;
             font-size: $fontSizeStaticHeader;
-            color: $acid;
+            .message-span {
+                color: black;
+                // animation: changeColor step-end infinite;
+                // transition:transform 2s ease-in 2s;
+                // animation-iteration-count: infinite;
+                // animation-direction: alternate;
+                // animation-duration: 5s;
+                // animation-timing-function: ease-in-out;
+                // -webkit-animation-duration: 5s;
+                // -webkit-animation-iteration-count: infinite;
+                // -webkit-animation-direction: alternate;
+                // -webkit-animation-timing-function: ease-in-out; 
+            }
             .message-span:hover{
-                animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+                color: $acid
+                // animation: changeColor step-end infinite;  //.8s jump ease infinite alternate,
             }
             @include mobile { 
                 padding-left: 0;
@@ -72,20 +102,21 @@
             font-size: $fontSizeStaticHeader;
             padding-left: $spacing-gap;
             .shop-span {
-                color: $acid;
-                animation: changeColor step-end infinite;
-                transition:transform 2s ease-in 2s;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                animation-duration: 5s;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-duration: 5s;
-                -webkit-animation-iteration-count: infinite;
-                -webkit-animation-direction: alternate;
-                -webkit-animation-timing-function: ease-in-out; 
+                color: black;
+                // animation: changeColor step-end infinite;
+                // transition:transform 2s ease-in 2s;
+                // animation-iteration-count: infinite;
+                // animation-direction: alternate;
+                // animation-duration: 5s;
+                // animation-timing-function: ease-in-out;
+                // -webkit-animation-duration: 5s;
+                // -webkit-animation-iteration-count: infinite;
+                // -webkit-animation-direction: alternate;
+                // -webkit-animation-timing-function: ease-in-out; 
             }
             .shop-span:hover {
-                animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+                color: $acid
+                // animation: changeColor step-end infinite; //.8s jump ease infinite alternate, 
             }
             @include mobile { 
                 padding-left: 0;
@@ -103,7 +134,7 @@
         font-weight: normal; 
         text-transform: lowercase;
         pointer-events: auto;
-        color: $acid;
+        color: black;
         background-color: transparent;
         @include mobile { 
             font-size: $fontSizeMobile;
@@ -111,8 +142,9 @@
         }
         .mail:hover {
             background-color: transparent;
-            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
-            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            // animation:  changeColor step-end infinite; //.8s jump ease infinite alternate,
+            // -webkit-animation: changeColor step-end infinite; //.8s jump ease infinite alternate,
+            color: $acid
         }
         .instagram {
             padding-left: $spacing-gap/2 + 2;
@@ -124,8 +156,9 @@
             }
         }
         .instagram:hover {
-            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
-            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            // animation: changeColor step-end infinite; //.8s jump ease infinite alternate, 
+            // -webkit-animation: changeColor step-end infinite; //.8s jump ease infinite alternate,
+            color: $acid
         }
         .number {
             padding-left: $spacing-gap;
@@ -138,8 +171,9 @@
         }
         .number:hover {
             background-color: transparent;
-            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
-            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            // animation:  changeColor step-end infinite; //.8s jump ease infinite alternate,
+            // -webkit-animation: changeColor step-end infinite; // .8s jump ease infinite alternate,
+            color: $acid
         }
         .location{
             padding-left: $spacing-gap * 2 - 3;
@@ -152,89 +186,95 @@
         }
         .location:hover {
             background-color: transparent;
-            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
-            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            color: $acid
+            // animation: changeColor step-end infinite; // .8s jump ease infinite alternate,
+            // -webkit-animation:  changeColor step-end infinite; //.8s jump ease infinite alternate,
+           
         }
 
         .and {
-            animation: changeColor step-end infinite;
-            transition:transform 2s ease-in 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-duration: 5s;
-            animation-timing-function: ease-in-out;
-            -webkit-animation: changeColor step-end infinite;
-            -webkit-animation-duration: 5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            -webkit-animation-timing-function: ease-in-out; 
+            // animation: changeColor step-end infinite;
+            // transition:transform 2s ease-in 2s;
+            // animation-iteration-count: infinite;
+            // animation-direction: alternate;
+            // animation-duration: 5s;
+            // animation-timing-function: ease-in-out;
+            // -webkit-animation: changeColor step-end infinite;
+            // -webkit-animation-duration: 5s;
+            // -webkit-animation-iteration-count: infinite;
+            // -webkit-animation-direction: alternate;
+            // -webkit-animation-timing-function: ease-in-out; 
+        }
+        .and:hover {
+            //color: $acid
         }
         a:link {
-            animation: changeColor step-end infinite;
-            transition:transform 2s ease-in 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-duration: 5s;
-            animation-timing-function: ease-in-out;
-            -webkit-animation: changeColor step-end infinite;
-            -webkit-animation-duration: 5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            -webkit-animation-timing-function: ease-in-out; 
+            // animation: changeColor step-end infinite;
+            // transition:transform 2s ease-in 2s;
+            // animation-iteration-count: infinite;
+            // animation-direction: alternate;
+            // animation-duration: 5s;
+            // animation-timing-function: ease-in-out;
+            // -webkit-animation: changeColor step-end infinite;
+            // -webkit-animation-duration: 5s;
+            // -webkit-animation-iteration-count: infinite;
+            // -webkit-animation-direction: alternate;
+            // -webkit-animation-timing-function: ease-in-out; 
         }
         a:hover {
             background-color: transparent;
-            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
-            -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+            //color: $acid
+            // animation: changeColor step-end infinite; // .8s jump ease infinite alternate,
+            // -webkit-animation: changeColor step-end infinite;  //.8s jump ease infinite alternate,
         }
     }    
 }
 
-@-webkit-keyframes changeColor {
-    0% {
-        color: $acid
-    }
-    25% {
-        color: $babyBlue
-    }
-    50% {
-        color: $seaFoam
-    }
-    75% {
-        color:$goldenHour
-    }
-}
+// @-webkit-keyframes changeColor {
+//     0% {
+//         color: $acid
+//     }
+//     25% {
+//         color: $babyBlue
+//     }
+//     50% {
+//         color: $seaFoam
+//     }
+//     75% {
+//         color:$goldenHour
+//     }
+// }
 
-@keyframes changeColor {
-    0% {
-        color: $acid
-    }
-    25% {
-        color: $babyBlue
-    }
-    50% {
-        color: $seaFoam
-    }
-    75% {
-        color:$goldenHour
-    }
-}
-@-webkit-keyframes jump {
-    0% {
-      transform: scale(1);
+// @keyframes changeColor {
+//     0% {
+//         color: $acid
+//     }
+//     25% {
+//         color: $babyBlue
+//     }
+//     50% {
+//         color: $seaFoam
+//     }
+//     75% {
+//         color:$goldenHour
+//     }
+// }
+// @-webkit-keyframes jump {
+//     0% {
+//       transform: scale(1);
      
-    }
-    100% {
-      transform: scale(1.5);
-    }
-  }
+//     }
+//     100% {
+//       transform: scale(1.5);
+//     }
+//   }
 
-@keyframes jump {
-    0% {
-      transform: scale(1);
+// @keyframes jump {
+//     0% {
+//       transform: scale(1);
      
-    }
-    100% {
-      transform: scale(1.5);
-    }
-  }
+//     }
+//     100% {
+//       transform: scale(1.5);
+//     }
+//   }
