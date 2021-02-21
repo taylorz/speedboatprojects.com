@@ -1,5 +1,13 @@
 @import "../../styles/styles.scss";
 
+@mixin mobile {
+    @media (max-width: 899px) { @content; }
+}
+
+@mixin tab {
+    @media (max-width: 1280px) { @content; }
+}
+
 .video-block-container {
     margin-top: $buffer*2;
     padding-top: 0; //$paddingTop;
@@ -8,4 +16,8 @@
     background: $bgColor;
     overflow: hidden;
 
+    @include mobile { 
+        height: 100px !important;
+        width: 100px !important;
+    }
 }

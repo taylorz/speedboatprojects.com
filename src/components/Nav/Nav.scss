@@ -28,6 +28,8 @@
         }
     }
     .fixed-header{
+        background-color: white;
+        padding-bottom: 1vh;
         @include mobile { 
             font-size: $fontSizeMobile;
         }
