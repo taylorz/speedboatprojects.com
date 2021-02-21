@@ -75,18 +75,18 @@ const Nav = ({ onClick }) => {
             </Grid> 
             <Grid container className="fixed-footer" xs={12} direction="row">
                     <Grid item xs={12} lg={4} className="mail">
-                        <a href= 'mailto: info@speedboatprojects.com' target="_blank"> info@speedboatprojects.com </a>
+                        <a href= 'mailto: info@speedboatprojects.com' target="_blank" rel="noopener noreferrer"> info@speedboatprojects.com </a>
                     </Grid>
                     <Grid item xs={12} lg={2} className="instagram"> 
-                        <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank"> instagram </a>
+                        <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank" rel="noopener noreferrer" > instagram </a>
                     </Grid>
                     <Grid item xs={12} lg={2} className="number">       
                         <a href="tel:+1 323-450-7551" >+1 323-450-7551</a>
                     </Grid>
                     <Grid item xs={12}  lg={3} className="location">
-                        <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
+                        <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank" rel="noopener noreferrer" > California </a>
                         <span className='and'>& </span>
-                        <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>        
+                        <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank" rel="noopener noreferrer" > New York</a>        
                 </Grid>
             </Grid>
         </Grid>
