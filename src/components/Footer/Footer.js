@@ -14,8 +14,11 @@ const Footer = () => {
     return (
         <MaxWidthWrapper>
         <div className="footer-container">
-            <Grid container className="footer-company" justify-content='space-evenly' spacing={SPACING}>
-                <Grid item xs={12}>
+            <Grid container className="footer-company" justify-content='flex-end' spacing={SPACING}>
+                <Grid item xs={3}>
+                    <span>              </span>
+                </Grid>
+                <Grid item xs={9}>
                     <div className = 'title'>
                         COMPANY
                     </div>
@@ -33,7 +36,10 @@ const Footer = () => {
                 </Grid>
             </Grid>
             <Grid container className="footer-services" justify-content='space-evenly'spacing={SPACING} >
-                <Grid item xs={12}>
+                <Grid item xs={3}>
+                    <span>              </span>
+                </Grid>
+                <Grid item xs={9}>
                 <div className='title'>
                         <p> SERVICES</p>
                     </div>
@@ -49,8 +55,11 @@ const Footer = () => {
                      </Grid> 
                 </Grid>
             </Grid>
-            <Grid container className="footer-partnership" justify-content='space-evenly'spacing={SPACING} >   
-                <Grid item xs={12}>
+            <Grid container className="footer-partnership" justify-content='space-evenly'spacing={SPACING} > 
+                <Grid item xs={3}>
+                    <span>              </span>
+                </Grid>
+                <Grid item xs={9}>
                     <div className = 'title'>
                         <p>{People.title}</p>
                     </div>
