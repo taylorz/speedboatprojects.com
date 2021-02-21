@@ -29,7 +29,7 @@
     }
     .fixed-header{
         background-color: white;
-        padding-bottom: 1vh;
+        padding-bottom: 0.5em;
         @include mobile { 
             font-size: $fontSizeMobile;
         }
