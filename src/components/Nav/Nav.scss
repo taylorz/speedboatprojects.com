@@ -92,7 +92,8 @@
         text-transform: lowercase;
         pointer-events: auto;
         color: black;
-        background-color: transparent;
+        //background-color: white;
+        //padding-bottom: 0.5em;
         @include mobile { 
             font-size: $fontSizeMobile;
             font-family: $primaryFont;
