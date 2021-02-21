@@ -28,11 +28,11 @@
         }
     }
     .fixed-header{
-        background-color: white;
+        background-color: $backgroundColor;
         padding-bottom: 0.5em;
         width: 100% !important;
         @include mobile { 
-            background-color: white;
+            background-color: $backgroundColor;
             width: 100% !important;
             font-size: $fontSizeMobile;
         }
@@ -146,9 +146,9 @@
             color: $acid
         }
 
-        .and:hover {
-            color: $acid
-        }
+        // .and:hover {
+        //     color: $acid
+        // }
         a:hover {
             background-color: transparent;
         }
