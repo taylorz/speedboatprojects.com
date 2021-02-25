@@ -2,8 +2,12 @@
 
 
 @mixin mobile {
-    @media (max-width: 899px) { @content; }
-}    
+    @media (max-width: $mobileMaxWidth) { @content; }
+}
+
+@mixin tab {
+    @media (max-width: $tabMaxWidth) { @content; }
+}  
 
 
 .footer-container {
@@ -13,10 +17,15 @@
     line-height: 1.6;
     padding: $margin;
     padding-bottom: 1vh;
+
+    @include tab { 
+        padding-bottom: 7vh;
+    }
     @include mobile { 
         font-size: $fontSizeMobile;
         font-family: $secondaryFont;
         padding-left: $mobileMargin;
+        padding-bottom: 12vh;
     }
     .title {
         font-weight: $fontWeight500;

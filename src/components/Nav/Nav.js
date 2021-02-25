@@ -56,7 +56,7 @@ const Nav = ({ onClick }) => {
                     </Button>   
                    
                 </Grid>
-                <Grid item xs={12} lg={2} className="message">
+                <Grid item xs={12} lg={6} className="message">
                     <Button disableRipple style={{
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
@@ -65,21 +65,7 @@ const Nav = ({ onClick }) => {
                         <span className='message-span'> {shopTextArray[shopIndex]}</span>
                         </Link>
                     </Button>
-                {/* <Button disableRipple style={{
-                        paddingLeft: 0,
-                        backgroundColor: 'transparent',
-                    }}>
-                        <Link to="footer" spy={true} smooth={true} duration={1000}>  <span className='message-span'>ABOUT US</span> </Link>
-                    </Button>                   */}
                 </Grid>
-                {/* <Grid item xs={12} lg={4} className="shop">
-                    <Button disableRipple onClick={openForm} style={{
-                        paddingLeft: 0,
-                        backgroundColor: 'transparent',
-                    }}>
-                    <span className='shop-span'>MSG US</span>
-                    </Button> 
-                </Grid> */}
             </Grid> 
             <Grid container className="fixed-footer" xs={12} direction="row">
                     <Grid item xs={12} lg={3} className="mail">

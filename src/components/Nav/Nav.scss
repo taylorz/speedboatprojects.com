@@ -9,9 +9,6 @@
 }
 
 .nav-container {
-    @include mobile { 
-        padding-left: $mobileMargin;
-    }
     .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;        
@@ -24,7 +21,8 @@
         padding-left: $margin;
         padding-right: $margin;
         @include mobile { 
-            padding-left: 0 !important;
+            padding-top: 1em;
+            padding-bottom: 1em;
         }
     }
     .fixed-header{
@@ -33,7 +31,6 @@
         width: 100% !important;
         @include mobile { 
             background-color: $backgroundColor;
-            width: 100% !important;
             font-size: $fontSizeMobile;
         }
         .speedboat {
@@ -97,33 +94,14 @@
         pointer-events: auto;
         color: black;
 
-        @include mobile { 
-            font-size: $fontSizeMobile;
-            font-family: $primaryFont;
-        }
         .mail:hover {
             color: $acid
         }
-        // .instagram {
-        //     //padding-left: $spacing-gap/2 + 2;
-        //     @include mobile { 
-        //         padding-left: 0;
-        //     }
-        //     @include tab { 
-        //         padding-left: 0;
-        //     }
-        // }
         .instagram:hover {
             color: $acid
         }
         .number {
             padding-left: $spacing-gap;
-            @include mobile { 
-                padding-left: 0;
-            }
-            @include tab { 
-                padding-left: 0;
-            }
         }
         .number-a:hover {
             color: $acid
