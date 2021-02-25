@@ -1,8 +1,7 @@
+import Grid from '@material-ui/core/Grid';
 import React from 'react';
-import Grid from '@material-ui/core/Grid'
-import './VideoItem.scss'
-import ReactPlayer from 'react-player'
-import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import ReactPlayer from 'react-player';
+import './VideoItem.scss';
 
 const VideoItem = ({ url }) => (
     <Grid item xs={12} className="video-wrapper">

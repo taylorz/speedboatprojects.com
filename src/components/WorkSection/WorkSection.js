@@ -1,9 +1,8 @@
+import Grid from '@material-ui/core/Grid';
 import React from 'react';
-import Grid from '@material-ui/core/Grid'
-import './WorkSection.scss'
-import ImageBlock from '../ImageBlock/ImageBlock'
-import VideoBlock from '../VideoBlock/VideoBlock'
-import FirstImageBlock from '../ImageBlock/FirstImageBlock'
+import ImageBlock from '../ImageBlock/ImageBlock';
+import VideoBlock from '../VideoBlock/VideoBlock';
+import './WorkSection.scss';
 
 const WorkSection = ({ workType }) => (
     

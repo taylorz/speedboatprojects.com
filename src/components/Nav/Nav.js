@@ -9,10 +9,6 @@ import './Nav.scss'
 const Nav = ({ onClick }) => {
 
     const typeformEmbed = useRef();
-    
-    const openForm = () => {
-        typeformEmbed.current.typeform.open();
-    };
 
     const shopTextArray = ['FURNITURE', 'ARCHITECTURE', 'BOOKS', 'ADUs', 'KITCHENS'];
     const [shopIndex, setShopIndex] = useState(0);
