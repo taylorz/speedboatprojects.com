@@ -86,7 +86,7 @@ const Nav = ({ onClick }) => {
                         <a href= 'mailto: info@speedboatprojects.com' target="_blank" rel="noopener noreferrer"> info@speedboatprojects.com </a>
                     </Grid>
                     <Grid item xs={12} lg={2} className="instagram"> 
-                        <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank" rel="noopener noreferrer" > instagram </a>
+                        <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank" rel="noopener noreferrer" > @speedboatprojects</a>
                     </Grid>
                     <Grid item xs={12} lg={2} className="number">       
                         <a href="tel:+1 323-450-7551" className='number-a'>+1 323-450-7551</a>
