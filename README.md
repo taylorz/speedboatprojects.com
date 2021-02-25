@@ -1,8 +1,17 @@
+# Speedboatt
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+## Installation
+
+### `yarn install`
+
+Use the package yarn [yarn](https://yarnpkg.com/) to install speedboat dependencies.
+
 
 ### `yarn start`
 

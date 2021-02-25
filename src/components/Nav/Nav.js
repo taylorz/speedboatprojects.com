@@ -4,7 +4,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-scroll'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
-// import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
 import './Nav.scss'
 
 const Nav = ({ onClick }) => {
@@ -52,7 +51,7 @@ const Nav = ({ onClick }) => {
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
                     }}>
-                        <Link to="top" spy={true} smooth={true} duration={1000}>  <span className= 'speedboat-span'>SPEEDBOAT</span> </Link>
+                        <Link to="top" spy={true} smooth={true} duration={4000}>  <span className= 'speedboat-span'>SPEEDBOAT</span> </Link>
                     </Button>   
                    
                 </Grid>
@@ -61,7 +60,7 @@ const Nav = ({ onClick }) => {
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
                     }}>
-                    <Link to="footer" spy={true} smooth={true} duration={1000}>  
+                    <Link to="footer" spy={true} smooth={true} duration={4000}>  
                         <span className='message-span'> {shopTextArray[shopIndex]}</span>
                         </Link>
                     </Button>
