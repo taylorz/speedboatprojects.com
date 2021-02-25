@@ -20,46 +20,22 @@
     }
     .title {
         font-weight: $fontWeight500;
+        background-color: transparent;
     }
     .footer-company {
         background-color: transparent;
-        //padding-left: 0;
-        // padding-top: $footerPaddingTop;
-        // padding-bottom: $footerPaddingBottom;
-        .title {
-            font-weight: $fontWeight500;
-        }
-        .speedboat {
-        }
-        .items {
-        }
     }
     .footer-services {
         background-color:  transparent;
         padding-top: $footerPaddingTop;
         padding-bottom: $footerPaddingBottom;
-        .title  {
-            font-weight: $fontWeight500;
-        }
-        .text {
-        }
-        .items {
-        }
     }
     .footer-partnership {
         background-color: transparent;
         padding-top: $footerPaddingTop;
         padding-bottom: $footerPaddingTop;
-        .title  {
-            font-weight: $fontWeight500;
-        }
-        .text {
-        }
-        .items {
-        }
         .incorporated {
             font-weight: $fontWeight500;
         } 
     }
-    
 }

@@ -14,14 +14,14 @@ const Footer = () => {
     return (
         <MaxWidthWrapper>
         <div className="footer-container">
-            <Grid container className="footer-company" justify-content='flex-end' spacing={SPACING}>
+            <Grid container className="footer-company" justify-content='center' spacing={SPACING}>
                 <Grid item xs={3}>
                     <div className = 'title'>
-                        COMPANY
+                        <p>COMPANY</p>
                     </div>
                 </Grid>
                 <Grid item xs={9}>
-                    <div className = 'speedboat'>
+                    <div>
                         <p>{Description.para1}</p>
                     </div>
                     <Grid container justify-content='space-evenly'spacing={SPACING} className='items'>
@@ -36,12 +36,11 @@ const Footer = () => {
             </Grid>
             <Grid container className="footer-services" justify-content='space-evenly'spacing={SPACING} >
                 <Grid item xs={3}>
-                    <span>              </span>
+                    <div className = 'title'>
+                        <p> SERVICES </p>
+                    </div>
                 </Grid>
                 <Grid item xs={9}>
-                <div className='title'>
-                        <p> SERVICES</p>
-                    </div>
                     <div className='text'>
                         <p>{Description.para4}</p>
                     </div>
@@ -56,12 +55,11 @@ const Footer = () => {
             </Grid>
             <Grid container className="footer-partnership" justify-content='space-evenly'spacing={SPACING} > 
                 <Grid item xs={3}>
-                    <span>              </span>
+                    <div className = 'title'>
+                        <p>PARTNERSHIP</p>
+                    </div>
                 </Grid>
                 <Grid item xs={9}>
-                    <div className = 'title'>
-                        <p>{People.title}</p>
-                    </div>
                     <div className = 'text'>
                         <p>{People.text}</p>
                     </div>

@@ -61,9 +61,9 @@ const Nav = ({ onClick }) => {
                         paddingLeft: 0,
                         backgroundColor: 'transparent',
                     }}>
-                    <a href="https://workshop.speedboatprojects.com/" target="_blank">
+                    <Link to="footer" spy={true} smooth={true} duration={1000}>  
                         <span className='message-span'> {shopTextArray[shopIndex]}</span>
-                    </a>
+                        </Link>
                     </Button>
                 {/* <Button disableRipple style={{
                         paddingLeft: 0,
