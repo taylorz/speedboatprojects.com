@@ -1,11 +1,10 @@
-import React, { useRef, useState, useEffect} from 'react'
-// import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
-import './Nav.scss'
+import { Button } from "@material-ui/core"
 import Grid from '@material-ui/core/Grid'
+import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-scroll'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
-import { Button } from "@material-ui/core";
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import './Nav.scss'
 
 const Nav = ({ onClick }) => {
 
@@ -36,56 +35,52 @@ const Nav = ({ onClick }) => {
     
 
     return (
-    <MaxWidthWrapper>    
+    <MaxWidthWrapper>  
+        <ReactTypeformEmbeded
+            popup
+            autoOpen={false}
+            url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
+            ref={tf => {
+                typeformEmbed.current = tf;
+            }}
+        />  
         <Grid container className="nav-container">
-            <Grid container className="header" xs={12} direction="row">
-                <Grid item xs={12} lg={6}>
-                    <Button disableRipple className="header speedboat"> 
-                        <Link to="test1" spy={true} smooth={true} duration={1000}>  <span>SPEEDBOAT</span> </Link>
+            <Grid container className="fixed-header" xs={12} direction="row">
+                <Grid item xs={12} lg={6} className="speedboat">
+                    <Button disableRipple style={{
+                        paddingLeft: 0,
+                        backgroundColor: 'transparent',
+                    }}>
+                        <Link to="top" spy={true} smooth={true} duration={4000}>  <span className= 'speedboat-span'>SPEEDBOAT</span> </Link>
                     </Button>   
+                   
                 </Grid>
-                <Grid item xs={12} lg={2}>
-                    <ReactTypeformEmbeded
-                        popup
-                        autoOpen={false}
-                        url="https://speedboatprojects.typeform.com/to/CrA1fmIk"
-                        ref={tf => {
-                            typeformEmbed.current = tf;
-                        }}
-                    />
-                    <Button disableRipple onClick={openForm} className="header message" > <span>MSG US</span></Button>                 
-                </Grid>
-                <Grid item xs={12} lg={3}>
-                    <Button disableRipple className="header shop" >
-                    <a href="https://workshop.speedboatprojects.com/" target="_blank">
-                        <span>SHOP {shopTextArray[shopIndex]}</span>
-                    </a>
+                <Grid item xs={12} lg={6} className="message">
+                    <Button disableRipple style={{
+                        paddingLeft: 0,
+                        backgroundColor: 'transparent',
+                    }}>
+                    <Link to="footer" spy={true} smooth={true} duration={4000}>  
+                        <span className='message-span'> {shopTextArray[shopIndex]}</span>
+                        </Link>
                     </Button>
                 </Grid>
             </Grid> 
-            <Grid container className="footer" xs={12} direction="row">
-                    <Grid item xs={12} lg={4}>
-                        <Button disableRipple className='footer item'>
-                            <a href= 'mailto: info@speedboatprojects.com' target="_blank"> info@speedboatprojects.com </a>
-                        </Button>
+            <Grid container className="fixed-footer" xs={12} direction="row">
+                    <Grid item xs={12} lg={3} className="mail">
+                        <a href= 'mailto: info@speedboatprojects.com' target="_blank" rel="noopener noreferrer"> info@speedboatprojects.com </a>
                     </Grid>
-                    <Grid item xs={12} lg={2}>
-                        <Button disableRipple className='footer item'>
-                            <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' target="_blank"> instagram </a>
-                        </Button>
+                    <Grid item xs={12} lg={3} className="instagram"> 
+                        <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank" rel="noopener noreferrer" > @speedboatprojects</a>
                     </Grid>
-                    <Grid item xs={12} lg={2}>
-                        <Button disableRipple className = 'footer item'> 
-                            <a href="tel:+1 323-450-7551" className='phoneNumber'>+1 323-450-7551</a>
-                        </Button>
+                    <Grid item xs={12} lg={2} className="number">       
+                        <a href="tel:+1 323-450-7551" className='number-a'>1 323-450-7551</a>
                     </Grid>
-                    <Grid item xs={12}  lg={3}>
-                        <Button disableRipple className='footer item'>
-                            <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
-                            <span className='and'>& </span>
-                            <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>
-                        </Button>                
-                    </Grid>
+                    <Grid item xs={12}  lg={3} className="location">
+                        <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank" rel="noopener noreferrer" className='location-california'> California </a>
+                        <span className='and'>& </span>
+                        <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank" rel="noopener noreferrer" className='location-nyc'> New York</a>        
+                </Grid>
             </Grid>
         </Grid>
     </MaxWidthWrapper>

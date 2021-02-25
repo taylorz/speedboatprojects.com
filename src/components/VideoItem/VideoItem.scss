@@ -1,14 +1,27 @@
 @import "../../styles/styles.scss";
 
+@mixin mobile {
+    @media (max-width: 899px) { @content; }
+}
+
+@mixin tab {
+    @media (max-width: 1280px) { @content; }
+}
+
 .video-wrapper {
     position: relative;
     .video-element {
         min-width: 100% !important;
-        height: 60vh !important;
+        height: 50vh !important;
         video {
             min-width: 100% !important;
             min-height: 100% !important;
             width: auto !important;
         }
+        @include mobile { 
+            height: 100px !important;
+            width: auto !important;
+        }
     }
+    
 } //video-wrapper

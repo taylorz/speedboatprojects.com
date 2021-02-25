@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid'
 import './ImageBlock.scss'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 
-const ImageBlock = ({ img1}) => (
+const FirstImageBlock = ({ img1}) => (
     <Grid container className="image-block-container">
         <MaxWidthWrapper>
             <div className="image-block-outer">
@@ -17,4 +17,4 @@ const ImageBlock = ({ img1}) => (
     </Grid>
 )
 
-export default ImageBlock;
+export default FirstImageBlock;

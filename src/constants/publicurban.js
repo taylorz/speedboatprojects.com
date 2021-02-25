@@ -6,10 +6,16 @@ import vid from '../assets/videos/20200809_04.mp4'
 
 const PUBLICURBAN = [
     {
-        images: [aduLA1, aduLA2],
+        image: aduLA1
     },
     {
-        images: [housingNYC1, compostPark2],
+        image: aduLA2
+    }, 
+    {
+        image: housingNYC1
+    },
+    {
+        image: compostPark2,
         video: vid
     },
 

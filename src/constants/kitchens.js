@@ -9,17 +9,30 @@ import housingPlan from '../assets/images/20_Housing_Plan.png'
 
 const KITCHENS = [
     {
-        images: [customKitchen01, customKitchen02],
+        image: customKitchen01
     },
     {
-        images: [grocers01, grocers02],
+        image: customKitchen02
     },
     {
-        images: [newYorkCity01, newYorkCity02],
+        image: grocers01
     },
     {
-        images: [housingPlan, housingElevation],
+        image: grocers02
     },
+    {
+        image: newYorkCity01
+    },
+    {
+        image: newYorkCity02
+    },
+    {
+        image: housingPlan
+    },
+    {
+        image: housingElevation
+    }
+
 ]
 
 export default KITCHENS

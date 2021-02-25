@@ -4,11 +4,8 @@ mark{
   background-color: white;
 }
 
-
-//1920 x 850
-
 .image-block-container {
-    padding-top: $paddingTopWorkspace;
+    padding-top: $paddingTop;
     &:nth-child(even) {
         .image-block-outer {
             .outer-project-details {
@@ -23,7 +20,7 @@ mark{
     .image-block-outer {
         margin-top: $buffer;
         margin-right: $margin; 
-        margin-bottom: $buffer;
+        //margin-bottom: $buffer;
         margin-left: $margin;
         position: relative;
         @include breakpoint(xs) {
