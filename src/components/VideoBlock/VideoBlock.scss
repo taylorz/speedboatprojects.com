@@ -1,10 +1,32 @@
 @import "../../styles/styles.scss";
 
+@mixin mobile {
+    @media (max-width: $mobileMaxWidth) { @content; }
+}
+
+@mixin tab {
+    @media (max-width: $tabMaxWidth) { @content; }
+}
+
 .video-block-container {
     margin-top: $buffer*2;
     padding-top: 0; //$paddingTop;
-    height: 75vh; 
+    height: $videoHeight; 
     width: 100%;
     background: $bgColor;
     overflow: hidden;
+
+    @include tab {
+        height: $videoHeightTab !important;
+        width: auto !important;
+        overflow: hidden;
+    }
+
+    @include mobile { 
+        height: $videoHeightMobile !important;
+        width: auto !important;
+        overflow: hidden;
+    }
 }
+
+

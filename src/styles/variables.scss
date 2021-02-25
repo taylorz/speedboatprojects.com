@@ -16,7 +16,9 @@ $mobileMargin:                       $buffer*12;
 $paddingTopWorkspace:                8px;  
 $paddingBottom:                      15px;  
 $spacing:                            3; //24px (3 * 8px)
-$spacing-gap:                        10px;                            
+$spacing-gap:                        10px;   
+$mobileMaxWidth:                    899px;
+$tabMaxWidth:                       1280px;                               
 
 $primaryFont:                        'Prophet Bold', Helvetica, sans-serif;
 $secondaryFont:                      'Work Sans', Helvetica, sans-serif;
@@ -57,6 +59,10 @@ $lineHeightMobile:                   24px;
 $lineHeight:                         38px;
 $lineHeightStatement:                50px;
 $lineHeightHero:                     96px;
+
+$videoHeight:                       65vh;
+$videoHeightTab:                    45vh;   
+$videoHeightMobile:                 35vh;
 
 $timing:                             .5s;
 $easingCubic:                        cubic-bezier(0.77, 0, 0.175, 1);

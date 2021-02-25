@@ -1,28 +1,28 @@
 @import "../../styles/styles.scss";
 
 @mixin mobile {
-    @media (max-width: 899px) { @content; }
+    @media (max-width: $mobileMaxWidth) { @content; }
 }
 
 @mixin tab {
-    @media (max-width: 1280px) { @content; }
+    @media (max-width: $tabMaxWidth) { @content; }
 }
 
 .hero-container {
     background: $backgroundColor;
     position: relative;
     margin-top: 1em;
-    height: 65vh;
+    height: $videoHeight;
     overflow: hidden;
 
     @include tab {
-        height: 55vh !important;
+        height: $videoHeightTab !important;
         width: auto !important;
         overflow: hidden;
     }
 
     @include mobile { 
-        height: 40vh !important;
+        height: $videoHeightMobile !important;
         width: auto !important;
         overflow: hidden;
     }

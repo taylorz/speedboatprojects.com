@@ -16,12 +16,11 @@ const Footer = () => {
         <div className="footer-container">
             <Grid container className="footer-company" justify-content='flex-end' spacing={SPACING}>
                 <Grid item xs={3}>
-                    <span>              </span>
-                </Grid>
-                <Grid item xs={9}>
                     <div className = 'title'>
                         COMPANY
                     </div>
+                </Grid>
+                <Grid item xs={9}>
                     <div className = 'speedboat'>
                         <p>{Description.para1}</p>
                     </div>
