@@ -82,10 +82,10 @@ const Nav = ({ onClick }) => {
                 </Grid> */}
             </Grid> 
             <Grid container className="fixed-footer" xs={12} direction="row">
-                    <Grid item xs={12} lg={4} className="mail">
+                    <Grid item xs={12} lg={3} className="mail">
                         <a href= 'mailto: info@speedboatprojects.com' target="_blank" rel="noopener noreferrer"> info@speedboatprojects.com </a>
                     </Grid>
-                    <Grid item xs={12} lg={2} className="instagram"> 
+                    <Grid item xs={12} lg={3} className="instagram"> 
                         <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank" rel="noopener noreferrer" > @speedboatprojects</a>
                     </Grid>
                     <Grid item xs={12} lg={2} className="number">       

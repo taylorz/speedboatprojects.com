@@ -1,11 +1,11 @@
 @import "../../styles/styles.scss";
 
 @mixin mobile {
-    @media (max-width: 899px) { @content; }
+    @media (max-width: $mobileMaxWidth) { @content; }
 }
 
 @mixin tab {
-    @media (max-width: 1280px) { @content; }
+    @media (max-width: $tabMaxWidth) { @content; }
 }
 
 .nav-container {
@@ -15,7 +15,7 @@
     .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;        
-        padding-top: 0.5em;
+        padding-top: $padding-fixNax;
         color: black;
         z-index: $zIndex1;
         text-transform: uppercase;
@@ -29,7 +29,7 @@
     }
     .fixed-header{
         background-color: $backgroundColor;
-        padding-bottom: 0.5em;
+        padding-bottom: $padding-fixNax;
         width: 100% !important;
         @include mobile { 
             background-color: $backgroundColor;
@@ -84,7 +84,11 @@
         }
     }
     .fixed-footer{
-        bottom: $paddingBottom;
+        padding: $padding-fixNax;
+        padding-left: $margin;
+        padding-right: $margin;
+        bottom: 0px;
+        background-color: white;
         font-family: $primaryFont;
         font-size: $fontSizeStaticFooter;
         text-align: left;
@@ -92,30 +96,24 @@
         text-transform: lowercase;
         pointer-events: auto;
         color: black;
-        //background-color: white;
-        //padding-bottom: 0.5em;
+
         @include mobile { 
             font-size: $fontSizeMobile;
             font-family: $primaryFont;
         }
         .mail:hover {
-            //background-color: transparent;
-            // animation:  changeColor step-end infinite; //.8s jump ease infinite alternate,
-            // -webkit-animation: changeColor step-end infinite; //.8s jump ease infinite alternate,
             color: $acid
         }
-        .instagram {
-            padding-left: $spacing-gap/2 + 2;
-            @include mobile { 
-                padding-left: 0;
-            }
-            @include tab { 
-                padding-left: 0;
-            }
-        }
+        // .instagram {
+        //     //padding-left: $spacing-gap/2 + 2;
+        //     @include mobile { 
+        //         padding-left: 0;
+        //     }
+        //     @include tab { 
+        //         padding-left: 0;
+        //     }
+        // }
         .instagram:hover {
-            // animation: changeColor step-end infinite; //.8s jump ease infinite alternate, 
-            // -webkit-animation: changeColor step-end infinite; //.8s jump ease infinite alternate,
             color: $acid
         }
         .number {
@@ -145,72 +143,5 @@
         .location-nyc:hover {
             color: $acid
         }
-
-        // .and:hover {
-        //     color: $acid
-        // }
-        a:hover {
-            background-color: transparent;
-        }
     }    
 }
-
-// @-webkit-keyframes changeColor {
-//     0% {
-//         color: $acid
-//     }
-//     25% {
-//         color: $babyBlue
-//     }
-//     50% {
-//         color: $seaFoam
-//     }
-//     75% {
-//         color:$goldenHour
-//     }
-// }
-
-// @keyframes changeColor {
-//     0% {
-//         color: $acid
-//     }
-//     25% {
-//         color: $babyBlue
-//     }
-//     50% {
-//         color: $seaFoam
-//     }
-//     75% {
-//         color:$goldenHour
-//     }
-// }
-// @-webkit-keyframes jump {
-//     0% {
-//       transform: scale(1);
-     
-//     }
-//     100% {
-//       transform: scale(1.5);
-//     }
-//   }
-
-// @keyframes jump {
-//     0% {
-//       transform: scale(1);
-     
-//     }
-//     100% {
-//       transform: scale(1.5);
-//     }
-//   }
-
-   // animation: changeColor step-end infinite;
-            // transition:transform 2s ease-in 2s;
-            // animation-iteration-count: infinite;
-            // animation-direction: alternate;
-            // animation-duration: 5s;
-            // animation-timing-function: ease-in-out;
-            // -webkit-animation-duration: 5s;
-            // -webkit-animation-iteration-count: infinite;
-            // -webkit-animation-direction: alternate;
-            // -webkit-animation-timing-function: ease-in-out; 
