@@ -14,8 +14,10 @@
     height: $videoHeight; 
     width: 100%;
     background: $bgColor;
+    text-align: center;
+    justify-content: center;
     overflow: hidden;
-
+   
     @include tab {
         height: $videoHeightTab !important;
         width: auto !important;

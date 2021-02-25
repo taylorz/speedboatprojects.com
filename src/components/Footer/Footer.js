@@ -24,12 +24,12 @@ const Footer = () => {
                     <div>
                         <p>{Description.para1}</p>
                     </div>
-                    <Grid container justify-content='space-evenly'spacing={SPACING} className='items'>
+                    <Grid container justify-content='space-between'spacing={SPACING} className='items'>
                         <Grid item xs={12}  lg={6}> 
-                            <p>{Description.para2} </p>
+                            <p className='description-1'>{Description.para2} </p>
                         </Grid>
                         <Grid item xs={12}  lg={6}> 
-                            <p>{Description.para3}</p>
+                            <p className='description-2'>{Description.para3}</p>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -44,10 +44,10 @@ const Footer = () => {
                     <div className='text'>
                         <p>{Description.para4}</p>
                     </div>
-                    <Grid container justify-content='space-evenly' spacing={SPACING} >   
+                    <Grid container justify-content='space-between' spacing={4} >   
                         {Divisions.map(({text }) => (
                             <Grid item xs={12} lg={4} className="items">
-                                <p> {text} </p>
+                                <p className='item'> {text} </p>
                             </Grid>
                         ))} 
                      </Grid> 

@@ -75,7 +75,7 @@ const Nav = ({ onClick }) => {
                         <a href= 'https://www.instagram.com/speedboatprojects/' target="_blank" rel="noopener noreferrer" > @speedboatprojects</a>
                     </Grid>
                     <Grid item xs={12} lg={2} className="number">       
-                        <a href="tel:+1 323-450-7551" className='number-a'>+1 323-450-7551</a>
+                        <a href="tel:+1 323-450-7551" className='number-a'>1 323-450-7551</a>
                     </Grid>
                     <Grid item xs={12}  lg={3} className="location">
                         <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank" rel="noopener noreferrer" className='location-california'> California </a>
