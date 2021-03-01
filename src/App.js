@@ -1,10 +1,10 @@
-import React, { Component, useState, useEffect }  from 'react';
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import createHistory from 'history/createBrowserHistory';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import Home from './pages/Homepage/Homepage'
-import Nav from './components/Nav/Nav'
 import './App.css';
-import createHistory from 'history/createBrowserHistory'
+import Nav from './components/Nav/Nav';
+import Home from './pages/Homepage/Homepage';
 
 const routes = [
   { path: '/', name: 'Home', Component: Home },

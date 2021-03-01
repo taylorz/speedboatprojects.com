@@ -4,8 +4,11 @@ mark{
   background-color: white;
 }
 
+
+//1920 x 850
+
 .image-block-container {
-    padding-top: $paddingTop;
+    padding-top: $paddingTopWorkspace;
     &:nth-child(even) {
         .image-block-outer {
             .outer-project-details {
@@ -18,10 +21,13 @@ mark{
         }
     }
     .image-block-outer {
-        margin: $buffer*2 $margin 0 $margin;
+        margin-top: $buffer;
+        margin-right: $margin; 
+        margin-bottom: $buffer;
+        margin-left: $margin;
         position: relative;
         @include breakpoint(xs) {
-            margin: $buffer*2 $mobileMargin 0 $mobileMargin;
+            margin: $buffer $mobileMargin 0 $mobileMargin;
         }
         .outer-project-details {
             @include breakpoint(md) {
@@ -47,10 +53,10 @@ mark{
         .image-block-inner {
             .image-block-wrapper {
                 position: relative;
-                padding-bottom: $paddingBottom;
                 img {
                     width: 100%;
                     min-height: 100%;
+                    background-color: transparent;
                 }
             }
         }

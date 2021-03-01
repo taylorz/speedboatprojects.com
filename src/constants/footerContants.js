@@ -32,7 +32,6 @@ const FOOTER_CONTENT = {
             
         ],
         People: {
-            title: 'PARTNERSHIP', 
             text: 'LAUREN, CLARA, HUNTER, HALLE, & CHAD work together as an integrated product team, with every partner personally vested in creating a positive outcome\
              for the projects. Because we are an entirely owner-operated company, our clients’ projects receive an unparalleled level of care, attention, and dedication to success.', 
             peoples: [

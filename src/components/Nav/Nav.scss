@@ -1,209 +1,122 @@
 @import "../../styles/styles.scss";
 
 @mixin mobile {
-    @media (max-width: 899px) { @content; }
+    @media (max-width: $mobileMaxWidth) { @content; }
 }
 
 @mixin tab {
-    @media (max-width: 1280px) { @content; }
+    @media (max-width: $tabMaxWidth) { @content; }
 }
 
 .nav-container {
-    text-transform: uppercase;
-    z-index: $zIndex1;
-    position: fixed;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-left: 55px;
-    padding-right: 55px;
-    background-color: transparent;
-    @include mobile { 
-        padding-left: $mobileMargin;
-    }
-    .header {
-        background-color: transparent;
-        font-size: $fontSize;
-        font-family: $primaryFont;
-        line-height: $fontSize;
-        pointer-events: auto;
-        text-align: left !important;
-        color: $acid;
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        padding-top: $padding-fixNax;
+        color: black;
+        z-index: $zIndex1;
+        text-transform: uppercase;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-left: $margin;
+        padding-right: $margin;
         @include mobile { 
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+    }
+    .fixed-header{
+        background-color: $backgroundColor;
+        padding-bottom: $padding-fixNax;
+        width: 100% !important;
+        @include mobile { 
+            background-color: $backgroundColor;
             font-size: $fontSizeMobile;
-            margin-left: -$buffer;
-        }
-        Button {
-            background-color: transparent;
-        }
-        span {
-            animation: changeColor step-end infinite;
-            transition:transform 2s ease-in 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-duration: 5s;
-            animation-timing-function: ease-in-out;
-            -webkit-animation-duration: 5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            -webkit-animation-timing-function: ease-in-out; 
-        }
-        span:hover {
-            animation: .8s jump ease infinite alternate, changeColor step-end infinite;
         }
         .speedboat {
-            :hover {
-                background-color: yellow;
+            font-size: $fontSizeStaticHeader;
+            color: black;
+            .speedboat-span {
+                color: black;
+            }
+        }
+        .speedboat-span:hover {
+            color: $acid
+        }
+        span {
+            color: black;
+            line-height: $fontSizeStaticHeader;
+            font-size: $fontSizeStaticHeader;
+            font-family: $primaryFont;
+            pointer-events: auto;
+        }
+        .message {
+            padding-left: $spacing-gap;
+            font-size: $fontSizeStaticHeader;
+            .message-span {
+                color: black;
+            }
+            .message-span:hover {
+                color: $acid
+            }
+            @include mobile { 
+                padding-left: 0;
+            }
+            @include tab { 
+                padding-left: 0;
             }
         }
         .shop {
-            display: inline-block; 
-            text-align: start;
-            width: 500px;
-            height: auto;
+            font-size: $fontSizeStaticHeader;
+            padding-left: $spacing-gap;
+            .shop-span {
+                color: black;
+            }
+            @include mobile { 
+                padding-left: 0;
+            }
+            @include tab { 
+                padding-left: 0 !important;
+            }
         }
     }
-    .footer {
-        bottom: $fontSizeFooter/4;
+    .fixed-footer{
+        padding: $padding-fixNax;
+        padding-left: $margin;
+        padding-right: $margin;
+        bottom: 0px;
+        background-color: $backgroundColor;
         font-family: $primaryFont;
-        font-size: $fontSizeFooter;
+        font-size: $fontSizeStaticFooter;
+        text-align: left;
         font-weight: normal; 
         text-transform: lowercase;
         pointer-events: auto;
-        color: $acid;
-        position: fixed;
-        white-space: nowrap;
-        background-color: transparent;
-        z-index: $zIndex2;
-        text-align: left !important;
-        @include mobile { 
-            font-size: $fontSizeSmall;
-            font-family: $primaryFont;
+        color: black;
+
+        .mail:hover {
+            color: $acid
         }
-        .and {
-            animation: changeColor step-end infinite;
-            transition:transform 2s ease-in 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-duration: 5s;
-            animation-timing-function: ease-in-out;
-            -webkit-animation: changeColor step-end infinite;
-            -webkit-animation-duration: 5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            -webkit-animation-timing-function: ease-in-out; 
+        .instagram:hover {
+            color: $acid
         }
-        .item {
-            display: inline-block;     
-            position: relative;  
-            padding: 0;
-            background-color: transparent;
-            :hover {
-                animation: .8s jump ease infinite alternate, changeColor step-end infinite;
-                -webkit-animation: .8s jump ease infinite alternate, changeColor step-end infinite;
+        .number-a:hover {
+            color: $acid
+        }
+        .location{
+            padding-left: $spacing-gap * 2 - 3;
+            @include mobile { 
+                padding-left: 0;
             }
-            .instagram {
-                margin-left: -25px;
-                @include mobile { 
-                    margin-left: 0 !important;
-                }
-                @include tab {
-                    margin-left: 0 !important;
-                }
-            }
-            .phoneNumber {
-                margin-left: -40px;
-                @include mobile { 
-                    margin-left: 0 !important;
-                }
-                @include tab {
-                    margin-left: 0 !important;
-                }
+            @include tab { 
+                padding-left: 0;
             }
         }
-        a:link {
-            animation: changeColor step-end infinite;
-            transition:transform 2s ease-in 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-duration: 5s;
-            animation-timing-function: ease-in-out;
-            -webkit-animation: changeColor step-end infinite;
-            -webkit-animation-duration: 5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            -webkit-animation-timing-function: ease-in-out; 
+        .location-california:hover {
+            color: $acid
         }
-    }
+        .location-nyc:hover {
+            color: $acid
+        }
+    }    
 }
-
-@-webkit-keyframes changeColor {
-    0% {
-        color: $acid
-    }
-    25% {
-        color: $babyBlue
-    }
-    50% {
-        color: $seaFoam
-    }
-    75% {
-        color:$goldenHour
-    }
-}
-
-@keyframes changeColor {
-    0% {
-        color: $acid
-    }
-    25% {
-        color: $babyBlue
-    }
-    50% {
-        color: $seaFoam
-    }
-    75% {
-        color:$goldenHour
-    }
-}
-@-webkit-keyframes jump {
-    0% {
-      transform: scale(1);
-     
-    }
-    100% {
-      transform: scale(1.2);
-    }
-  }
-
-@keyframes jump {
-    0% {
-      transform: scale(1);
-     
-    }
-    100% {
-      transform: scale(1.2);
-    }
-  }
-
-@-webkit-keyframes jumpMain {
-    0% {
-      transform: scale(1);
-     
-    }
-    100% {
-      transform: scale(1.08);
-    }
-  }
-
-
-@keyframes jumpMain {
-    0% {
-      transform: scale(1);
-     
-    }
-    100% {
-      transform: scale(1.08);
-    }
-  }
-
-

@@ -1,37 +1,29 @@
 @import "../../styles/styles.scss";
 
-.hero-container {
-    background: #eaeaea;
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
-    &:hover {
-        .text-wrapper {
-            opacity: 1;
-            @include transition;
-        }
-    }
-    .text-wrapper {
-        opacity: 0;
-        @include transition;
-        z-index: 1;
-        padding: $buffer*12;
-        @include breakpoint(xs) {
-            display: none;
-        }
-        .hero-text {
-            color: white;
-            font-size: $fontSizeStatement;
-            line-height: $lineHeightStatement;
-        }
-    }
+@mixin mobile {
+    @media (max-width: $mobileMaxWidth) { @content; }
 }
-.hero-text-mobile {
-    display: none !important;
-    .text-wrapper {
-        padding: $mobileMargin;
-        color: $babyBlue;
-        font-size: $fontSizeMobile;
-        line-height: $lineHeightMobile;
+
+@mixin tab {
+    @media (max-width: $tabMaxWidth) { @content; }
+}
+
+.hero-container {
+    background: $backgroundColor;
+    position: relative;
+    margin-top: 1em;
+    height: $videoHeight;
+    overflow: hidden;
+
+    @include tab {
+        height: $videoHeightTab !important;
+        width: auto !important;
+        overflow: hidden;
+    }
+
+    @include mobile { 
+        height: $videoHeightMobile !important;
+        width: auto !important;
+        overflow: hidden;
     }
 }
