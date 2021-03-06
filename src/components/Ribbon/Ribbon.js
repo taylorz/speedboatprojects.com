@@ -1,8 +1,8 @@
-import React, { component } from 'react'
-import './Ribbon.scss'
 import Grid from '@material-ui/core/Grid'
-import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import React from 'react'
 import Ticker from 'react-ticker'
+import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import './Ribbon.scss'
 
 const Ribbon = ({kitchens, customhomes, multifamily, publicurban}) => (
     <Grid

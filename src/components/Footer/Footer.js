@@ -1,26 +1,15 @@
-import React from 'react'
-import './Footer.scss'
 import Grid from '@material-ui/core/Grid'
-import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import React from 'react'
 // import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import FOOTER_CONTENT from '../../constants/footerContants'
+import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import './Footer.scss'
 
 const Footer = () => {
 
     const {Description, Divisions, People} = FOOTER_CONTENT;
 
     const SPACING = 3;
-
-    function nameList(names) {
-        const listItems = names.map((name) =>
-          <li>
-            {name}
-          </li>
-        );
-        return (
-          <ul>{listItems}</ul>
-        );
-      }
 
     return (
         <MaxWidthWrapper>

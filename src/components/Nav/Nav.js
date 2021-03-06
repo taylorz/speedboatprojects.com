@@ -57,7 +57,7 @@ const Nav = ({ onClick }) => {
                 </Grid>
                 <Grid item xs={12} lg={3}>
                     <Button disableRipple className="header shop" >
-                    <a href="https://workshop.speedboatprojects.com/" target="_blank">
+                    <a href="https://workshop.speedboatprojects.com/" target="_blank" rel="noopener noreferrer">
                         <span>SHOP {shopTextArray[shopIndex]}</span>
                     </a>
                     </Button>
@@ -66,7 +66,7 @@ const Nav = ({ onClick }) => {
             <Grid container className="footer" xs={12} direction="row">
                     <Grid item xs={12} lg={4}>
                         <Button disableRipple className='footer item'>
-                            <a href= 'mailto: info@speedboatprojects.com' target="_blank"> info@speedboatprojects.com </a>
+                            <a href= 'mailto: info@speedboatprojects.com' target="_blank" rel="noopener noreferrer"> info@speedboatprojects.com </a>
                         </Button>
                     </Grid>
                     <Grid item xs={12} lg={2}>
