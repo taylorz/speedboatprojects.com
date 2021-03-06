@@ -1,11 +1,11 @@
-import React, { useRef, useState, useEffect} from 'react'
-// import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
-import './Nav.scss'
+import { Button } from "@material-ui/core"
 import Grid from '@material-ui/core/Grid'
+import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-scroll'
 import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
 import ReactTypeformEmbeded from '../ReactTypeformEmbeded/ReactTypeformEmbeded'
-import { Button } from "@material-ui/core";
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom'
+import './Nav.scss'
 
 const Nav = ({ onClick }) => {
 
@@ -71,7 +71,7 @@ const Nav = ({ onClick }) => {
                     </Grid>
                     <Grid item xs={12} lg={2}>
                         <Button disableRipple className='footer item'>
-                            <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' target="_blank"> instagram </a>
+                            <a href= 'https://www.instagram.com/speedboatprojects/' className='instagram' rel="noopener noreferrer" target="_blank"> instagram </a>
                         </Button>
                     </Grid>
                     <Grid item xs={12} lg={2}>
@@ -81,9 +81,9 @@ const Nav = ({ onClick }) => {
                     </Grid>
                     <Grid item xs={12}  lg={3}>
                         <Button disableRipple className='footer item'>
-                            <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8' target="_blank"> California </a>
+                            <a href= 'https://goo.gl/maps/yhmG89N8N7wqQF2k8'rel="noopener noreferrer" target="_blank" > California </a>
                             <span className='and'>& </span>
-                            <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' target="_blank"> New York</a>
+                            <a href= 'https://goo.gl/maps/VzfHjDRb78eqd5vr6' rel="noopener noreferrer" target="_blank" > New York</a>
                         </Button>                
                     </Grid>
             </Grid>

@@ -1,7 +1,7 @@
+import Grid from '@material-ui/core/Grid';
 import React from 'react';
-import Grid from '@material-ui/core/Grid'
-import './ImageBlock.scss'
-import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper'
+import MaxWidthWrapper from '../MaxWidthWrapper/MaxWidthWrapper';
+import './ImageBlock.scss';
 
 const ImageBlock = ({ img1, img2, projectTitle, projectLocation }) => (
     <Grid container className="image-block-container">
@@ -14,10 +14,10 @@ const ImageBlock = ({ img1, img2, projectTitle, projectLocation }) => (
                 </div>
                 <Grid container className="image-block-inner">
                     <Grid item xs={12}  className="image-block-wrapper">
-                        <img src={img1}/>
+                        <img src={img1} alt=""/>
                     </Grid>
                     <Grid item xs={12} className="image-block-wrapper">
-                        <img src={img2}/>
+                        <img src={img2} alt=""/>
                     </Grid>
                 </Grid>
             </div>
